@@ -32,13 +32,13 @@
             @row([
                 'type' => 'textinput',
                 'field' => 'title_1',
-                'title' => 'title 1'
+                'title' => 'Title 1'
             ])
 
             @row([
                 'type' => 'textinput',
                 'field' => 'title_2',
-                'title' => 'title 2'
+                'title' => 'Title 2'
             ])
 
             @row([
@@ -94,11 +94,70 @@
                 'title' => 'Unit 4'
             ])
 
+            @row([
+                'type' => 'textinput',
+                'field' => 'left_content_1',
+                'title' => 'Left Content 1'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'left_content_2',
+                'title' => 'Left Content 2'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'left_content_3',
+                'title' => 'Left Content 3'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'left_content_4',
+                'title' => 'Left Content 4'
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'left_image',
+                'title' => 'Left Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'left_content_5',
+                'title' => 'Left Content 5'
+            ])
 
             @row([
                 'type' => 'editor',
                 'field' => 'left_editor',
-                'title' => 'Left Content'
+                'title' => 'Left Description'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'right_content_1',
+                'title' => 'Right Content 1'
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'right_image',
+                'title' => 'Right Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'right_content_2',
+                'title' => 'Right Content 2'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'right_content_3',
+                'title' => 'Right Content 3'
             ])
 
             @row([

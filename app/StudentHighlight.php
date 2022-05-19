@@ -5,11 +5,9 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class CurriculumCourseYear1 extends BasePageModel
+class StudentHighlight extends BaseModel
 {
-    protected $table = 'curriculum_course_year_1';
-
-    protected $casts = ['team_1' => 'array','team_2' => 'array','team_3' => 'array'];
+    protected $table = 'student_highlight';
 
     public function getListingUrl($params = []){
         return false;
