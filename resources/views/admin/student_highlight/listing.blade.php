@@ -29,7 +29,7 @@
                         <thead>
                             <tr>
                                 <th class="col-checkbox"><input type="checkbox" class="checkbox-select-all"></th>
-                                <th>@sortable(['field' => 'title'])</th>
+                                <th>@sortable(['field' => 'name'])</th>
                                 <th class="col-time">@sortable(['field' => 'created'])</th>
                                 <th class="col-time">@sortable(['field' => 'updated'])</th>
                                 <th class="col-status">@sortable(['field' => 'post_status', 'title' => 'status'])</th>
@@ -40,7 +40,7 @@
                             @foreach ($records as $key => $record)
                             <tr>
                                 <td class="col-checkbox"><input type="checkbox" name="id[]" value="{{ $record->id }}" {{ !auth()->user()->can('delete', $record) ? 'disabled' : '' }}></td>
-                                <td><a href="{{ $record->link }}">{{ $record->title }}</a></td>
+                                <td><a href="{{ $record->link }}">{{ $record->name }}</a></td>
                                 <td>@include('admin.base.created-at')</td>
                                 <td>@include('admin.base.updated-at')</td>
                                 <td>@include('admin.base.status-badge')</td>

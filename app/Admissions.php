@@ -9,6 +9,8 @@ class Admissions extends BasePageModel
 {
     protected $table = 'admissions';
 
+    protected $casts = ['jupas_details' => 'array','jupas_timeline' => 'array'];
+
     public function getListingUrl($params = []){
         return false;
     }

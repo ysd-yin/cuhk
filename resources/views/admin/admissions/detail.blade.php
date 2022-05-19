@@ -92,7 +92,7 @@
             @row([
                 'type' => 'textinput',
                 'field' => 'apply_non_jupas_title',
-                'title' => 'Apply Non Jupas title',
+                'title' => 'Apply Non Jupas Title',
             ])
 
             @row([
@@ -104,7 +104,7 @@
             @row([
                 'type' => 'textinput',
                 'field' => 'apply_internal_title',
-                'title' => 'Apply International Admissions title',
+                'title' => 'Apply International Admissions Title',
             ])
 
             @row([
@@ -114,7 +114,7 @@
             ])
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'field' => 'non_jupas_description',
                 'title' => 'Non Jupas Description',
             ])

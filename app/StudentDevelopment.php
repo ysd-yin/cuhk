@@ -9,6 +9,8 @@ class StudentDevelopment extends BasePageModel
 {
     protected $table = 'student_development';
 
+    protected $casts = ['content' => 'array'];
+    
     public function getListingUrl($params = []){
         return false;
     }

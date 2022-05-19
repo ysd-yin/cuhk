@@ -32,7 +32,14 @@
 
             @row([
                 'type' => 'textinput',
-                'field' => 'title',
+                'field' => 'title_1',
+                'title' => 'Title 1'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_2',
+                'title' => 'Title 2'
             ])
 
             @row([
@@ -75,16 +82,25 @@
                         'type' => 'image-upload',
                         'field' => 'image',
                         'title' => 'Image',
+                        'options' => [
+                            'width' => '15%'
+                        ]
                     ],
                     [
                         'type' => 'textinput',
                         'field' => 'title',
                         'title' => 'Title',
+                        'options' => [
+                            'width' => '35%'
+                        ]
                     ],
                     [
                         'type' => 'editor',
                         'field' => 'content',
                         'title' => 'Content',
+                        'options' => [
+                            'width' => '50%'
+                        ]
                     ]
                 ]
             ])
