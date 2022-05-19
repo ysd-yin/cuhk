@@ -32,6 +32,7 @@ var classObj = {
 		// 'curriculum_year_3',
 		// 'curriculum_year_4',
 		// 'curriculum_year_5',
+		'student_highlight'
 	],
 	3 : [
 	],
