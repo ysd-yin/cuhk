@@ -24,6 +24,7 @@ var classObj = {
 		// 'curriculum_course_year_3',
 		// 'curriculum_course_year_4',
 		// 'curriculum_course_year_5',
+		'news_page'
 	],
 	2 : [
 		// 'student_achievement_post'
@@ -32,6 +33,7 @@ var classObj = {
 		// 'curriculum_year_3',
 		// 'curriculum_year_4',
 		// 'curriculum_year_5',
+		// 'student_highlight'
 	],
 	3 : [
 	],

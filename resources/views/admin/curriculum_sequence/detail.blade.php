@@ -32,7 +32,6 @@
 
             @row([
                 'type' => 'textinput',
-                'has_language' => true,
                 'field' => 'title',
             ])
 
@@ -103,19 +102,7 @@
             ])
 
             @row([
-                'type' => 'textinput',
-                'field' => 'year_5_bottom_unit',
-                'title' => 'Year 5 Bottom Course Unit',
-            ])
-
-            @row([
-                'type' => 'textinput',
-                'field' => 'year_5_bottom',
-                'title' => 'Year 5 Bottom Course',
-            ])
-
-            @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'field' => 'course_description',
                 'title' => 'Course Description',
             ])
@@ -163,7 +150,7 @@
             ])
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'field' => 'course_list_description',
                 'title' => 'Course List Description',
             ])

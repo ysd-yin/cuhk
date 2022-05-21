@@ -12,3 +12,4 @@ docker-compose.yml
 /deploy/httpd.conf
 /vendor
 /template
+/public/assets/frontend

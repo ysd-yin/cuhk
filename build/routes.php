@@ -1,10 +1,10 @@
-		Route::group(['prefix' => 'student_achievement_post'], function () {
-	        Route::get('listing', 'Admin\StudentAchievementPostController@listing')->name('admin.student_achievement_post.listing');
-	        Route::get('detail/{id?}', 'Admin\StudentAchievementPostController@detail')->name('admin.student_achievement_post.detail');
-	        Route::get('arrangement/{parent_id?}', 'Admin\StudentAchievementPostController@arrangement')->name('admin.student_achievement_post.arrangement');
-	        Route::post('save', 'Admin\StudentAchievementPostController@save')->name('admin.student_achievement_post.save');
-	        Route::post('delete', 'Admin\StudentAchievementPostController@delete')->name('admin.student_achievement_post.delete');
-	        Route::post('save_arrangement', 'Admin\StudentAchievementPostController@save_arrangement')->name('admin.student_achievement_post.save_arrangement');
-            Route::post('bulk_action', 'Admin\StudentAchievementPostController@bulkAction')->name('admin.student_achievement_post.bulk_action');
+		Route::group(['prefix' => 'news_page'], function () {
+	        Route::get('listing', 'Admin\NewsPageController@listing')->name('admin.news_page.listing');
+	        Route::get('detail/{id?}', 'Admin\NewsPageController@detail')->name('admin.news_page.detail');
+	        Route::get('arrangement/{parent_id?}', 'Admin\NewsPageController@arrangement')->name('admin.news_page.arrangement');
+	        Route::post('save', 'Admin\NewsPageController@save')->name('admin.news_page.save');
+	        Route::post('delete', 'Admin\NewsPageController@delete')->name('admin.news_page.delete');
+	        Route::post('save_arrangement', 'Admin\NewsPageController@save_arrangement')->name('admin.news_page.save_arrangement');
+            Route::post('bulk_action', 'Admin\NewsPageController@bulkAction')->name('admin.news_page.bulk_action');
 	    });
 

@@ -29,10 +29,16 @@
     <div class="card">
         <div class="card-header">{{ $config['page_name'] }}</div>
         <div class="card-body" id="app-main">
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_1',
+                'title' => 'Title 1'
+            ])
 
             @row([
                 'type' => 'textinput',
-                'field' => 'title',
+                'field' => 'title_2',
+                'title' => 'Title 2'
             ])
 
             @row([
@@ -88,15 +94,74 @@
                 'title' => 'Unit 4'
             ])
 
-
             @row([
-                'type' => 'edidor',
-                'field' => 'left_editor',
-                'title' => 'Left Content'
+                'type' => 'textinput',
+                'field' => 'left_content_1',
+                'title' => 'Left Content 1'
             ])
 
             @row([
-                'type' => 'edidor',
+                'type' => 'textinput',
+                'field' => 'left_content_2',
+                'title' => 'Left Content 2'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'left_content_3',
+                'title' => 'Left Content 3'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'left_content_4',
+                'title' => 'Left Content 4'
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'left_image',
+                'title' => 'Left Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'left_content_5',
+                'title' => 'Left Content 5'
+            ])
+
+            @row([
+                'type' => 'editor',
+                'field' => 'left_editor',
+                'title' => 'Left Description'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'right_content_1',
+                'title' => 'Right Content 1'
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'right_image',
+                'title' => 'Right Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'right_content_2',
+                'title' => 'Right Content 2'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'right_content_3',
+                'title' => 'Right Content 3'
+            ])
+
+            @row([
+                'type' => 'editor',
                 'field' => 'right_editor',
                 'title' => 'Right Content'
             ])

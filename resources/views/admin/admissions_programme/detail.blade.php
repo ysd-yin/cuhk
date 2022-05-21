@@ -32,7 +32,14 @@
 
             @row([
                 'type' => 'textinput',
-                'field' => 'title',
+                'field' => 'title_1',
+                'title' => 'Title 1',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_2',
+                'title' => 'Title 2',
             ])
 
             @row([
@@ -42,43 +49,38 @@
 
             @row([
                 'type' => 'textinput',
-                'field' => 'jupas_code',
-                'title' => 'Jupas Code',
+                'field' => 'url_title',
+                'title' => 'URL Title',
             ])
 
             @row([
                 'type' => 'textinput',
                 'field' => 'url',
-            ])
-
-            @row([
-                'type' => 'textarea',
-                'field' => 'jupas_description',
-                'title' => 'Jupas Description',
+                'title' => 'URL',
             ])
 
             @row([
                 'type' => 'textinput',
-                'field' => 'jupas_title',
-                'title' => 'Jupas Title',
+                'field' => 'video_title',
+                'title' => 'Video Title',
             ])
 
             @repeater([
-                'field' => 'jupas_details',
+                'field' => 'video',
                 'show_title' => true,
-                'title' => 'Jupas Details',
+                'title' => 'Programme Videos',
                 'button_text' => 'Add New',
                 'sub_fields' =>
                 [
                     [
                         'type' => 'textinput',
-                        'field' => 'subject',
-                        'title' => 'Subject',
+                        'field' => 'video',
+                        'title' => 'Video',
                     ],
                     [
                         'type' => 'textinput',
-                        'field' => 'score',
-                        'title' => 'Minimum Score (Weighting)',
+                        'field' => 'title',
+                        'title' => 'Title',
                     ]
                 ]
             ])

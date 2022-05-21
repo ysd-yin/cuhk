@@ -29,11 +29,16 @@
     <div class="card">
         <div class="card-header">{{ $config['page_name'] }}</div>
         <div class="card-body" id="app-main">
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_1',
+                'title' => 'Title 1'
+            ])
 
             @row([
                 'type' => 'textinput',
-                'has_language' => true,
-                'field' => 'title',
+                'field' => 'title_2',
+                'title' => 'Title 2'
             ])
 
             @repeater([
@@ -45,7 +50,7 @@
                 [
                     [
                         'type' => 'image-upload',
-                        'title' => 'Imge',
+                        'title' => 'Image',
                         'field' => 'image'
                     ],
                     [
@@ -54,7 +59,7 @@
                         'field' => 'name'
                     ],
                     [
-                        'type' => 'editor',
+                        'type' => 'textarea',
                         'title' => 'Post',
                         'field' => 'post'
                     ]

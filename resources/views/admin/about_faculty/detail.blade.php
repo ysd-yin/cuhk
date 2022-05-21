@@ -32,30 +32,38 @@
 
             @row([
                 'type' => 'textinput',
-                'field' => 'title',
+                'field' => 'title_1',
+                'title' => 'Title 1'
+            ])  
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_2',
+                'title' => 'Title 2'
             ])  
 
             @row([
                 'type' => 'editor',
-                'field' => 'description',
+                'field' => 'first_description',
+                'title' => 'First Description'
             ])
 
             @row([
                 'type' => 'textinput',
                 'field' => 'image_1',
-                'title' => ' Image Title 1'
+                'title' => 'Image Title 1'
             ])  
 
             @row([
                 'type' => 'textinput',
                 'field' => 'image_2',
-                'title' => ' Image Title 2'
+                'title' => 'Image Title 2'
             ])  
 
             @row([
                 'type' => 'textinput',
                 'field' => 'image_3',
-                'title' => ' Image Title 3'
+                'title' => 'Image Title 3'
             ])  
 
             @row([

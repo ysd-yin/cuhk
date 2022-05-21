@@ -32,8 +32,14 @@
 
             @row([
                 'type' => 'textinput',
-                'has_language' => true,
-                'field' => 'title',
+                'field' => 'title_1',
+                'Title' => 'Title 1',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_2',
+                'Title' => 'Title 2',
             ])
 
             @repeater([
@@ -44,7 +50,7 @@
                 [
                     [
                         'type' => 'image-upload',
-                        'title' => 'Imge',
+                        'title' => 'Image',
                         'field' => 'image'
                     ],
                     [
@@ -53,7 +59,7 @@
                         'field' => 'title'
                     ],
                     [
-                        'type' => 'editor',
+                        'type' => 'textarea',
                         'title' => 'Description',
                         'field' => 'description'
                     ]
@@ -73,9 +79,21 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'image_1_title',
+                'title' => 'Image 1 Title'
+            ])
+
+            @row([
                 'type' => 'image-upload',
                 'field' => 'image_2',
                 'title' => 'Image 2 (Horizontal)'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_2_title',
+                'title' => 'Image 2 Title'
             ])
 
             @row([
@@ -85,9 +103,21 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'image_3_title',
+                'title' => 'Image 3 Title'
+            ])
+
+            @row([
                 'type' => 'image-upload',
                 'field' => 'image_4',
                 'title' => 'Image 4 (Horizontal)'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_4_title',
+                'title' => 'Image 4 Title'
             ])
 
             @row([
@@ -97,9 +127,21 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'image_5_title',
+                'title' => 'Image 5 Title'
+            ])
+
+            @row([
                 'type' => 'image-upload',
                 'field' => 'image_6',
                 'title' => 'Image 6 (Horizontal)'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_6_title',
+                'title' => 'Image 6 Title'
             ])
 
             @row([
@@ -109,9 +151,21 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'image_7_title',
+                'title' => 'Image 7 Title'
+            ])
+            
+            @row([
                 'type' => 'image-upload',
                 'field' => 'image_8',
                 'title' => 'Image 8 (Horizontal)'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_8_title',
+                'title' => 'Image 8 Title'
             ])
 
             @row([
@@ -121,34 +175,68 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'image_9_title',
+                'title' => 'Image 9 Title'
+            ])
+
+            @row([
                 'type' => 'image-upload',
                 'field' => 'image_10',
                 'title' => 'Image 10 (Horizontal)'
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'image_10_title',
+                'title' => 'Image 10 Title'
+            ])
+            @row([
                 'type' => 'image-upload',
                 'field' => 'image_11',
-                'title' => 'Image_11 (Vertical)'
+                'title' => 'Image 11 (Vertical)'
+            ])
+            @row([
+
+                'type' => 'textinput',
+                'field' => 'image_11_title',
+                'title' => 'Image 11 Title'
             ])
 
             @row([
                 'type' => 'image-upload',
                 'field' => 'image_12',
-                'title' => 'Image 12 (Vertical)'
+                'title' => 'Image 12 (Horizontal)'
             ])
 
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_12_title',
+                'title' => 'Image 12 Title'
+            ])
+            
             @row([
                 'type' => 'image-upload',
                 'field' => 'image_13',
                 'title' => 'Image 13 (Vertical)'
             ])
 
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_13_title',
+                'title' => 'Image 13 Title'
+            ])
                          
             @row([
                 'type' => 'image-upload',
                 'field' => 'image_14',
                 'title' => 'Image 14 (Horizontal)'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_14_title',
+                'title' => 'Image 14 Title'
             ])
 
             @row([
@@ -158,9 +246,21 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'image_15_title',
+                'title' => 'Image 15 Title'
+            ])
+
+            @row([
                 'type' => 'image-upload',
                 'field' => 'image_16',
-                'title' => 'Image 16 (Vertical)'
+                'title' => 'Image 16 (Horizontal)'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_16_title',
+                'title' => 'Image 16 Title'
             ])
 
             @row([
@@ -170,15 +270,32 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'image_17_title',
+                'title' => 'Image 17 Title'
+            ])
+
+            @row([
                 'type' => 'image-upload',
                 'field' => 'image_18',
                 'title' => 'Image 18 (Horizontal)'
+            ])
+                        
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_18_title',
+                'title' => 'Image 18 Title'
             ])
 
             @row([
                 'type' => 'image-upload',
                 'field' => 'image_19',
-                'title' => 'Image 19 (Horizontal)'
+                'title' => 'Image 19 (Vertical)'
+            ])
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_19_title',
+                'title' => 'Image 19 Title'
             ])
 
             @row([
@@ -188,9 +305,21 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'image_20_title',
+                'title' => 'Image 20 Title'
+            ])
+
+            @row([
                 'type' => 'image-upload',
                 'field' => 'image_21',
                 'title' => 'Image 21 (Horizontal)'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_21_title',
+                'title' => 'Image 21 Title'
             ])
 
             @row([
@@ -200,9 +329,21 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'image_22_title',
+                'title' => 'Image 22 Title'
+            ])
+
+            @row([
                 'type' => 'image-upload',
                 'field' => 'image_23',
                 'title' => 'Image 23 (Horizontal)'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'image_23_title',
+                'title' => 'Image 23 Title'
             ])
 
             @row([
@@ -212,16 +353,11 @@
             ])
 
             @row([
-                'type' => 'image-upload',
-                'field' => 'image_25',
-                'title' => 'Image 25 (Vertical)'
+                'type' => 'textinput',
+                'field' => 'image_24_title',
+                'title' => 'Image 24 Title'
             ])
 
-            @row([
-                'type' => 'image-upload',
-                'field' => 'image_26',
-                'title' => 'Image 26 (Vertical)'
-            ])
         </div>
         @include('admin.base.footer') 
     </div>

@@ -32,7 +32,20 @@
 
             @row([
                 'type' => 'textinput',
-                'field' => 'title',
+                'field' => 'banner_title',
+                'Title' => 'Banner Title'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_1',
+                'Title' => 'Title 1'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_2',
+                'Title' => 'Title 2'
             ])
 
             @row([
@@ -61,6 +74,12 @@
 
             @row([
                 'type' => 'textinput',
+                'field' => 'undergraduate_office_map',
+                'title' => 'Undergraduate Office Map',
+            ])
+
+            @row([
+                'type' => 'textinput',
                 'field' => 'undergraduate_office_tel',
                 'title' => 'Undergraduate Office Tel',
             ])
@@ -81,6 +100,12 @@
                 'type' => 'textarea',
                 'field' => 'faculty_law_address',
                 'title' => 'Faculty of Law Address',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'faculty_law_map',
+                'title' => 'Faculty of Law Map',
             ])
 
             @row([

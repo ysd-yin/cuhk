@@ -9,6 +9,8 @@ class AdmissionsProgramme extends BasePageModel
 {
     protected $table = 'admissions_programme';
 
+    protected $casts = ['video' => 'array'];
+
     public function getListingUrl($params = []){
         return false;
     }

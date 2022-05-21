@@ -9,6 +9,8 @@ class CurriculumCourseYear2 extends BasePageModel
 {
     protected $table = 'curriculum_course_year_2';
 
+    protected $casts = ['team_1' => 'array','team_2' => 'array','team_3' => 'array'];
+
     public function getListingUrl($params = []){
         return false;
     }

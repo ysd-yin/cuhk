@@ -9,6 +9,8 @@ class AboutLearning extends BasePageModel
 {
     protected $table = 'about_learning';
 
+    protected $casts = ['content' => 'array'];
+
     public function getListingUrl($params = []){
         return false;
     }

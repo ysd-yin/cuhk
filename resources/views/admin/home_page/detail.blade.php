@@ -44,18 +44,6 @@
 
             @row([
                 'type' => 'textinput',
-                'title' => 'Left Image Sentence',
-                'field' => 'left_image_sentence',
-            ])
-
-            @row([
-                'type' => 'textinput',
-                'title' => 'Right Image Sentence',
-                'field' => 'right_image_sentence',
-            ])
-
-            @row([
-                'type' => 'textinput',
                 'title' => 'Second Section Left Description',
                 'field' => 'second_left_description',
             ])
@@ -66,24 +54,22 @@
                 'field' => 'second_left_url',
             ])
 
-            @repeater([
-                'field' => 'second',
-                'show_title' => true,
-                'title' => 'Icon',
-                'button_text' => 'Add New',
-                'sub_fields' =>
-                [
-                    [
-                        'type' => 'image-upload',
-                        'title' => 'Icon',
-                        'field' => 'icon'
-                    ],
-                    [
-                        'type' => 'editor',
-                        'title' => 'Description',
-                        'field' => 'description'
-                    ],
-                ]
+            @row([
+                'type' => 'textarea',
+                'title' => 'Icon 1',
+                'field' => 'icon_1',
+            ])
+
+            @row([
+                'type' => 'textarea',
+                'title' => 'Icon 2',
+                'field' => 'icon_2',
+            ])
+
+            @row([
+                'type' => 'textarea',
+                'title' => 'Icon 3',
+                'field' => 'icon_3',
             ])
 
             @row([
@@ -112,7 +98,7 @@
                 'sub_fields' =>
                 [
                     [
-                        'type' => 'editor',
+                        'type' => 'textarea',
                         'title' => 'Description',
                         'field' => 'description'
                     ],

@@ -32,29 +32,34 @@
 
             @row([
                 'type' => 'textinput',
-                'has_language' => true,
-                'title' => 'Banner title',
-                'field' => 'banner_title',
+                'title' => 'Banner Title 1',
+                'field' => 'banner_title_1',
             ])
 
             @row([
                 'type' => 'textinput',
-                'field' => 'title_1',
-                'title' => 'Title 1',
+                'title' => 'Banner Title 2',
+                'field' => 'banner_title_2',
             ])
 
             @row([
                 'type' => 'textinput',
-                'field' => 'title_2',
-                'title' => 'Title 2',
+                'field' => 'first_title_1',
+                'title' => 'First Title 1',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'first_title_2',
+                'title' => 'First Title 2',
             ])
 
             @row([
                 'type' => 'editor',
-                'field' => 'description',
-                'title' => 'First Title',
+                'field' => 'first_description',
+                'title' => 'First description',
             ])
-
+{{-- 
             @row([
                 'type' => 'image-upload',
                 'field' => 'logo_image_left',
@@ -65,9 +70,9 @@
                 'type' => 'image-upload',
                 'field' => 'logo_image_right',
                 'title' => 'Right Image',
-            ])
+            ]) --}}
 
-            @row([
+            {{-- @row([
                 'type' => 'textinput',
                 'title' => 'Left Image Sentence',
                 'field' => 'left_image_sentence',
@@ -77,7 +82,7 @@
                 'type' => 'textinput',
                 'title' => 'Right Image Sentence',
                 'field' => 'right_image_sentence',
-            ])
+            ]) --}}
 
             @row([
                 'type' => 'editor',
@@ -97,24 +102,28 @@
                 'title' => 'Third Title 2',
             ])
 
-            @repeater([
-                'field' => 'third_icon',
-                'show_title' => true,
-                'title' => 'Third Icon',
-                'button_text' => 'Add New',
-                'sub_fields' =>
-                [
-                    [
-                        'type' => 'image-upload',
-                        'field' => 'icon',
-                        'title' => 'Icon',
-                    ],
-                    [
-                        'type' => 'editor',
-                        'title' => 'Description',
-                        'field' => 'description'
-                    ]
-                ]
+            @row([
+                'type' => 'textinput',
+                'field' => 'icon_description_1',
+                'title' => 'Icon Description 1',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'icon_description_2',
+                'title' => 'Icon Description 2',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'icon_description_3',
+                'title' => 'Icon Description 3',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'icon_description_4',
+                'title' => 'Icon Description 4',
             ])
         </div>
         @include('admin.base.footer') 

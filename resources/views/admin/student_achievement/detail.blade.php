@@ -32,7 +32,14 @@
 
             @row([
                 'type' => 'textinput',
-                'field' => 'title',
+                'field' => 'title_1',
+                'title' => 'Title 1',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_2',
+                'title' => 'Title 2',
             ])
 
             @row([

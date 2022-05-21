@@ -26,12 +26,12 @@ class AdminMenuController extends Controller
             [
                 'name' => 'About',
                 'sections' => [
-                    'about' => "About",
-                    'about_message' => "Co-Director's Message",
-                    'about_overview' => 'Overview',
-                    'about_management' => 'Management',
-                    'about_faculty' => 'Faculty',
-                    'about_learning' => 'Learning',
+                    'about_message' => "Programme Co‐Directors' Message",
+                    'about_overview' => 'Programme Overview',
+                    'about_management' => 'Programme Management',
+                    'about_faculty' => 'International Academic Faculty',
+                    'about_learning' => 'Learning Environment',
+                    'news_page' => 'News Page',
                     'about_news_event' => 'News & Events',
                     'about_contact' => 'Contact Us',
                 ]
@@ -51,15 +51,15 @@ class AdminMenuController extends Controller
             [
                 'name' => 'Student Enrichment',
                 'sections' => [
-                    'student_development' => 'Development',
-                    'student_achievement' => 'Student Achievement',
+                    'student_development' => 'Development and Experiential Learning',
+                    'student_achievement' => 'Student Achievement and Experience',
                     'student_achievement_post' => 'Student Achievement Post',
                 ]
             ],
             [
                 'name' => 'Student Voices',
                 'sections' => [
-                    'student_voices' => 'Voices',
+                    'student_highlight' => 'Student Voices',
                 ]
             ],
             [
@@ -71,10 +71,10 @@ class AdminMenuController extends Controller
             [
                 'name' => 'Admissions',
                 'sections' => [
-                    'admissions' => 'Admissions',
-                    'admissions_programme' => 'Programme',
+                    'admissions' => 'Admission Requirements',
+                    'admissions_programme' => 'Programme Brochure & Videos',
                     // 'admissions_tuition' => 'Tuition',
-                    'admissions_faq' => 'FAQ',
+                    'admissions_faq' => 'FAQs',
                 ]
             ],
             // [

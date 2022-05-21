@@ -47,51 +47,105 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'bottom_description',
+                'title' => 'Bottom Description'
+            ])
+
+            @row([
                 'type' => 'image-upload',
                 'field' => 'ball_1',
-                'title' => 'Ball 1'
+                'title' => 'Ball 1 Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'ball_1_text',
+                'title' => 'Ball 1 Text'
             ])
              
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_2',
-                'title' => 'Ball 2'
+                'title' => 'Ball 2 Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'ball_2_text',
+                'title' => 'Ball 2 Text'
             ])
 
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_3',
-                'title' => 'Ball 3'
+                'title' => 'Ball 3 Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'ball_3_text',
+                'title' => 'Ball 3 Text'
             ])
 
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_4',
-                'title' => 'Ball 4'
+                'title' => 'Ball 4 Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'ball_4_text',
+                'title' => 'Ball 4 Text'
             ])
 
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_5',
-                'title' => 'Ball 5'
+                'title' => 'Ball 5 Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'ball_5_text',
+                'title' => 'Ball 5 Text'
             ])
 
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_6',
-                'title' => 'Ball 6'
+                'title' => 'Ball 6 Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'ball_6_text',
+                'title' => 'Ball 6 Text'
             ])
 
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_7',
-                'title' => 'Ball 7'
+                'title' => 'Ball 7 Image'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'ball_7_text',
+                'title' => 'Ball 7 Text'
             ])
 
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_8',
-                'title' => 'Ball 8'
+                'title' => 'Ball 8 Image'
+            ])textinput
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'ball_8_text',
+                'title' => 'Ball 1 Text'
             ])
         </div>
         @include('admin.base.footer') 

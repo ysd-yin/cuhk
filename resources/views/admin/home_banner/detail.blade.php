@@ -39,21 +39,18 @@
 
             @row([
                 'type' => 'textinput',
-                'has_language' => true,
                 'title' => 'Title 1',
                 'field' => 'title_1',
             ])
 
             @row([
                 'type' => 'textinput',
-                'has_language' => true,
                 'title' => 'Title 2',
                 'field' => 'title_2',
             ])
 
             @row([
                 'type' => 'textinput',
-                'has_language' => true,
                 'title' => 'Sub title',
                 'field' => 'sub_title',
             ])
