@@ -54,6 +54,12 @@
 
             @row([
                 'type' => 'textinput',
+                'field' => 'unit_short_title_1',
+                'title' => 'Unit Short Title 1'
+            ])
+
+            @row([
+                'type' => 'textinput',
                 'field' => 'unit_1',
                 'title' => 'Unit 1'
             ])
@@ -62,6 +68,12 @@
                 'type' => 'textinput',
                 'field' => 'unit_title_2',
                 'title' => 'Unit Title 2'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'unit_short_title_2',
+                'title' => 'Unit Short Title 2'
             ])
 
             @row([
@@ -78,6 +90,12 @@
 
             @row([
                 'type' => 'textinput',
+                'field' => 'unit_short_title_3',
+                'title' => 'Unit Short Title 3'
+            ])
+
+            @row([
+                'type' => 'textinput',
                 'field' => 'unit_3',
                 'title' => 'Unit 3'
             ])
@@ -86,6 +104,12 @@
                 'type' => 'textinput',
                 'field' => 'unit_title_4',
                 'title' => 'Unit Title 4'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'unit_short_title_4',
+                'title' => 'Unit Short Title 4'
             ])
 
             @row([

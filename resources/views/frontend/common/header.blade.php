@@ -305,6 +305,7 @@
         }
       </style>
     <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=622e9dcd9a2c51920e6316d0" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script type="text/javascript">
         ! function(o, c) {
           var n = c.documentElement,
@@ -416,7 +417,7 @@
           <a href="about-contact-us.html" class="header-top-link">Contact Us</a>
         </div>
         <div class="nav-main-menu-b">
-          <div data-hover="false" data-delay="600" class="nav-dropdown w-dropdown" data-ix="nav-dropdown">
+          <div data-hover="false" data-delay="600" class="about_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
             <div class="nav-dropdown-toggle w-dropdown-toggle">
               <div>About</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
             </div>
@@ -432,7 +433,7 @@
               </div>
             </nav>
           </div>
-          <div data-hover="false" data-delay="600" class="nav-dropdown w-dropdown" data-ix="nav-dropdown">
+          <div data-hover="false" data-delay="600" class="curriculum_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
             <div class="nav-dropdown-toggle w-dropdown-toggle">
               <div>Curriculum</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
             </div>
@@ -443,7 +444,7 @@
               </div>
             </nav>
           </div>
-          <div data-hover="false" data-delay="600" class="nav-dropdown w-dropdown" data-ix="nav-dropdown">
+          <div data-hover="false" data-delay="600" class="student_enrichment nav-dropdown w-dropdown" data-ix="nav-dropdown">
             <div class="nav-dropdown-toggle w-dropdown-toggle">
               <div>Student Enrichment</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
             </div>

@@ -1,10 +1,10 @@
-		Route::group(['prefix' => 'news_page'], function () {
-	        Route::get('listing', 'Admin\NewsPageController@listing')->name('admin.news_page.listing');
-	        Route::get('detail/{id?}', 'Admin\NewsPageController@detail')->name('admin.news_page.detail');
-	        Route::get('arrangement/{parent_id?}', 'Admin\NewsPageController@arrangement')->name('admin.news_page.arrangement');
-	        Route::post('save', 'Admin\NewsPageController@save')->name('admin.news_page.save');
-	        Route::post('delete', 'Admin\NewsPageController@delete')->name('admin.news_page.delete');
-	        Route::post('save_arrangement', 'Admin\NewsPageController@save_arrangement')->name('admin.news_page.save_arrangement');
-            Route::post('bulk_action', 'Admin\NewsPageController@bulkAction')->name('admin.news_page.bulk_action');
+		Route::group(['prefix' => 'student_voices_pages'], function () {
+	        Route::get('listing', 'Admin\StudentVoicesPagesController@listing')->name('admin.student_voices_pages.listing');
+	        Route::get('detail/{id?}', 'Admin\StudentVoicesPagesController@detail')->name('admin.student_voices_pages.detail');
+	        Route::get('arrangement/{parent_id?}', 'Admin\StudentVoicesPagesController@arrangement')->name('admin.student_voices_pages.arrangement');
+	        Route::post('save', 'Admin\StudentVoicesPagesController@save')->name('admin.student_voices_pages.save');
+	        Route::post('delete', 'Admin\StudentVoicesPagesController@delete')->name('admin.student_voices_pages.delete');
+	        Route::post('save_arrangement', 'Admin\StudentVoicesPagesController@save_arrangement')->name('admin.student_voices_pages.save_arrangement');
+            Route::post('bulk_action', 'Admin\StudentVoicesPagesController@bulkAction')->name('admin.student_voices_pages.bulk_action');
 	    });
 

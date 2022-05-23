@@ -59,6 +59,7 @@ class AdminMenuController extends Controller
             [
                 'name' => 'Student Voices',
                 'sections' => [
+                    'student_voices_pages' => 'Student Voices Page',
                     'student_highlight' => 'Student Voices',
                 ]
             ],

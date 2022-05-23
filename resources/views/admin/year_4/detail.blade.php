@@ -73,7 +73,7 @@
             @repeater([
                 'field' => 'team_3',
                 'show_title' => true,
-                'title' => 'Team 3',
+                'title' => 'Summer Term',
                 'button_text' => 'Add New',
                 'sub_fields' =>
                 [

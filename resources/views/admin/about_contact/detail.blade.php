@@ -89,6 +89,36 @@
                 'field' => 'undergraduate_office_fax',
                 'title' => 'Undergraduate Office Fax',
             ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'undergraduate_office_fb',
+                'title' => 'Undergraduate Office Facebook',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'undergraduate_office_in',
+                'title' => 'Undergraduate Office Linkedin',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'undergraduate_office_ig',
+                'title' => 'Undergraduate Office Instagram',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'undergraduate_office_wechat',
+                'title' => 'Undergraduate Office Wechat',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'undergraduate_office_youtube',
+                'title' => 'Undergraduate Office Youtube',
+            ])
              
             @row([
                 'type' => 'textinput',
@@ -118,6 +148,30 @@
                 'type' => 'textinput',
                 'field' => 'faculty_law_fax',
                 'title' => 'Faculty of Law Fax',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'faculty_law_fb',
+                'title' => 'Faculty of Law Facebook',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'faculty_law_twitter',
+                'title' => 'Faculty of Law Twitter',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'faculty_law_ln',
+                'title' => 'Faculty of Law Linkedin',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'faculty_law_youtube',
+                'title' => 'Faculty of Law Youtube',
             ])
         </div>
         @include('admin.base.footer') 

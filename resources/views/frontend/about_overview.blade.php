@@ -130,4 +130,15 @@
     </div>
   </div>
 </div>
+<script>
+  add_current_page = setInterval(jQ, 1000);
+  
+  function jQ(){
+    $('.about_menu .nav-dropdown-link-b a').eq(1).addClass(" w--current")
+  }
+  
+  function StopInteval() {
+    clearInterval(add_current_page);
+  }
+  </script>
 @endsection

@@ -17,6 +17,7 @@ Route::get('refresh-csrf', function() {
 })->name('refresh-csrf');
 
 Route::get('/', 'IndexController@index')->name('index');
+
 Route::get('/about-programme-co-directors-message', 'AboutMessageController@index')->name('about_message');
 Route::get('/about-programme-overview', 'AboutOverviewController@index')->name('about_overview');
 Route::get('/about-programme-management', 'AboutManagementController@index')->name('about_management');
@@ -25,6 +26,14 @@ Route::get('/about-learning-environment', 'AboutLearningController@index')->name
 Route::get('/about-news-events', 'AboutNewsController@index')->name('about_news');
 Route::get('/about-news-events-details', 'AboutNewsController@details')->name('about_news_details');
 Route::get('/about-contact-us', 'AboutContactUsController@index')->name('about_contact_us');
+
+Route::get('/curriculum-programme-structure', 'CurriculumStructureController@index')->name('curriculum_structure');
+Route::get('/curriculum-study-sequence', 'CurriculumSequenceController@index')->name('curriculum_sequence');
+
+Route::get('/student-enrichment-development-and-experiential-learning', 'StudentDevelopmentController@index')->name('student_development');
+Route::get('/student-enrichment-student-achievement-and-experience', 'StudentAchievementController@index')->name('student_achievement');
+
+Route::get('/student-voices', 'StudentVoicesController@index')->name('student_voices');
 
 \App\Language::indexRoute();
 
