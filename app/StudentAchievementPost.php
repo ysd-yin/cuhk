@@ -9,6 +9,8 @@ class StudentAchievementPost extends BaseModel
 {
     protected $table = 'student_achievement_post';
 
+    protected $casts = ['image_list' => 'array'];
+
     public function getListingUrl($params = []){
         return false;
     }

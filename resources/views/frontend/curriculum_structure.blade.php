@@ -264,5 +264,5 @@
   function StopInteval() {
     clearInterval(add_current_page);
   }
-  </script>
+</script>
 @endsection

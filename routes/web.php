@@ -35,6 +35,11 @@ Route::get('/student-enrichment-student-achievement-and-experience', 'StudentAch
 
 Route::get('/student-voices', 'StudentVoicesController@index')->name('student_voices');
 
+Route::get('/career-prospects', 'CareerProspectsController@index')->name('career_prospects');
+
+Route::get('/admissions', 'AdmissionsController@index')->name('admissions');
+Route::get('/admissions-faqs', 'AdmissionsFaqController@index')->name('admissions_faq');
+
 \App\Language::indexRoute();
 
 // Route::get('/', 'IndexController@index')->name('index');

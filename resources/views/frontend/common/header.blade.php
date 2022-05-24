@@ -465,7 +465,7 @@
               <div>Career Prospects</div>
             </a>
           </div>
-          <div data-hover="false" data-delay="600" class="nav-dropdown w-dropdown" data-ix="nav-dropdown">
+          <div data-hover="false" data-delay="600" class="admissions_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
             <div class="nav-dropdown-toggle w-dropdown-toggle">
               <div>Admissions</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop admissions">
             </div>

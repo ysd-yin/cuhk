@@ -47,7 +47,7 @@
             ])
 
             @row([
-                'type' => 'textinput',
+                'type' => 'textarea',
                 'field' => 'bottom_description',
                 'title' => 'Bottom Description'
             ])
@@ -140,12 +140,12 @@
                 'type' => 'image-upload',
                 'field' => 'ball_8',
                 'title' => 'Ball 8 Image'
-            ])textinput
+            ])
 
             @row([
                 'type' => 'textinput',
                 'field' => 'ball_8_text',
-                'title' => 'Ball 1 Text'
+                'title' => 'Ball 8 Text'
             ])
         </div>
         @include('admin.base.footer') 
