@@ -16,6 +16,7 @@ class BaseFrontendController extends Controller
     public function output($callback){
 
         $data['current_language'] =  \App\Language::getCurrentLanguage();
+        $data['header'] = \App\Header::firstOrFail();
         $data['all_languages'] = \App\Language::getAllLanguageRoutes();
         $data['other_languages'] = $data['all_languages']->reject(function($language) {
             return $language->code == \App::getLocale();

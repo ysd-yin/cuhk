@@ -17,6 +17,12 @@ class AdminMenuController extends Controller
         return 
         [
             [
+                'name' => 'Header',
+                'sections' => [
+                    'header' => 'Header',
+                ]
+            ],
+            [
                 'name' => 'Home Page',
                 'sections' => [
                     'home_page' => 'Page Contents',

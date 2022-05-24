@@ -402,19 +402,19 @@
       </div>
       <div class="nav-menu popup-scroll">
         <div class="header-top">
-          <a href="about-news-events.html" class="header-top-link">News &amp; Events</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
-          <a href="admissions-programme-brochure-videos.html" class="header-top-link">Programme Brochure &amp; Videos</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
-          <a href="https://mycuhk.sharepoint.com/sites/faculty.BA.UGO/cuhkbba-jd/SitePages/Home.aspx" target="_blank" class="header-top-link">Current Students</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+          <a href="{{route('about_news')}}" class="header-top-link">News &amp; Events</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+          <a href="{{route('admissions_programme')}}" class="header-top-link">Programme Brochure &amp; Videos</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+          <a href="{{$header->current_url}}" target="_blank" class="header-top-link">Current Students</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
           <div class="header-top-link-dropdown-b">
             <a href="#" class="header-top-link" data-ix="header-top-dropdown">Student Careers</a>
             <div class="header-top-dropdown-list" data-ix="nav-dropdown-list">
               <div class="header-top-dropdown-link-b">
-                <a href="https://mycuhk.sharepoint.com/sites/faculty.BA.UGO/jobapplication/SitePages/Jobs.aspx" target="_blank" class="header-top-dropdown-link">CUHK Business School - Business Career Planning</a>
-                <a href="https://www.law.cuhk.edu.hk/en/student-careers/login.php" target="_blank" class="header-top-dropdown-link">CUHK LAW - Virtual Careers Resource Centre (VCRC)</a>
+                <a href="{{$header->careers_url_1}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_1}}</a>
+                <a href="{{$header->careers_url_2}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_2}}</a>
               </div>
             </div>
           </div><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
-          <a href="about-contact-us.html" class="header-top-link">Contact Us</a>
+          <a href="{{route('about_contact_us')}}" class="header-top-link">Contact Us</a>
         </div>
         <div class="nav-main-menu-b">
           <div data-hover="false" data-delay="600" class="about_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
@@ -423,13 +423,13 @@
             </div>
             <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
               <div class="nav-dropdown-link-b">
-                <a href="about-programme-co-directors-message.html" class="nav-dropdown-link w-dropdown-link">Programme Co‐Directors&#x27; Message</a>
-                <a href="about-programme-overview.html" class="nav-dropdown-link w-dropdown-link">Programme Overview</a>
-                <a href="about-programme-management.html" class="nav-dropdown-link w-dropdown-link">Programme Management</a>
-                <a href="about-international-academic-faculty.html" class="nav-dropdown-link w-dropdown-link">International Academic Faculty</a>
-                <a href="about-learning-environment.html" class="nav-dropdown-link w-dropdown-link">Learning Environment</a>
-                <a href="about-news-events.html" class="nav-dropdown-link w-dropdown-link">News &amp; Events</a>
-                <a href="about-contact-us.html" class="nav-dropdown-link w-dropdown-link">Contact Us</a>
+                <a href="{{route('about_message')}}" class="nav-dropdown-link w-dropdown-link">Programme Co‐Directors&#x27; Message</a>
+                <a href="{{route('about_overview')}}" class="nav-dropdown-link w-dropdown-link">Programme Overview</a>
+                <a href="{{route('about_management')}}" class="nav-dropdown-link w-dropdown-link">Programme Management</a>
+                <a href="{{route('about_faculty')}}" class="nav-dropdown-link w-dropdown-link">International Academic Faculty</a>
+                <a href="{{route('about_learning')}}" class="nav-dropdown-link w-dropdown-link">Learning Environment</a>
+                <a href="{{route('about_news')}}" class="nav-dropdown-link w-dropdown-link">News &amp; Events</a>
+                <a href="{{route('about_contact_us')}}" class="nav-dropdown-link w-dropdown-link">Contact Us</a>
               </div>
             </nav>
           </div>
@@ -439,8 +439,8 @@
             </div>
             <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
               <div class="nav-dropdown-link-b">
-                <a href="curriculum-programme-structure.html" class="nav-dropdown-link w-dropdown-link">Programme Structure</a>
-                <a href="curriculum-study-sequence.html" class="nav-dropdown-link w-dropdown-link">Study Sequence</a>
+                <a href="{{route('curriculum_structure')}}" class="nav-dropdown-link w-dropdown-link">Programme Structure</a>
+                <a href="{{route('curriculum_sequence')}}" class="nav-dropdown-link w-dropdown-link">Study Sequence</a>
               </div>
             </nav>
           </div>
@@ -450,18 +450,18 @@
             </div>
             <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
               <div class="nav-dropdown-link-b">
-                <a href="student-enrichment-development-and-experiential-learning.html" class="nav-dropdown-link w-dropdown-link">Development and Experiential Learning</a>
-                <a href="student-enrichment-student-achievement-and-experience.html" class="nav-dropdown-link w-dropdown-link">Student Achievement and Experience</a>
+                <a href="{{route('student_development')}}" class="nav-dropdown-link w-dropdown-link">Development and Experiential Learning</a>
+                <a href="{{route('student_achievement')}}" class="nav-dropdown-link w-dropdown-link">Student Achievement and Experience</a>
               </div>
             </nav>
           </div>
           <div class="nav-dropdown">
-            <a href="student-voices.html" class="nav-dropdown-toggle w-inline-block">
+            <a href="{{route('student_voices')}}" class="nav-dropdown-toggle w-inline-block">
               <div>Student Voices</div>
             </a>
           </div>
           <div class="nav-dropdown">
-            <a href="career-prospects.html" class="nav-dropdown-toggle w-inline-block">
+            <a href="{{route('career_prospects')}}" class="nav-dropdown-toggle w-inline-block">
               <div>Career Prospects</div>
             </a>
           </div>
@@ -471,10 +471,10 @@
             </div>
             <nav class="nav-dropdown-list admissions w-dropdown-list" data-ix="nav-dropdown-list">
               <div class="nav-dropdown-link-b">
-                <a href="admissions.html" class="nav-dropdown-link w-dropdown-link">Admission Requirements</a>
-                <a href="admissions-programme-brochure-videos.html" class="nav-dropdown-link w-dropdown-link">Programme Brochure &amp; Videos</a>
-                <a href="admissions.html" class="nav-dropdown-link w-dropdown-link">Tuition Fees</a>
-                <a href="admissions-faqs.html" class="nav-dropdown-link w-dropdown-link">FAQs</a>
+                <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Admission Requirements</a>
+                <a href="{{route('admissions_programme')}}" class="nav-dropdown-link w-dropdown-link">Programme Brochure &amp; Videos</a>
+                <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Tuition Fees</a>
+                <a href="{{route('admissions_faq')}}" class="nav-dropdown-link w-dropdown-link">FAQs</a>
               </div>
             </nav>
           </div>

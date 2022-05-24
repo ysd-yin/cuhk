@@ -29,61 +29,35 @@
     <div class="card">
         <div class="card-header">{{ $config['page_name'] }}</div>
         <div class="card-body" id="app-main">
-            @row([
-                'type' => 'textinput',
-                'field' => 'title',
-            ])
 
             @row([
                 'type' => 'textinput',
-                'field' => 'admissions_title',
-                'title' => 'Admissions Title'
-            ])
-
-            @repeater([
-                'field' => 'admissions',
-                'show_title' => true,
-                'title' => 'Admissions',
-                'button_text' => 'Add New',
-                'sub_fields' =>
-                [
-                    [
-                        'type' => 'textarea',
-                        'field' => 'title',
-                        'title' => 'Title',
-                    ],
-                    [
-                        'type' => 'editor',
-                        'field' => 'content',
-                        'title' => 'Content',
-                    ]
-                ]
+                'field' => 'current_url',
+                'title' => 'Current Student URL'
             ])
 
             @row([
                 'type' => 'textinput',
-                'field' => 'prospects_recognitions_title',
-                'title' => 'Prospects & Recognitions Title'
+                'field' => 'careers_title_1',
+                'title' => 'Studenr Careers Title 1'
+            ])
+            
+            @row([
+                'type' => 'textinput',
+                'field' => 'careers_url_1',
+                'title' => 'Studenr Careers URL 1'
             ])
 
-            @repeater([
-                'field' => 'prospects_recognitions',
-                'show_title' => true,
-                'title' => 'Prospects & Recognitions',
-                'button_text' => 'Add New',
-                'sub_fields' =>
-                [
-                    [
-                        'type' => 'textarea',
-                        'field' => 'title',
-                        'title' => 'Title',
-                    ],
-                    [
-                        'type' => 'editor',
-                        'field' => 'content',
-                        'title' => 'Content',
-                    ]
-                ]
+            @row([
+                'type' => 'textinput',
+                'field' => 'careers_title_2',
+                'title' => 'Studenr Careers Title 2'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'careers_url_2',
+                'title' => 'Studenr Careers URL 2'
             ])
              
         </div>

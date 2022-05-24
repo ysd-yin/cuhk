@@ -1,10 +1,10 @@
-		Route::group(['prefix' => 'student_voices_pages'], function () {
-	        Route::get('listing', 'Admin\StudentVoicesPagesController@listing')->name('admin.student_voices_pages.listing');
-	        Route::get('detail/{id?}', 'Admin\StudentVoicesPagesController@detail')->name('admin.student_voices_pages.detail');
-	        Route::get('arrangement/{parent_id?}', 'Admin\StudentVoicesPagesController@arrangement')->name('admin.student_voices_pages.arrangement');
-	        Route::post('save', 'Admin\StudentVoicesPagesController@save')->name('admin.student_voices_pages.save');
-	        Route::post('delete', 'Admin\StudentVoicesPagesController@delete')->name('admin.student_voices_pages.delete');
-	        Route::post('save_arrangement', 'Admin\StudentVoicesPagesController@save_arrangement')->name('admin.student_voices_pages.save_arrangement');
-            Route::post('bulk_action', 'Admin\StudentVoicesPagesController@bulkAction')->name('admin.student_voices_pages.bulk_action');
+		Route::group(['prefix' => 'header'], function () {
+	        Route::get('listing', 'Admin\HeaderController@listing')->name('admin.header.listing');
+	        Route::get('detail/{id?}', 'Admin\HeaderController@detail')->name('admin.header.detail');
+	        Route::get('arrangement/{parent_id?}', 'Admin\HeaderController@arrangement')->name('admin.header.arrangement');
+	        Route::post('save', 'Admin\HeaderController@save')->name('admin.header.save');
+	        Route::post('delete', 'Admin\HeaderController@delete')->name('admin.header.delete');
+	        Route::post('save_arrangement', 'Admin\HeaderController@save_arrangement')->name('admin.header.save_arrangement');
+            Route::post('bulk_action', 'Admin\HeaderController@bulkAction')->name('admin.header.bulk_action');
 	    });
 

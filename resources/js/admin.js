@@ -148,7 +148,11 @@ var editorParams = {
                     "ffffff", "",
                 ],
                 templates: [
-
+                    {
+                        title: 'Date modified example',
+                        description: 'Adds a timestamp indicating the last time the document modified.',
+                        content: '<p>Last Modified: <time class="mdate">This will be replaced with the date modified.</time></p>'
+                      },
                 ],
                 file_picker_types: 'image',
                 file_picker_callback: function (cb, value, meta) {

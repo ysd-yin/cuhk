@@ -39,6 +39,7 @@ Route::get('/career-prospects', 'CareerProspectsController@index')->name('career
 
 Route::get('/admissions', 'AdmissionsController@index')->name('admissions');
 Route::get('/admissions-faqs', 'AdmissionsFaqController@index')->name('admissions_faq');
+Route::get('/admissions-programme-brochure-videos', 'AdmissionsProgrammeController@index')->name('admissions_programme');
 
 \App\Language::indexRoute();
 
