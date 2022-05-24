@@ -29,7 +29,7 @@
 </div>
 <div class="breadcrumb-b w-clearfix">
   <div class="breadcrumb">
-    <a href="index.html" class="breadcrumb-link">Home</a><img src="{{ asset_frontend('images/breadcrumb-arrow.svg') }}" loading="lazy" alt="" class="breadcrumb-arrow">
+    <a href="/" class="breadcrumb-link">Home</a><img src="{{ asset_frontend('images/breadcrumb-arrow.svg') }}" loading="lazy" alt="" class="breadcrumb-arrow">
     <div>Student Voices</div>
   </div>
 </div>
@@ -100,72 +100,6 @@
         </a>
       </div>
       @endforeach
-      <div class="student-voices-expand" data-ix="student-voices-expand">
-        <div class="student-voices-col" data-ix="fade-in-from-bottom">
-          <a href="student-voices-details.html" class="student-voices-list-b w-inline-block"><img src="{{ asset_frontend('images/student-voices-img-max2x.jpg') }}" loading="lazy" sizes="(max-width: 767px) 39vw, 18vw" alt="" class="student-voices-list-img">
-            <div class="student-voices-list-content-b">
-              <div class="student-voices-list-txt-b">
-                <div class="student-voices-list-txt-quote"><img src="{{ asset_frontend('images/student-voices-graphic-quote.svg') }}" loading="lazy" alt="" class="student-voices-list-quote">
-                  <div>At first glance, I was impressed by the CUHK BBA-JD Programme as it is very eye-catching and distinctive. I wondered how business and law …</div>
-                </div>
-                <div class="student-voices-slide-txt-info">
-                  <div class="content-name"><em>Max Chan</em></div>
-                  <div>BBA-JD, Class of 2022</div>
-                </div>
-              </div>
-              <div class="student-voices-content-line"></div>
-            </div>
-          </a>
-        </div>
-        <div class="student-voices-col" data-ix="fade-in-from-bottom">
-          <a href="student-voices-details.html" class="student-voices-list-b w-inline-block"><img src="{{ asset_frontend('images/student-voices-img-rosie2x.jpg') }}" loading="lazy" sizes="(max-width: 767px) 39vw, 18vw" alt="" class="student-voices-list-img">
-            <div class="student-voices-list-content-b">
-              <div class="student-voices-list-txt-b">
-                <div class="student-voices-list-txt-quote"><img src="{{ asset_frontend('images/student-voices-graphic-quote.svg') }}" loading="lazy" alt="" class="student-voices-list-quote">
-                  <div>In addition to the packed study schedule being one of the features of the 5-year double degree programme, CUHK BBA-JD has …</div>
-                </div>
-                <div class="student-voices-slide-txt-info">
-                  <div class="content-name"><em>Rosie Tang</em></div>
-                  <div>BBA-JD, Class of 2023</div>
-                </div>
-              </div>
-              <div class="student-voices-content-line"></div>
-            </div>
-          </a>
-        </div>
-        <div class="student-voices-col" data-ix="fade-in-from-bottom">
-          <a href="student-voices-details.html" class="student-voices-list-b w-inline-block"><img src="{{ asset_frontend('images/student-voices-img-peony2x.jpg') }}" loading="lazy" sizes="(max-width: 767px) 39vw, 18vw" alt="" class="student-voices-list-img">
-            <div class="student-voices-list-content-b">
-              <div class="student-voices-list-txt-b">
-                <div class="student-voices-list-txt-quote"><img src="{{ asset_frontend('images/student-voices-graphic-quote.svg') }}" loading="lazy" alt="" class="student-voices-list-quote">
-                  <div>In my years in the CUHK BBA-JD Programme, I have built a solid foundation of practical knowledge and other transferrable skills …</div>
-                </div>
-                <div class="student-voices-slide-txt-info">
-                  <div class="content-name"><em>Peony Leung</em></div>
-                  <div>BBA-JD, Class of 2023</div>
-                </div>
-              </div>
-              <div class="student-voices-content-line"></div>
-            </div>
-          </a>
-        </div>
-        <div class="student-voices-col" data-ix="fade-in-from-bottom">
-          <a href="student-voices-details.html" class="student-voices-list-b w-inline-block"><img src="{{ asset_frontend('images/student-voices-img-ngyeeyan2x.jpg') }}" loading="lazy" sizes="(max-width: 767px) 39vw, 18vw" alt="" class="student-voices-list-img">
-            <div class="student-voices-list-content-b">
-              <div class="student-voices-list-txt-b">
-                <div class="student-voices-list-txt-quote"><img src="{{ asset_frontend('images/student-voices-graphic-quote.svg') }}" loading="lazy" alt="" class="student-voices-list-quote">
-                  <div>The CUHK BBA-JD Programme has been an exciting journey. With the guidance of my professors and friends, I have managed to …</div>
-                </div>
-                <div class="student-voices-slide-txt-info">
-                  <div class="content-name"><em>Ng Yee Yan</em></div>
-                  <div>BBA-JD, Class of 2022</div>
-                </div>
-              </div>
-              <div class="student-voices-content-line"></div>
-            </div>
-          </a>
-        </div>
-      </div>
       <div class="student-voices-btn-b" data-ix="fade-in-from-bottom">
         <a href="#" class="content-link-btn w-inline-block" data-ix="student-voices-btn-load">
           <div class="content-link-btn-hover"></div>

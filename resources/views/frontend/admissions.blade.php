@@ -15,7 +15,7 @@
 </div>
 <div class="breadcrumb-b w-clearfix">
   <div class="breadcrumb">
-    <a href="index.html" class="breadcrumb-link">Home</a><img src="{{ asset_frontend('images/breadcrumb-arrow.svg') }}" loading="lazy" alt="" class="breadcrumb-arrow">
+    <a href="/" class="breadcrumb-link">Home</a><img src="{{ asset_frontend('images/breadcrumb-arrow.svg') }}" loading="lazy" alt="" class="breadcrumb-arrow">
     <div>Admissions</div>
   </div>
 </div>
@@ -148,6 +148,7 @@
     </div>
   </div>
 </div>
+<div id="tuition-fee"></div>
 <div class="bottom-banner" data-ix="study-sequence-course">
   <div class="tuition-bg"></div><img src="{{ asset_frontend('images/study-squence-course-graphic-l01.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-l01" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-l02.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-l02" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-l03.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-l03" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-r01.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-r01" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-l02.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-r02" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-r03.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-r03" data-ix="study-sequence-course-graphic-initial">
   <div class="bottom-banner-txt-b">

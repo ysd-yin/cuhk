@@ -1,93 +1,577 @@
-@extends('layouts.frontend')
-
-@section('content')
-<?php 
-// echo "<pre>";
-?>
-{{-- {{$home_banner}} --}}
-<?php 
-// echo "</pre>";
-?>
-<div class="section-home-banner wf-section">
-    <div data-delay="5000" data-animation="over" class="home-banner-slider w-slider" data-autoplay="true"
-        data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0"
-        data-nav-spacing="10" data-duration="600" data-infinite="true" id="home-banner-slider">
-        <div class="w-slider-mask">
-            <div class="home-banner-slide w-slide" data-ix="home-banner-slide">
-                <div class="home-banner-img banner01" data-ix="home-banner-img"></div>
-                <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                    class="home-banner-tag">
-                    <div class="home-banner-tag-arrow"></div>
-                    <div class="home-banner-tag-txt-b">
-                        <div>BBA-JD Double Degree Programme</div>
-                    </div>
+<!DOCTYPE html><!--  Last Published: Fri May 13 2022 06:38:35 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="622e9dcd9a2c5174716316d2" data-wf-site="622e9dcd9a2c51920e6316d0">
+<head>
+  <meta charset="utf-8">
+  <title>CUHK BBA-JD Double Degree Programme</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="{{ asset_frontend('css/normalize.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset_frontend('css/components.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset_frontend('css/cuhk-bba-jd-ysd-v01.css') }}" rel="stylesheet" type="text/css">
+  <style>
+    @media only screen and (max-width: 991px) {
+    .student-voices-slide-txt, .student-voices-content {
+      -webkit-line-clamp: 4 !important;
+      }
+    }
+    .student-voices-slide-txt, .student-voices-content{
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 5;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+  }
+  <style>
+      @media (min-width:992px) {
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a7ffb6b4-624d-d0b3-c54f-dc44bfad4b13"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="2d34d5ce-9e7a-fa1e-e263-cb844393e0db"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a965b502-9f55-0360-4831-c01760c61a0b"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="cf1e2e8e-60e3-550c-6f69-95c6d55e28ae"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="1d84458f-418f-157b-77f5-e115ec824ce4"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="32a2498e-f85e-f867-970d-47551cd7562e"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a2813832-26ff-ea96-4dbe-fd55fdf62bac"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="b08dd851-7cc2-a792-3264-312f41d2125c"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="7a83bf23-1182-1e30-a984-27a0b9ffc7d2"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="95067e1b-a6e9-3206-bde3-f90d50e8be31"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="073ea10e-c6b5-7a70-043c-91efd47b1bbb"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="564216b1-4e8a-0874-cf42-99cb6f6f62a3"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+      }
+      @media (max-width:991px) and (min-width:768px) {
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a7ffb6b4-624d-d0b3-c54f-dc44bfad4b13"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="2d34d5ce-9e7a-fa1e-e263-cb844393e0db"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a965b502-9f55-0360-4831-c01760c61a0b"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="cf1e2e8e-60e3-550c-6f69-95c6d55e28ae"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="1d84458f-418f-157b-77f5-e115ec824ce4"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="32a2498e-f85e-f867-970d-47551cd7562e"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a2813832-26ff-ea96-4dbe-fd55fdf62bac"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="b08dd851-7cc2-a792-3264-312f41d2125c"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="7a83bf23-1182-1e30-a984-27a0b9ffc7d2"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="95067e1b-a6e9-3206-bde3-f90d50e8be31"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="073ea10e-c6b5-7a70-043c-91efd47b1bbb"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="564216b1-4e8a-0874-cf42-99cb6f6f62a3"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+      }
+      @media (max-width:767px) and (min-width:480px) {
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a7ffb6b4-624d-d0b3-c54f-dc44bfad4b13"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="2d34d5ce-9e7a-fa1e-e263-cb844393e0db"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a965b502-9f55-0360-4831-c01760c61a0b"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="cf1e2e8e-60e3-550c-6f69-95c6d55e28ae"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="1d84458f-418f-157b-77f5-e115ec824ce4"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="32a2498e-f85e-f867-970d-47551cd7562e"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a2813832-26ff-ea96-4dbe-fd55fdf62bac"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="b08dd851-7cc2-a792-3264-312f41d2125c"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="7a83bf23-1182-1e30-a984-27a0b9ffc7d2"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="95067e1b-a6e9-3206-bde3-f90d50e8be31"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="073ea10e-c6b5-7a70-043c-91efd47b1bbb"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="564216b1-4e8a-0874-cf42-99cb6f6f62a3"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+      }
+      @media (max-width:479px) {
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a7ffb6b4-624d-d0b3-c54f-dc44bfad4b13"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="2d34d5ce-9e7a-fa1e-e263-cb844393e0db"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a965b502-9f55-0360-4831-c01760c61a0b"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="cf1e2e8e-60e3-550c-6f69-95c6d55e28ae"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="1d84458f-418f-157b-77f5-e115ec824ce4"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="32a2498e-f85e-f867-970d-47551cd7562e"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="a2813832-26ff-ea96-4dbe-fd55fdf62bac"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="b08dd851-7cc2-a792-3264-312f41d2125c"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="7a83bf23-1182-1e30-a984-27a0b9ffc7d2"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="95067e1b-a6e9-3206-bde3-f90d50e8be31"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="073ea10e-c6b5-7a70-043c-91efd47b1bbb"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="564216b1-4e8a-0874-cf42-99cb6f6f62a3"] {
+          -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+      }
+    </style>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+      .txt-stroke {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1.5px #392064;
+      }
+      @media(max-width: 767px) {
+        .txt-stroke {
+          -webkit-text-stroke: 0.8px #392064;
+        }
+      }
+      .txt-stroke-with-whitebg {
+        -webkit-text-fill-color: #ffffff;
+        -webkit-text-stroke: 1.5px #392064;
+      }
+      @media(max-width: 767px) {
+        .txt-stroke-with-whitebg {
+          -webkit-text-stroke: 0.8px #392064;
+        }
+      }
+      .txt-stroke-white {
+        -webkit-text-stroke: 1.5px #ffffff;
+      }
+      @media(max-width: 767px) {
+        .txt-stroke-white {
+          -webkit-text-stroke: 0.8px #ffffff;
+        }
+      }
+      .txt-stroke-white-nobg {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1.5px #ffffff;
+      }
+      @media(max-width: 767px) {
+        .txt-stroke-white-nobg {
+          -webkit-text-stroke: 0.8px #ffffff;
+        }
+      }
+      @media print {
+        .nav-menu {
+          display: none;
+        }
+        .header {
+          position: absolute;
+        }
+      }
+      .w-slider-dot {
+        height: 16px;
+        width: 16px;
+        background: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('https://uploads-ssl.webflow.com/622e9dcd9a2c51920e6316d0/622f46fe33d4a6db44d6bebf_slider-dot.svg');
+      }
+      .w-slider-dot.w-active {
+        height: 16px;
+        width: 16px;
+        background: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('https://uploads-ssl.webflow.com/622e9dcd9a2c51920e6316d0/622f46fec43d0c98be95261a_slider-dot-active.svg');
+      }
+    </style>
+  <style>
+      .home-banner-slider {
+        pointer-events: none;
+      }
+      .home-banner-txt-slider {
+        pointer-events: none;
+      }
+      .home-banner-slide-nav {
+        pointer-events: auto;
+      }
+      .home-banner-btn-b {
+        pointer-events: auto;
+      }
+    </style>
+</head>
+<body>
+    <div class="header wf-section">
+        <div class="header-line"></div>
+        <div class="header-bg"></div>
+        <div class="container-menu w-container">
+          <div class="header-logo-align">
+            <a href="https://www.bschool.cuhk.edu.hk/" target="_blank" class="header-logo-bba w-inline-block"><img src="{{ asset_frontend('images/logo-bba2x.png') }}" loading="lazy" width="101" alt="" class="img"></a>
+            <a href="https://www.law.cuhk.edu.hk/" target="_blank" class="header-logo-law w-inline-block"><img src="{{ asset_frontend('images/logo-law2x.png') }}" loading="lazy" width="139" alt="" class="img"></a>
+            <a href="/" aria-current="page" class="header-logo-bba-jd w-inline-block w--current"><img src="{{ asset_frontend('images/logo-bba-jd2x.png') }}" loading="lazy" width="88" alt="" class="img"></a>
+          </div>
+          <div class="nav-menu popup-scroll">
+            <div class="header-top">
+              <a href="{{route('about_news')}}" class="header-top-link">News &amp; Events</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+              <a href="{{route('admissions_programme')}}" class="header-top-link">Programme Brochure &amp; Videos</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+              <a href="{{$header->current_url}}" target="_blank" class="header-top-link">Current Students</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+              <div class="header-top-link-dropdown-b">
+                <a href="#" class="header-top-link" data-ix="header-top-dropdown">Student Careers</a>
+                <div class="header-top-dropdown-list" data-ix="nav-dropdown-list">
+                  <div class="header-top-dropdown-link-b">
+                    <a href="{{$header->careers_url_1}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_1}}</a>
+                    <a href="{{$header->careers_url_2}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_2}}</a>
+                  </div>
                 </div>
+              </div><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+              <a href="{{route('about_contact_us')}}" class="header-top-link">Contact Us</a>
             </div>
-            <div class="home-banner-slide w-slide" data-ix="home-banner-slide">
-                <div class="home-banner-img banner02" data-ix="home-banner-img"></div>
+            <div class="nav-main-menu-b">
+              <div data-hover="false" data-delay="600" class="about_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
+                <div class="nav-dropdown-toggle w-dropdown-toggle">
+                  <div>About</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+                </div>
+                <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
+                  <div class="nav-dropdown-link-b">
+                    <a href="{{route('about_message')}}" class="nav-dropdown-link w-dropdown-link">Programme Co‐Directors&#x27; Message</a>
+                    <a href="{{route('about_overview')}}" class="nav-dropdown-link w-dropdown-link">Programme Overview</a>
+                    <a href="{{route('about_management')}}" class="nav-dropdown-link w-dropdown-link">Programme Management</a>
+                    <a href="{{route('about_faculty')}}" class="nav-dropdown-link w-dropdown-link">International Academic Faculty</a>
+                    <a href="{{route('about_learning')}}" class="nav-dropdown-link w-dropdown-link">Learning Environment</a>
+                    <a href="{{route('about_news')}}" class="nav-dropdown-link w-dropdown-link">News &amp; Events</a>
+                    <a href="{{route('about_contact_us')}}" class="nav-dropdown-link w-dropdown-link">Contact Us</a>
+                  </div>
+                </nav>
+              </div>
+              <div data-hover="false" data-delay="600" class="curriculum_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
+                <div class="nav-dropdown-toggle w-dropdown-toggle">
+                  <div>Curriculum</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+                </div>
+                <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
+                  <div class="nav-dropdown-link-b">
+                    <a href="{{route('curriculum_structure')}}" class="nav-dropdown-link w-dropdown-link">Programme Structure</a>
+                    <a href="{{route('curriculum_sequence')}}" class="nav-dropdown-link w-dropdown-link">Study Sequence</a>
+                  </div>
+                </nav>
+              </div>
+              <div data-hover="false" data-delay="600" class="student_enrichment nav-dropdown w-dropdown" data-ix="nav-dropdown">
+                <div class="nav-dropdown-toggle w-dropdown-toggle">
+                  <div>Student Enrichment</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+                </div>
+                <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
+                  <div class="nav-dropdown-link-b">
+                    <a href="{{route('student_development')}}" class="nav-dropdown-link w-dropdown-link">Development and Experiential Learning</a>
+                    <a href="{{route('student_achievement')}}" class="nav-dropdown-link w-dropdown-link">Student Achievement and Experience</a>
+                  </div>
+                </nav>
+              </div>
+              <div class="nav-dropdown">
+                <a href="{{route('student_voices')}}" class="nav-dropdown-toggle w-inline-block">
+                  <div>Student Voices</div>
+                </a>
+              </div>
+              <div class="nav-dropdown">
+                <a href="{{route('career_prospects')}}" class="nav-dropdown-toggle w-inline-block">
+                  <div>Career Prospects</div>
+                </a>
+              </div>
+              <div data-hover="false" data-delay="600" class="admissions_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
+                <div class="nav-dropdown-toggle w-dropdown-toggle">
+                  <div>Admissions</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop admissions">
+                </div>
+                <nav class="nav-dropdown-list admissions w-dropdown-list" data-ix="nav-dropdown-list">
+                  <div class="nav-dropdown-link-b">
+                    <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Admission Requirements</a>
+                    <a href="{{route('admissions_programme')}}" class="nav-dropdown-link w-dropdown-link">Programme Brochure &amp; Videos</a>
+                    <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Tuition Fees</a>
+                    <a href="{{route('admissions_faq')}}" class="nav-dropdown-link w-dropdown-link">FAQs</a>
+                  </div>
+                </nav>
+              </div>
+              <div data-hover="false" data-delay="600" class="nav-dropdown hidden-desktop w-dropdown" data-ix="nav-dropdown">
+                <div class="nav-dropdown-toggle w-dropdown-toggle">
+                  <div>Portals</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow">
+                </div>
+                <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
+                  <div class="nav-dropdown-link-b">
+                    <a href="{{$footer->url_1}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_1}}</a>
+                    <a href="{{$footer->url_2}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_2}}</a>
+                    <a href="{{$footer->url_3}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_3}}</a>
+                  </div>
+                </nav>
+              </div>
             </div>
+          </div>
+          <a href="#" class="menu-btn popup-link popup-close w-inline-block" data-ix="menu-btn">
+            <div class="menu-btn-align">
+              <div class="menu-btn-line-b">
+                <div class="menu-btn-line01"></div>
+                <div class="menu-btn-line02"></div>
+                <div class="menu-btn-line03"></div>
+              </div>
+              <div class="menu-btn-txt">
+                <div class="menu-btn-txt-open">Menu</div>
+                <div class="menu-btn-txt-close">Close</div>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="hidden w-slider-arrow-left"></div>
-        <div class="hidden w-slider-arrow-right"></div>
-        <div class="home-banner-slide-nav w-slider-nav w-round"></div>
+      </div>
+  <div class="section-home-banner wf-section">
+    <div data-delay="5000" data-animation="over" class="home-banner-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="10" data-duration="600" data-infinite="true" id="home-banner-slider">
+      <div class="w-slider-mask">
+        @foreach ($home_banner as $item)
+        <div class="home-banner-slide w-slide" data-ix="home-banner-slide">
+            <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url({{$item->getMedia('image')->getResizedImage(2000)}})"></div>
+            <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
+              <div class="home-banner-tag-arrow"></div>
+              <div class="home-banner-tag-txt-b">
+                <div>{{$item->title}}</div>
+              </div>
+            </div>
+          </div>
+        @endforeach
+      </div>
+      <div class="hidden w-slider-arrow-left"></div>
+      <div class="hidden w-slider-arrow-right"></div>
+      <div class="home-banner-slide-nav w-slider-nav w-round"></div>
     </div>
-    <div data-delay="4000" data-animation="fade" class="home-banner-txt-slider w-slider" data-autoplay="false"
-        data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0"
-        data-nav-spacing="3" data-duration="600" data-infinite="true" id="home-banner-txt-slider"
-        data-thumbs-for="#home-banner-slider">
-        <div class="home-banner-txt-slide-mask w-slider-mask">
-            <div class="home-banner-txt-slide w-slide" data-ix="home-thumbnail-slide">
-                <div class="home-banner-txt-b active">
-                    <div>
-                        <div class="txt-mask">
-                            <div class="home-banner-txt txt-color-purple" data-ix="home-banner-txt"><span
-                                    class="txt-stroke-white">2 Degrees</span></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="txt-mask">
-                            <div class="home-banner-txt txt-color-gold" data-ix="home-banner-txt"><span
-                                    class="txt-stroke-white">in 5 Years</span></div>
-                        </div>
-                    </div>
+    <div data-delay="4000" data-animation="fade" class="home-banner-txt-slider w-slider" id="home-banner-txt-slider">
+      <div class="home-banner-txt-slide-mask w-slider-mask">
+        @foreach ($home_banner as $item2)
+        <div class="home-banner-txt-slide w-slide" data-ix="home-thumbnail-slide">
+            <div class="home-banner-txt-b active">
+              <div>
+                <div class="txt-mask">
+                  <div class="home-banner-txt txt-color-purple" data-ix="home-banner-txt"><span class="txt-stroke-white">{{$item2->title_1}}</span></div>
                 </div>
-            </div>
-            <div class="home-banner-txt-slide w-slide" data-ix="home-thumbnail-slide">
-                <div class="home-banner-txt-b">
-                    <div>
-                        <div class="txt-mask">
-                            <div class="home-banner-txt txt-color-purple" data-ix="home-banner-txt"><span
-                                    class="txt-stroke-white">Growing with</span></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="txt-mask">
-                            <div class="home-banner-txt txt-color-gold" data-ix="home-banner-txt"><span
-                                    class="txt-stroke-white">BBA-JD</span></div>
-                        </div>
-                    </div>
-                    <div class="home-banner-btn-b">
-                        <a data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de629" href="#" class="btn-arrow w-inline-block">
-                            <div data-is-ix2-target="1" class="img" data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de62a"
-                                data-animation-type="lottie" data-src="{{ asset_frontend('documents/btn-arrow.json') }}" data-loop="0"
-                                data-direction="1" data-autoplay="0" data-renderer="svg"
-                                data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0">
-                            </div>
-                        </a>
-                    </div>
+              </div>
+              <div>
+                <div class="txt-mask">
+                  <div class="home-banner-txt txt-color-gold" data-ix="home-banner-txt"><span class="txt-stroke-white">{{$item2->title_2}}</span></div>
                 </div>
+              </div>
+              @if(isset($item2->url))
+              <div class="home-banner-btn-b">
+                <a data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de629" href="{{$item2->url}}" class="btn-arrow w-inline-block">
+                  <div data-is-ix2-target="1" class="img" data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de62a" data-animation-type="lottie" data-src="{{asset_frontend('documents/btn-arrow.json')}}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
+                </a>
+              </div>
+              @endif
             </div>
-        </div>
-        <div class="hide w-slider-arrow-left"></div>
-        <div class="hide w-slider-arrow-right"></div>
-        <div class="hide w-slider-nav"></div>
-    </div><img src="{{ asset_frontend('images/home-banner-mask.svg') }}" loading="lazy"
-        style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-        alt="" class="home-banner-mask"><img src="{{ asset_frontend('images/home-banner-mask-mobile.svg') }}" loading="lazy"
-        style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-        alt="" class="home-banner-mask-mobile">
-</div>
-<div class="section-content bg-map wf-section">
+          </div>
+        @endforeach
+      </div>
+      <div class="hide w-slider-arrow-left"></div>
+      <div class="hide w-slider-arrow-right"></div>
+      <div class="hide w-slider-nav"></div>
+    </div><img src="images/home-banner-mask.svg" loading="lazy" style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="home-banner-mask"><img src="images/home-banner-mask-mobile.svg" loading="lazy" style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="home-banner-mask-mobile">
+  </div>
+  <div class="section-content bg-map wf-section">
     <div class="container-full w-container">
         <div class="heading-b">
             <div class="txt-mask">
@@ -186,7 +670,7 @@
                     </div>
                 </div>
                 <div class="btn-b show-in-mobile" data-ix="fade-in-from-left">
-                    <a data-w-id="0c4b0b11-18b3-7dac-ec52-68aaac7611b3" href="about-programme-overview.html"
+                    <a data-w-id="0c4b0b11-18b3-7dac-ec52-68aaac7611b3" href="{{route('about_overview')}}"
                         class="btn-arrow w-inline-block">
                         <div data-is-ix2-target="1" class="img" data-w-id="0c4b0b11-18b3-7dac-ec52-68aaac7611b4"
                             data-animation-type="lottie" data-src="{{ asset_frontend('documents/btn-arrow.json') }}" data-loop="0"
@@ -253,7 +737,7 @@
         <div class="home-program-txt-b" data-ix="fade-in-from-bottom">
             <div>{{$home_data->forth_description}}</div>
             <div class="btn-b m-align-center">
-                <a data-w-id="979d4643-2400-d94f-e7c3-7784b633852a" href="curriculum-programme-structure.html"
+                <a data-w-id="979d4643-2400-d94f-e7c3-7784b633852a" href="{{route('curriculum_structure')}}"
                     class="btn-arrow w-inline-block">
                     <div data-is-ix2-target="1" class="img" data-w-id="979d4643-2400-d94f-e7c3-7784b633852b"
                         data-animation-type="lottie" data-src="{{ asset_frontend('documents/btn-arrow.json') }}" data-loop="0"
@@ -438,10 +922,11 @@
             data-easing="ease" data-ix="student-voices-slider" data-hide-arrows="false" data-disable-swipe="false"
             data-autoplay-limit="0" data-nav-spacing="3" data-duration="600" data-infinite="true">
             <div class="student-voices-slide-mask w-slider-mask">
+                @foreach ($student_highlight as $item)
                 <div class="student-voices-slide w-slide" data-ix="student-voices-slide">
-                    <a href="student-voices-details.html" class="student-voices-slide-b w-inline-block">
+                    <a href="/student-voices-details?id={{$item->id}}" class="student-voices-slide-b w-inline-block">
                         <div class="student-voices-slide-row">
-                            <div class="student-voices-slide-img-b"><img src="{{ asset_frontend('images/student-voices-img-tina2x.jpg') }}"
+                            <div class="student-voices-slide-img-b"><img src="{{$item->getMedia('image')->getResizedImage(500)}}"
                                     loading="lazy"
                                     sizes="(max-width: 479px) 73vw, (max-width: 767px) 36vw, (max-width: 1279px) 41vw, (max-width: 1439px) 33vw, 29vw"
                                     alt="" class="img"><img src="{{ asset_frontend('images/student-voices-slide-mask.svg') }}" loading="lazy"
@@ -455,21 +940,13 @@
                                     <div class="student-voices-slide-txt-quote"><img
                                             src="{{ asset_frontend('images/student-voices-graphic-quote.svg') }}" loading="lazy" alt=""
                                             class="student-voices-slide-quote">
-                                        <div class="student-voices-slide-txt">I always wanted to do both business and
-                                            law because the two do go hand in hand. This seems a cliché but it is also
-                                            true. Business is not just about numbers, but is also about how one&#x27;s…
-                                        </div>
+                                        <div class="student-voices-slide-txt">{!! editor($item->description) !!}</div>
                                     </div>
                                     <div class="student-voices-slide-txt-info">
-                                        <div class="content-name"><em>Tina Wong</em></div>
+                                        <div class="content-name" data-ix="fade-in-from-left"><em>{{$item->name}}</em></div>
                                         <ul role="list" class="w-list-unstyled">
                                             <li>
-                                                <div class="txt-color-bk">BBA (Hons) (CUHK); JD (CUHK); PCLL (CUHK)
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="txt-color-bk">Vice President, Deutsche Bank AG, Hong Kong
-                                                    Branch</div>
+                                                <div class="txt-color-bk">{{$item->post}}</div>
                                             </li>
                                         </ul>
                                     </div>
@@ -479,77 +956,7 @@
                         <div class="gradient-line"></div>
                     </a>
                 </div>
-                <div class="student-voices-slide w-slide" data-ix="student-voices-slide">
-                    <a href="student-voices-details.html" class="student-voices-slide-b w-inline-block">
-                        <div class="student-voices-slide-row">
-                            <div class="student-voices-slide-img-b"><img src="{{ asset_frontend('images/student-voices-img-amy2x.jpg') }}"
-                                    loading="lazy"
-                                    sizes="(max-width: 479px) 73vw, (max-width: 767px) 36vw, (max-width: 1279px) 41vw, (max-width: 1439px) 33vw, 29vw"
-                                    alt="" class="img"><img src="{{ asset_frontend('images/student-voices-slide-mask.svg') }}" loading="lazy"
-                                    alt="" class="student-voices-slide-img-mask"
-                                    data-ix="student-voices-slide-img-mask"></div>
-                            <div class="student-voices-slide-content-b"><img
-                                    src="{{ asset_frontend('images/student-voices-slide-mask-mobile2x.png') }}" loading="lazy" alt=""
-                                    class="student-voices-slide-img-mask-mobile"
-                                    data-ix="student-voices-slide-img-mask-mobile">
-                                <div class="student-voices-slide-txt-b">
-                                    <div class="student-voices-slide-txt-quote"><img
-                                            src="{{ asset_frontend('images/student-voices-graphic-quote.svg') }}" loading="lazy" alt=""
-                                            class="student-voices-slide-quote">
-                                        <div class="student-voices-slide-txt">CUHK BBA-JD being a double degree
-                                            programme, undoubtedly, can sometimes be stressful and tough. However,
-                                            potentials can only be reached if you dare challenge yourself and go beyond
-                                            ...</div>
-                                    </div>
-                                    <div class="student-voices-slide-txt-info">
-                                        <div class="content-name" data-ix="fade-in-from-left"><em>Amy Chung</em></div>
-                                        <ul role="list" class="w-list-unstyled">
-                                            <li>
-                                                <div class="txt-color-bk">BBA-JD, Class of 2022</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gradient-line"></div>
-                    </a>
-                </div>
-                <div class="student-voices-slide w-slide" data-ix="student-voices-slide">
-                    <a href="student-voices-details.html" class="student-voices-slide-b w-inline-block">
-                        <div class="student-voices-slide-row">
-                            <div class="student-voices-slide-img-b"><img src="{{ asset_frontend('images/student-voices-img-max2x.jpg') }}"
-                                    loading="lazy"
-                                    sizes="(max-width: 479px) 73vw, (max-width: 767px) 36vw, (max-width: 1279px) 41vw, (max-width: 1439px) 33vw, 29vw"
-                                    alt="" class="img"><img src="{{ asset_frontend('images/student-voices-slide-mask.svg') }}" loading="lazy"
-                                    alt="" class="student-voices-slide-img-mask"
-                                    data-ix="student-voices-slide-img-mask"></div>
-                            <div class="student-voices-slide-content-b"><img
-                                    src="{{ asset_frontend('images/student-voices-slide-mask-mobile2x.png') }}" loading="lazy" alt=""
-                                    class="student-voices-slide-img-mask-mobile"
-                                    data-ix="student-voices-slide-img-mask-mobile">
-                                <div class="student-voices-slide-txt-b">
-                                    <div class="student-voices-slide-txt-quote"><img
-                                            src="{{ asset_frontend('images/student-voices-graphic-quote.svg') }}" loading="lazy" alt=""
-                                            class="student-voices-slide-quote">
-                                        <div class="student-voices-slide-txt">At first glance, I was impressed by the
-                                            CUHK BBA-JD Programme as it is very eye-catching and distinctive. I wondered
-                                            how business and law …</div>
-                                    </div>
-                                    <div class="student-voices-slide-txt-info">
-                                        <div class="content-name" data-ix="fade-in-from-left"><em>Max Chan</em></div>
-                                        <ul role="list" class="w-list-unstyled">
-                                            <li>
-                                                <div class="txt-color-bk">BBA-JD, Class of 2022</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gradient-line"></div>
-                    </a>
-                </div>
+                @endforeach
             </div>
             <div class="student-voices-slide-arrow-l w-slider-arrow-left"></div>
             <div class="student-voices-slide-arrow-r w-slider-arrow-right"></div>
@@ -652,4 +1059,4 @@
         </div>
     </div>
 </div>
-@endsection
+@include('frontend.common.footer');

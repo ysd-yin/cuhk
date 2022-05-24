@@ -25,4 +25,17 @@ class StudentVoicesController extends BaseFrontendController
             return view('frontend.student_voices', $data);
         });
     }
+
+    public function details()
+    {
+        return parent::output(function($data){
+            $query = \App\StudentHighlight::online()->arrange();
+            if($post_ids = request('id')){
+                $query->where('id', $post_ids);
+            }
+            $data['student_voices_details'] = $query->get();
+            $data['student_voices'] = \App\StudentHighlight::online()->arrange()->limit(4)->get()->shuffle();
+            return view('frontend.student_voices_details', $data);
+        });
+    }
 }

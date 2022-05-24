@@ -25,25 +25,25 @@
                   <div class="footer-sitemap-title">About</div>
                   <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                     <li>
-                      <a href="about-programme-co-directors-message.html" class="txt-link-white">Programme Co‐Directors&#x27; Message</a>
+                      <a href="{{route('about_message')}}" class="txt-link-white">Programme Co‐Directors&#x27; Message</a>
                     </li>
                     <li>
-                      <a href="about-programme-overview.html" class="txt-link-white">Programme Overview</a>
+                      <a href="{{route('about_overview')}}" class="txt-link-white">Programme Overview</a>
                     </li>
                     <li>
-                      <a href="about-programme-management.html" class="txt-link-white">Programme Management</a>
+                      <a href="{{route('about_management')}}" class="txt-link-white">Programme Management</a>
                     </li>
                     <li>
-                      <a href="about-international-academic-faculty.html" class="txt-link-white">International Academic Faculty</a>
+                      <a href="{{route('about_faculty')}}" class="txt-link-white">International Academic Faculty</a>
                     </li>
                     <li>
-                      <a href="about-learning-environment.html" class="txt-link-white">Learning Environment</a>
+                      <a href="{{route('about_learning')}}" class="txt-link-white">Learning Environment</a>
                     </li>
                     <li>
-                      <a href="about-news-events.html" class="txt-link-white">News &amp; Events</a>
+                      <a href="{{route('about_news')}}" class="txt-link-white">News &amp; Events</a>
                     </li>
                     <li>
-                      <a href="about-contact-us.html" class="txt-link-white">Contact Us</a>
+                      <a href="{{route('about_contact_us')}}" class="txt-link-white">Contact Us</a>
                     </li>
                   </ul>
                 </div>
@@ -51,10 +51,10 @@
                   <div class="footer-sitemap-title">Curriculum</div>
                   <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                     <li>
-                      <a href="curriculum-programme-structure.html" class="txt-link-white">Programme Structure</a>
+                      <a href="{{route('curriculum_structure')}}" class="txt-link-white">Programme Structure</a>
                     </li>
                     <li>
-                      <a href="curriculum-study-sequence.html" class="txt-link-white">Study Sequence</a>
+                      <a href="{{route('curriculum_sequence')}}" class="txt-link-white">Study Sequence</a>
                     </li>
                   </ul>
                 </div>
@@ -64,21 +64,21 @@
                   <div class="footer-sitemap-title">Student Enrichment</div>
                   <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                     <li>
-                      <a href="student-enrichment-development-and-experiential-learning.html" class="txt-link-white">Development and Experiential Learning</a>
+                      <a href="{{route('student_development')}}" class="txt-link-white">Development and Experiential Learning</a>
                     </li>
                     <li>
-                      <a href="student-enrichment-student-achievement-and-experience.html" class="txt-link-white">Student Achievement and Experience</a>
+                      <a href="{{route('student_achievement')}}" class="txt-link-white">Student Achievement and Experience</a>
                     </li>
                   </ul>
                 </div>
                 <div class="footer-sitemap-list">
                   <div class="footer-sitemap-title">
-                    <a href="student-voices.html" class="txt-link-white">Student Voices</a>
+                    <a href="{{route('student_voices')}}" class="txt-link-white">Student Voices</a>
                   </div>
                 </div>
                 <div class="footer-sitemap-list">
                   <div class="footer-sitemap-title">
-                    <a href="career-prospects.html" class="txt-link-white">Career Prospects</a>
+                    <a href="{{route('career_prospects')}}" class="txt-link-white">Career Prospects</a>
                   </div>
                 </div>
               </div>
@@ -87,16 +87,16 @@
                   <div class="footer-sitemap-title">Admissions</div>
                   <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                     <li>
-                      <a href="admissions.html" class="txt-link-white">Admission Requirements</a>
+                      <a href="{{route('admissions')}}" class="txt-link-white">Admission Requirements</a>
                     </li>
                     <li>
-                      <a href="admissions-programme-brochure-videos.html" class="txt-link-white">Programme Brochure &amp; Videos</a>
+                      <a href="{{route('admissions_programme')}}" class="txt-link-white">Programme Brochure &amp; Videos</a>
                     </li>
                     <li>
-                      <a href="admissions.html" class="txt-link-white">Tuition Fees</a>
+                      <a href="{{route('admissions')}}#tuition-fee" class="txt-link-white">Tuition Fees</a>
                     </li>
                     <li>
-                      <a href="admissions-faqs.html" class="txt-link-white">FAQs</a>
+                      <a href="{{route('admissions_faq')}}" class="txt-link-white">FAQs</a>
                     </li>
                   </ul>
                 </div>
@@ -104,13 +104,13 @@
                   <div class="footer-sitemap-title">Portals</div>
                   <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                     <li>
-                      <a href="https://mycuhk.sharepoint.com/sites/faculty.BA.UGO/cuhkbba-jd/SitePages/Home.aspx" target="_blank" class="txt-link-white">Current Students Portal</a>
+                      <a href="{{$footer->url_1}}" target="_blank" class="txt-link-white">{{$footer->title_1}}</a>
                     </li>
                     <li>
-                      <a href="https://mycuhk.sharepoint.com/sites/faculty.BA.UGO/jobapplication/SitePages/Jobs.aspx" target="_blank" class="txt-link-white">CUHK Business School - Business Career Planning Portal</a>
+                      <a href="{{$footer->url_2}}" target="_blank" class="txt-link-white">{{$footer->title_2}}</a>
                     </li>
                     <li>
-                      <a href="https://www.law.cuhk.edu.hk/en/student-careers/login.php" target="_blank" class="txt-link-white">CUHK LAW - Virtual Careers Resource Centre</a>
+                      <a href="{{$footer->url_3}}" target="_blank" class="txt-link-white">{{$footer->title_3}}</a>
                     </li>
                   </ul>
                 </div>
@@ -125,25 +125,25 @@
               <div class="footer-sitemap-expand" data-ix="footer-sitemap-expand">
                 <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                   <li>
-                    <a href="about-programme-co-directors-message.html" class="txt-link-white">Programme Co‐Directors&#x27; Message</a>
+                    <a href="{{route('about_message')}}" class="txt-link-white">Programme Co‐Directors&#x27; Message</a>
                   </li>
                   <li>
-                    <a href="about-programme-overview.html" class="txt-link-white">Programme Overview</a>
+                    <a href="{{route('about_overview')}}" class="txt-link-white">Programme Overview</a>
                   </li>
                   <li>
-                    <a href="about-programme-management.html" class="txt-link-white">Programme Management</a>
+                    <a href="{{route('about_management')}}" class="txt-link-white">Programme Management</a>
                   </li>
                   <li>
-                    <a href="about-international-academic-faculty.html" class="txt-link-white">International Academic Faculty</a>
+                    <a href="{{route('about_faculty')}}" class="txt-link-white">International Academic Faculty</a>
                   </li>
                   <li>
-                    <a href="about-learning-environment.html" class="txt-link-white">Learning Environment</a>
+                    <a href="{{route('about_learning')}}" class="txt-link-white">Learning Environment</a>
                   </li>
                   <li>
-                    <a href="about-news-events.html" class="txt-link-white">News &amp; Events</a>
+                    <a href="{{route('about_news')}}" class="txt-link-white">News &amp; Events</a>
                   </li>
                   <li>
-                    <a href="about-contact-us.html" class="txt-link-white">Contact Us</a>
+                    <a href="{{route('about_contact_us')}}" class="txt-link-white">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -155,10 +155,10 @@
               <div class="footer-sitemap-expand" data-ix="footer-sitemap-expand">
                 <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                   <li>
-                    <a href="curriculum-programme-structure.html" class="txt-link-white">Programme Structure</a>
+                    <a href="{{route('curriculum_structure')}}" class="txt-link-white">Programme Structure</a>
                   </li>
                   <li>
-                    <a href="curriculum-study-sequence.html" class="txt-link-white">Study Sequence</a>
+                    <a href="{{route('curriculum_sequence')}}" class="txt-link-white">Study Sequence</a>
                   </li>
                 </ul>
               </div>
@@ -170,21 +170,21 @@
               <div class="footer-sitemap-expand" data-ix="footer-sitemap-expand">
                 <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                   <li>
-                    <a href="student-enrichment-development-and-experiential-learning.html" class="txt-link-white">Development and Experiential Learning</a>
+                    <a href="{{route('student_development')}}" class="txt-link-white">Development and Experiential Learning</a>
                   </li>
                   <li>
-                    <a href="student-enrichment-student-achievement-and-experience.html" class="txt-link-white">Student Achievement and Experience</a>
+                    <a href="{{route('student_achievement')}}" class="txt-link-white">Student Achievement and Experience</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="footer-sitemap-list">
-              <a href="student-voices.html" class="footer-sitemap-title w-inline-block">
+              <a href="{{route('student_voices')}}" class="footer-sitemap-title w-inline-block">
                 <div>Student Voices</div>
               </a>
             </div>
             <div class="footer-sitemap-list">
-              <a href="career-prospects.html" class="footer-sitemap-title w-inline-block">
+              <a href="{{route('career_prospects')}}" class="footer-sitemap-title w-inline-block">
                 <div>Career Prospects</div>
               </a>
             </div>
@@ -195,16 +195,16 @@
               <div class="footer-sitemap-expand" data-ix="footer-sitemap-expand">
                 <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                   <li>
-                    <a href="admissions.html" class="txt-link-white">Admission Requirements</a>
+                    <a href="{{route('admissions')}}" class="txt-link-white">Admission Requirements</a>
                   </li>
                   <li>
-                    <a href="admissions-programme-brochure-videos.html" class="txt-link-white">Programme Brochure &amp; Videos</a>
+                    <a href="{{route('admissions_programme')}}" class="txt-link-white">Programme Brochure &amp; Videos</a>
                   </li>
                   <li>
-                    <a href="admissions.html" class="txt-link-white">Tuition Fees</a>
+                    <a href="{{route('admissions')}}" class="txt-link-white">Tuition Fees</a>
                   </li>
                   <li>
-                    <a href="admissions-faqs.html" class="txt-link-white">FAQs</a>
+                    <a href="{{route('admissions_faq')}}" class="txt-link-white">FAQs</a>
                   </li>
                 </ul>
               </div>
@@ -216,13 +216,13 @@
               <div class="footer-sitemap-expand" data-ix="footer-sitemap-expand">
                 <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                   <li>
-                    <a href="https://mycuhk.sharepoint.com/sites/faculty.BA.UGO/jobapplication/" target="_blank" class="txt-link-white">Current Students Portal</a>
+                    <a href="{{$footer->url_1}}" target="_blank" class="txt-link-white">{{$footer->title_1}}</a>
                   </li>
                   <li>
-                    <a href="https://mycuhk.sharepoint.com/sites/faculty.BA.UGO/jobapplication/SitePagesDirect" target="_blank" class="txt-link-white">CUHK Business School - Business Career Planning Portal</a>
+                    <a href="{{$footer->url_2}}" target="_blank" class="txt-link-white">{{$footer->title_2}}</a>
                   </li>
                   <li>
-                    <a href="https://www.law.cuhk.edu.hk/en/student%E2%80%90careers/login.php" target="_blank" class="txt-link-white">CUHK LAW - Virtual Careers Resource Centre</a>
+                    <a href="{{$footer->url_3}}" target="_blank" class="txt-link-white">{{$footer->title_3}}</a>
                   </li>
                 </ul>
               </div>
@@ -240,7 +240,7 @@
       </div>
     </div>
   </div>
-  {{-- <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=622e9dcd9a2c51920e6316d0" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> --}}
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=622e9dcd9a2c51920e6316d0" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="{{ asset_frontend('js/cuhk-bba-jd-ysd-v01.js') }}" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script>
@@ -285,6 +285,7 @@
                 if (/w-active/.exec(classList)) {
                   // add 'active' class to current custom dot of same index as the .w-slider-dot 
                   $('#home-banner-txt-slider').find('.home-banner-txt-b').removeClass('active');
+                  console.log(index);
                   var tempElement = $('#home-banner-txt-slider .home-banner-txt-slide:nth-child(' + (index + 1) + ')');
                   $('#home-banner-txt-slider').find('.w-slider-nav').children().eq(index).trigger('tap');
                   tempElement.find('.home-banner-txt-b').addClass('active');

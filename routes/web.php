@@ -34,6 +34,7 @@ Route::get('/student-enrichment-development-and-experiential-learning', 'Student
 Route::get('/student-enrichment-student-achievement-and-experience', 'StudentAchievementController@index')->name('student_achievement');
 
 Route::get('/student-voices', 'StudentVoicesController@index')->name('student_voices');
+Route::get('/student-voices-details', 'StudentVoicesController@details')->name('student_voices_details');
 
 Route::get('/career-prospects', 'CareerProspectsController@index')->name('career_prospects');
 

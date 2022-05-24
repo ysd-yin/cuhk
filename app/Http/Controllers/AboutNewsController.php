@@ -25,11 +25,13 @@ class AboutNewsController extends BaseFrontendController
 
     public function details()
     {
-        $query = \App\AboutNewsEvent::online()->arrange();
-        if($post_ids = request('id')){
-            $query->where('id', $post_ids);
-        }
-        $data['news'] = $query->get();
-        return view('frontend.about_news_details', $data);
+        return parent::output(function($data){
+            $query = \App\AboutNewsEvent::online()->arrange();
+            if($post_ids = request('id')){
+                $query->where('id', $post_ids);
+            }
+            $data['news'] = $query->get();
+            return view('frontend.about_news_details', $data);
+        });
     }
 }

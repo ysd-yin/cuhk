@@ -149,9 +149,9 @@ var editorParams = {
                 ],
                 templates: [
                     {
-                        title: 'Date modified example',
-                        description: 'Adds a timestamp indicating the last time the document modified.',
-                        content: '<p>Last Modified: <time class="mdate">This will be replaced with the date modified.</time></p>'
+                        title: 'Register Button Example',
+                        description: 'Adds a Register Button Example',
+                        content: '<div href="#" class="content-link-btn w-inline-block" data-ix="content-link-btn"><div class="content-link-btn-hover"></div><div class="content-link-btn-txt">Register by 24 May</div></div>'
                       },
                 ],
                 file_picker_types: 'image',

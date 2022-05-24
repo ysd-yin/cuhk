@@ -26,71 +26,51 @@
 <form id="mainForm" action="{{ route('admin.' . $config['section'] . '.save') }}" method="post" enctype="multipart/form-data">
     @csrf
     <input type="hidden" name="id" value="{{ $id }}">
-    
     <div class="card">
         <div class="card-header">{{ $config['page_name'] }}</div>
         <div class="card-body" id="app-main">
-            {{-- @row([
-                'type' => 'textinput',
-                'has_language' => true,
-                'title' => 'Title Internal',
-                'field' => 'title_internal',
-            ]) --}}
 
             @row([
                 'type' => 'textinput',
-                'title' => 'Title 1',
                 'field' => 'title_1',
-            ])
-
-            @row([
-                'type' => 'textinput',
-                'title' => 'Title 2',
-                'field' => 'title_2',
-            ])
-
-            {{-- @row([
-                'type' => 'textinput',
-                'title' => 'Sub title',
-                'field' => 'sub_title',
-            ]) --}}
-
-            @row([
-                'type' => 'textinput',
-                'title' => 'Sub title',
-                'field' => 'title',
-            ])
-
-            @row([
-                'type' => 'textinput',
-                'field' => 'url',
-            ])
-            @row([
-                'type' => 'image-upload',
-                'field' => 'image',
+                'title' => 'Portals Title 1'
             ])
              
-            @include('admin.base.status')
+             @row([
+                'type' => 'textinput',
+                'field' => 'url_1',
+                'title' => 'Portals URL 1'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_2',
+                'title' => 'Portals Title 2'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'url_2',
+                'title' => 'Portals URL 2'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'title_3',
+                'title' => 'Portals Title 3'
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'url_3',
+                'title' => 'Portals Title 3'
+            ])
+
         </div>
         @include('admin.base.footer') 
     </div>
     @include('admin.base.seo')
 </form>
 @endsection
-@section('js-before')
-@parent
-<script>
-    mixins.push({
-        data: {
-            titles: {
-                1: 'title1',
-                2: 'title2',
-                3: 'title3',
-            },
-            rows: [],
-            radio: null,
-            autocomplete: '',
-        }
-    })
-</script>
+@section('js')
 @endsection

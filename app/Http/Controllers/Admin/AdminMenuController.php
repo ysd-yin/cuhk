@@ -84,6 +84,12 @@ class AdminMenuController extends Controller
                     'admissions_faq' => 'FAQs',
                 ]
             ],
+            [
+                'name' => 'Footer',
+                'sections' => [
+                    'footer' => 'Footer',
+                ]
+            ],
             // [
             //     'name' => 'Home Page',
             //     'sections' => [

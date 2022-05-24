@@ -26,7 +26,8 @@ var classObj = {
 		// 'curriculum_course_year_5',
 		// 'news_page'
 		// 'student_voices_pages'
-		'header'
+		// 'header'
+		// 'footer'
 	],
 	2 : [
 		// 'student_achievement_post'

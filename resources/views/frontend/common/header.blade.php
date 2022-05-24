@@ -305,7 +305,7 @@
         }
       </style>
     <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=622e9dcd9a2c51920e6316d0" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    {{-- <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=622e9dcd9a2c51920e6316d0" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> --}}
     <script type="text/javascript">
         ! function(o, c) {
           var n = c.documentElement,
@@ -473,7 +473,7 @@
               <div class="nav-dropdown-link-b">
                 <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Admission Requirements</a>
                 <a href="{{route('admissions_programme')}}" class="nav-dropdown-link w-dropdown-link">Programme Brochure &amp; Videos</a>
-                <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Tuition Fees</a>
+                <a href="{{route('admissions')}}#tuition-fee" class="nav-dropdown-link w-dropdown-link">Tuition Fees</a>
                 <a href="{{route('admissions_faq')}}" class="nav-dropdown-link w-dropdown-link">FAQs</a>
               </div>
             </nav>
@@ -484,9 +484,9 @@
             </div>
             <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
               <div class="nav-dropdown-link-b">
-                <a href="#" class="nav-dropdown-link w-dropdown-link">Current Students Portal</a>
-                <a href="#" class="nav-dropdown-link w-dropdown-link">CUHK Business School - Business Career Planning Portal</a>
-                <a href="#" class="nav-dropdown-link w-dropdown-link">CUHK LAW - Virtual Careers Resource Centre</a>
+                <a href="{{$footer->url_1}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_1}}</a>
+                <a href="{{$footer->url_2}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_2}}</a>
+                <a href="{{$footer->url_3}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_3}}</a>
               </div>
             </nav>
           </div>
