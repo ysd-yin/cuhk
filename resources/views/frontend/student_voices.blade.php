@@ -100,12 +100,12 @@
         </a>
       </div>
       @endforeach
-      <div class="student-voices-btn-b" data-ix="fade-in-from-bottom">
+      {{-- <div class="student-voices-btn-b" data-ix="fade-in-from-bottom">
         <a href="#" class="content-link-btn w-inline-block" data-ix="student-voices-btn-load">
           <div class="content-link-btn-hover"></div>
           <div class="content-link-btn-txt">Load More</div>
         </a>
-      </div>
+      </div> --}}
     </div>
   </div>
 </div>

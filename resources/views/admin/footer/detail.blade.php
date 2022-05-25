@@ -66,6 +66,18 @@
                 'title' => 'Portals Title 3'
             ])
 
+            @row([
+                'type' => 'editor',
+                'field' => 'privacy',
+                'title' => 'Privacy Content'
+            ])
+
+            @row([
+                'type' => 'editor',
+                'field' => 'disclaimer',
+                'title' => 'Disclaimer Content'
+            ])
+
         </div>
         @include('admin.base.footer') 
     </div>

@@ -285,7 +285,6 @@
                 if (/w-active/.exec(classList)) {
                   // add 'active' class to current custom dot of same index as the .w-slider-dot 
                   $('#home-banner-txt-slider').find('.home-banner-txt-b').removeClass('active');
-                  console.log(index);
                   var tempElement = $('#home-banner-txt-slider .home-banner-txt-slide:nth-child(' + (index + 1) + ')');
                   $('#home-banner-txt-slider').find('.w-slider-nav').children().eq(index).trigger('tap');
                   tempElement.find('.home-banner-txt-b').addClass('active');

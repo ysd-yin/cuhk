@@ -1,6 +1,27 @@
 @extends('layouts.frontend')
 
 @section('content')
+<div class="pop-video" data-ix="pop">
+  <a href="#" class="pop-btn-close popup-close w-inline-block" data-ix="pop-btn-close"><img src="{{ asset_frontend('images/expand-white.svg') }}" loading="lazy" alt="" class="pop-btn-close-icon">
+    <div class="pop-btn-close-txt">Close</div>
+  </a>
+  <div class="popup-content">
+    <div class="section-content wf-section">
+      <div class="container w-container">
+        <div class="pop-video-b">
+          <div style="padding-top:56.17021276595745%" class="w-embed-youtubevideo video-youtube">
+            {{-- <iframe class="video_link" src="https://www.youtube.com/embed/wOVbS6GGN0U?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0" frameborder="0" style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> --}}
+          </div><img src="{{ asset_frontend('images/development-graphic02.svg') }}" loading="lazy" alt="" class="pop-video-graphic01"><img src="{{ asset_frontend('images/development-graphic01.svg') }}" loading="lazy" alt="" class="pop-video-graphic02"><img src="{{ asset_frontend('images/codirectors-message-graphic02.svg') }}" loading="lazy" alt="" class="pop-video-graphic03"><img src="{{ asset_frontend('images/international-academic-faculty-graphic01.svg') }}" loading="lazy" alt="" class="pop-video-graphic04">
+          <div class="pop-video-border"></div>
+        </div>
+        <div class="pop-video-txt-b">
+          <div class="pop-video-line"></div>
+          <div class="video_text"><strong>How do you like CUHK BBA-JD?</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="section-inner-banner wf-section">
   <div class="inner-banner-img-b">
     <div class="inner-banner-img brochure" data-ix="inner-banner-img"></div>
@@ -52,79 +73,105 @@
         <h2 class="align-center" data-ix="txt-appear-from-bottom">Programme Videos</h2>
       </div>
     </div>
-    <div class="video-row01">
-      <div class="video-col01" data-ix="video-col">
-        <a data-w-id="c6124f18-2741-8a50-f1e5-bc824e1d665b" href="#" class="video-list popup-link w-inline-block" data-ix="video-list"><img src="{{ asset_frontend('images/video-img012x.jpg') }}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 54vw, (max-width: 991px) 36vw, (max-width: 1279px) 32vw, (max-width: 1439px) 31vw, 32vw" alt="" class="img">
-          <div class="video-list-hover" data-ix="video-list-hover">
-            <div>How do you like CUHK BBA-JD?</div>
+    @foreach ($admissions_programme->video as $item)
+        @if($loop->index == 0 || $loop->index == 5 || $loop->index == 10 )
+        <div class="video-row01 video_block">
+          <div class="video-col01" data-ix="video-col">
+            <a data-w-id="c6124f18-2741-8a50-f1e5-bc824e1d665b" href="#" class="video-list popup-link w-inline-block" data-ix="video-list"><img src="{{$item['medias']['thumbnail'][0]['path']}}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 54vw, (max-width: 991px) 36vw, (max-width: 1279px) 32vw, (max-width: 1439px) 31vw, 32vw" alt="" class="img">
+              <div class="video-list-hover" data-ix="video-list-hover">
+                <input type="hidden" class="url_link" value="{{$item['video']}}">
+                <input type="hidden" class="url_title" value="{{$item['title']}}">
+                <div>{{$item['title']}}</div>
+              </div>
+              <div class="video-icon">
+                <div class="video-icon-img"></div>
+              </div>
+              <div class="video-border"></div>
+            </a>
+            <div class="video-list-txt-mobile">{{$item['title']}}</div>
           </div>
-          <div class="video-icon">
-            <div class="video-icon-img"></div>
+        </div>
+        @elseif($loop->index == 1 || $loop->index == 6 || $loop->index == 11 )
+        <div class="video-row02 video_block">
+          <div class="video-col02" data-ix="video-col">
+            <a data-w-id="40c82e62-652b-1a71-05f9-108797b66ca1" href="#" class="video-list popup-link w-inline-block" data-ix="video-list"><img src="{{$item['medias']['thumbnail'][0]['path']}}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 54vw, (max-width: 991px) 50vw, 54vw" alt="" class="img">
+              <div class="video-list-hover" data-ix="video-list-hover">
+                <input type="hidden" class="url_link" value="{{$item['video']}}">
+                <input type="hidden" class="url_title" value="{{$item['title']}}">
+                <div>{{$item['title']}}</div>
+              </div>
+              <div class="video-icon">
+                <div class="video-icon-img"></div>
+              </div>
+              <div class="video-border"></div>
+            </a>
+            <div class="video-list-txt-mobile">{{$item['title']}}</div>
           </div>
-          <div class="video-border"></div>
-        </a>
-        <div class="video-list-txt-mobile">How do you like CUHK BBA-JD?</div>
-      </div>
-    </div>
-    <div class="video-row02">
-      <div class="video-col02" data-ix="video-col">
-        <a data-w-id="40c82e62-652b-1a71-05f9-108797b66ca1" href="#" class="video-list popup-link w-inline-block" data-ix="video-list"><img src="{{ asset_frontend('images/video-img022x.jpg') }}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 54vw, (max-width: 991px) 50vw, 54vw" alt="" class="img">
-          <div class="video-list-hover" data-ix="video-list-hover">
-            <div>How would you describe CUHK BBA-JD?</div>
+        </div>
+        @elseif($loop->index == 2 || $loop->index == 7 || $loop->index == 12 )
+        <div class="video-row03 video_block">
+          <div class="video-col03" data-ix="video-col">
+            <a data-w-id="c5fa1f87-f038-fd18-b9fe-30af8848ef59" href="#" class="video-list popup-link w-inline-block" data-ix="video-list"><img src="{{$item['medias']['thumbnail'][0]['path']}}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 54vw, (max-width: 991px) 36vw, (max-width: 1279px) 32vw, (max-width: 1439px) 31vw, 32vw" alt="" class="img">
+              <div class="video-list-hover" data-ix="video-list-hover">
+                <input type="hidden" class="url_link" value="{{$item['video']}}">
+                <input type="hidden" class="url_title" value="{{$item['title']}}">
+                <div>{{$item['title']}}</div>
+              </div>
+              <div class="video-icon">
+                <div class="video-icon-img"></div>
+              </div>
+              <div class="video-border"></div>
+            </a>
+            <div class="video-list-txt-mobile">{{$item['title']}}</div>
           </div>
-          <div class="video-icon">
-            <div class="video-icon-img"></div>
+        </div>
+        @elseif($loop->index == 3 || $loop->index == 8 || $loop->index == 13 )
+        <div class="video-row04 video_block">
+          <div class="video-col04" data-ix="video-col">
+            <a data-w-id="60d1ef64-7045-c4ca-5034-103f15e50b59" href="#" class="video-list popup-link w-inline-block" data-ix="video-list"><img src="{{$item['medias']['thumbnail'][0]['path']}}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 54vw, (max-width: 991px) 36vw, (max-width: 1279px) 32vw, (max-width: 1439px) 31vw, 32vw" alt="" class="img">
+              <div class="video-list-hover" data-ix="video-list-hover">
+                <input type="hidden" class="url_link" value="{{$item['video']}}">
+                <input type="hidden" class="url_title" value="{{$item['title']}}">
+                <div>{{$item['title']}}</div>
+              </div>
+              <div class="video-icon">
+                <div class="video-icon-img"></div>
+              </div>
+              <div class="video-border"></div>
+            </a>
+            <div class="video-list-txt-mobile">{{$item['title']}}</div>
           </div>
-          <div class="video-border"></div>
-        </a>
-        <div class="video-list-txt-mobile">How would you describe CUHK BBA-JD?</div>
-      </div>
-    </div>
-    <div class="video-row03">
-      <div class="video-col03" data-ix="video-col">
-        <a data-w-id="c5fa1f87-f038-fd18-b9fe-30af8848ef59" href="#" class="video-list popup-link w-inline-block" data-ix="video-list"><img src="{{ asset_frontend('images/video-img032x.jpg') }}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 54vw, (max-width: 991px) 36vw, (max-width: 1279px) 32vw, (max-width: 1439px) 31vw, 32vw" alt="" class="img">
-          <div class="video-list-hover" data-ix="video-list-hover">
-            <div>Can you tell me more about CUHK BBA-JD admission interview and how it goes?</div>
+        </div>
+        @elseif($loop->index == 4 || $loop->index == 9 || $loop->index == 14 )
+        <div class="video-row05 video_block">
+          <div class="video-col05" data-ix="video-col">
+            <a data-w-id="72d05e21-ec73-6c11-d920-b505164fc5ef" href="#" class="video-list popup-link w-inline-block" data-ix="video-list"><img src="{{$item['medias']['thumbnail'][0]['path']}}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 54vw, (max-width: 991px) 50vw, 54vw" alt="" class="img">
+              <div class="video-list-hover" data-ix="video-list-hover">
+                <input type="hidden" class="url_link" value="{{$item['video']}}">
+                <input type="hidden" class="url_title" value="{{$item['title']}}">
+                <div>{{$item['title']}}</div>
+              </div>
+              <div class="video-icon">
+                <div class="video-icon-img"></div>
+              </div>
+              <div class="video-border"></div>
+            </a>
+            <div class="video-list-txt-mobile">{{$item['title']}}</div>
           </div>
-          <div class="video-icon">
-            <div class="video-icon-img"></div>
-          </div>
-          <div class="video-border"></div>
-        </a>
-        <div class="video-list-txt-mobile">Can you tell me more about CUHK BBA-JD admission interview and how it goes?</div>
-      </div>
-    </div>
-    <div class="video-row04">
-      <div class="video-col04" data-ix="video-col">
-        <a data-w-id="60d1ef64-7045-c4ca-5034-103f15e50b59" href="#" class="video-list popup-link w-inline-block" data-ix="video-list"><img src="{{ asset_frontend('images/video-img042x.jpg') }}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 54vw, (max-width: 991px) 36vw, (max-width: 1279px) 32vw, (max-width: 1439px) 31vw, 32vw" alt="" class="img">
-          <div class="video-list-hover" data-ix="video-list-hover">
-            <div>How special is CUHK BBA-JD?</div>
-          </div>
-          <div class="video-icon">
-            <div class="video-icon-img"></div>
-          </div>
-          <div class="video-border"></div>
-        </a>
-        <div class="video-list-txt-mobile">How special is CUHK BBA-JD?</div>
-      </div>
-    </div>
-    <div class="video-row05">
-      <div class="video-col05" data-ix="video-col">
-        <a data-w-id="72d05e21-ec73-6c11-d920-b505164fc5ef" href="#" class="video-list popup-link w-inline-block" data-ix="video-list"><img src="{{ asset_frontend('images/video-img052x.jpg') }}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 54vw, (max-width: 991px) 50vw, 54vw" alt="" class="img">
-          <div class="video-list-hover" data-ix="video-list-hover">
-            <div>Will BBA-JD students have the chance to do an internship and study abroad?</div>
-          </div>
-          <div class="video-icon">
-            <div class="video-icon-img"></div>
-          </div>
-          <div class="video-border"></div>
-        </a>
-        <div class="video-list-txt-mobile">Will BBA-JD students have the chance to do an internship and study abroad?</div>
-      </div>
-    </div>
+        </div>
+        @endif
+    @endforeach
   </div><img src="{{ asset_frontend('images/study-squence-course-graphic-l01.svg') }}" loading="lazy" alt="" class="video-graphic01"><img src="{{ asset_frontend('images/development-graphic02.svg') }}" loading="lazy" alt="" class="video-graphic02"><img src="{{ asset_frontend('images/study-squence-course-graphic-l03.svg') }}" loading="lazy" alt="" class="video-graphic03"><img src="{{ asset_frontend('images/development-graphic05.svg') }}" loading="lazy" alt="" class="video-graphic04"><img src="{{ asset_frontend('images/development-graphic02.svg') }}" loading="lazy" alt="" class="video-graphic05"><img src="{{ asset_frontend('images/study-squence-course-graphic-r03.svg') }}" loading="lazy" alt="" class="video-graphic06">
 </div>
 <script>
+  window.onload = (event) => {
+    $( ".video_block" ).click(function() {
+      var link = $(this).find('.url_link').attr('value');
+      var text = $(this).find('.url_title').attr('value');
+      $('.video-youtube').html('<iframe class="video_link" src="'+link+'" frameborder="0" style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>');
+      $('.video_text').html("<strong>"+text+"</strong>")
+    });
+  };
   add_current_page = setInterval(jQ, 1000);
   
   function jQ(){
@@ -134,5 +181,6 @@
   function StopInteval() {
     clearInterval(add_current_page);
   }
+
 </script>
 @endsection

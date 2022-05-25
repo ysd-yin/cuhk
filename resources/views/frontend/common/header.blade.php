@@ -507,3 +507,33 @@
       </a>
     </div>
   </div>
+  <div class="pop-privacy" data-ix="pop">
+    <a href="#" class="pop-btn-close popup-close w-inline-block" data-ix="pop-btn-close"><img src="{{ asset_frontend('images/expand-white.svg') }}" loading="lazy" alt="" class="pop-btn-close-icon">
+      <div class="pop-btn-close-txt">Close</div>
+    </a>
+    <div class="popup-content popup-scroll">
+      <div class="section-content wf-section">
+        <div class="container-900 w-container">
+          <div class="heading2-b">
+            <h2>Privacy Policy</h2>
+          </div>
+          <div>{!! editor($footer->privacy) !!}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pop-disclaimer" data-ix="pop">
+    <a href="#" class="pop-btn-close popup-close w-inline-block" data-ix="pop-btn-close"><img src="{{ asset_frontend('images/expand-white.svg') }}" loading="lazy" alt="" class="pop-btn-close-icon">
+      <div class="pop-btn-close-txt">Close</div>
+    </a>
+    <div class="popup-content popup-scroll">
+      <div class="section-content wf-section">
+        <div class="container-900 w-container">
+          <div class="heading2-b">
+            <h2>Disclaimer</h2>
+          </div>
+          <div>{!! editor($footer->disclaimer) !!}</div>
+        </div>
+      </div>
+    </div>
+  </div>

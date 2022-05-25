@@ -405,122 +405,153 @@
     </style>
 </head>
 <body>
+
     <div class="header wf-section">
-        <div class="header-line"></div>
-        <div class="header-bg"></div>
-        <div class="container-menu w-container">
-          <div class="header-logo-align">
-            <a href="https://www.bschool.cuhk.edu.hk/" target="_blank" class="header-logo-bba w-inline-block"><img src="{{ asset_frontend('images/logo-bba2x.png') }}" loading="lazy" width="101" alt="" class="img"></a>
-            <a href="https://www.law.cuhk.edu.hk/" target="_blank" class="header-logo-law w-inline-block"><img src="{{ asset_frontend('images/logo-law2x.png') }}" loading="lazy" width="139" alt="" class="img"></a>
-            <a href="/" aria-current="page" class="header-logo-bba-jd w-inline-block w--current"><img src="{{ asset_frontend('images/logo-bba-jd2x.png') }}" loading="lazy" width="88" alt="" class="img"></a>
+      <div class="header-line"></div>
+      <div class="header-bg"></div>
+      <div class="container-menu w-container">
+        <div class="header-logo-align">
+          <a href="https://www.bschool.cuhk.edu.hk/" target="_blank" class="header-logo-bba w-inline-block"><img src="{{ asset_frontend('images/logo-bba2x.png') }}" loading="lazy" width="101" alt="" class="img"></a>
+          <a href="https://www.law.cuhk.edu.hk/" target="_blank" class="header-logo-law w-inline-block"><img src="{{ asset_frontend('images/logo-law2x.png') }}" loading="lazy" width="139" alt="" class="img"></a>
+          <a href="/" aria-current="page" class="header-logo-bba-jd w-inline-block w--current"><img src="{{ asset_frontend('images/logo-bba-jd2x.png') }}" loading="lazy" width="88" alt="" class="img"></a>
+        </div>
+        <div class="nav-menu popup-scroll">
+          <div class="header-top">
+            <a href="{{route('about_news')}}" class="header-top-link">News &amp; Events</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+            <a href="{{route('admissions_programme')}}" class="header-top-link">Programme Brochure &amp; Videos</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+            <a href="{{$header->current_url}}" target="_blank" class="header-top-link">Current Students</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+            <div class="header-top-link-dropdown-b">
+              <a href="#" class="header-top-link" data-ix="header-top-dropdown">Student Careers</a>
+              <div class="header-top-dropdown-list" data-ix="nav-dropdown-list">
+                <div class="header-top-dropdown-link-b">
+                  <a href="{{$header->careers_url_1}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_1}}</a>
+                  <a href="{{$header->careers_url_2}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_2}}</a>
+                </div>
+              </div>
+            </div><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+            <a href="{{route('about_contact_us')}}" class="header-top-link">Contact Us</a>
           </div>
-          <div class="nav-menu popup-scroll">
-            <div class="header-top">
-              <a href="{{route('about_news')}}" class="header-top-link">News &amp; Events</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
-              <a href="{{route('admissions_programme')}}" class="header-top-link">Programme Brochure &amp; Videos</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
-              <a href="{{$header->current_url}}" target="_blank" class="header-top-link">Current Students</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
-              <div class="header-top-link-dropdown-b">
-                <a href="#" class="header-top-link" data-ix="header-top-dropdown">Student Careers</a>
-                <div class="header-top-dropdown-list" data-ix="nav-dropdown-list">
-                  <div class="header-top-dropdown-link-b">
-                    <a href="{{$header->careers_url_1}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_1}}</a>
-                    <a href="{{$header->careers_url_2}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_2}}</a>
-                  </div>
+          <div class="nav-main-menu-b">
+            <div data-hover="false" data-delay="600" class="about_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
+              <div class="nav-dropdown-toggle w-dropdown-toggle">
+                <div>About</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+              </div>
+              <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
+                <div class="nav-dropdown-link-b">
+                  <a href="{{route('about_message')}}" class="nav-dropdown-link w-dropdown-link">Programme Co‐Directors&#x27; Message</a>
+                  <a href="{{route('about_overview')}}" class="nav-dropdown-link w-dropdown-link">Programme Overview</a>
+                  <a href="{{route('about_management')}}" class="nav-dropdown-link w-dropdown-link">Programme Management</a>
+                  <a href="{{route('about_faculty')}}" class="nav-dropdown-link w-dropdown-link">International Academic Faculty</a>
+                  <a href="{{route('about_learning')}}" class="nav-dropdown-link w-dropdown-link">Learning Environment</a>
+                  <a href="{{route('about_news')}}" class="nav-dropdown-link w-dropdown-link">News &amp; Events</a>
+                  <a href="{{route('about_contact_us')}}" class="nav-dropdown-link w-dropdown-link">Contact Us</a>
                 </div>
-              </div><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
-              <a href="{{route('about_contact_us')}}" class="header-top-link">Contact Us</a>
+              </nav>
             </div>
-            <div class="nav-main-menu-b">
-              <div data-hover="false" data-delay="600" class="about_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
-                <div class="nav-dropdown-toggle w-dropdown-toggle">
-                  <div>About</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+            <div data-hover="false" data-delay="600" class="curriculum_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
+              <div class="nav-dropdown-toggle w-dropdown-toggle">
+                <div>Curriculum</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+              </div>
+              <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
+                <div class="nav-dropdown-link-b">
+                  <a href="{{route('curriculum_structure')}}" class="nav-dropdown-link w-dropdown-link">Programme Structure</a>
+                  <a href="{{route('curriculum_sequence')}}" class="nav-dropdown-link w-dropdown-link">Study Sequence</a>
                 </div>
-                <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
-                  <div class="nav-dropdown-link-b">
-                    <a href="{{route('about_message')}}" class="nav-dropdown-link w-dropdown-link">Programme Co‐Directors&#x27; Message</a>
-                    <a href="{{route('about_overview')}}" class="nav-dropdown-link w-dropdown-link">Programme Overview</a>
-                    <a href="{{route('about_management')}}" class="nav-dropdown-link w-dropdown-link">Programme Management</a>
-                    <a href="{{route('about_faculty')}}" class="nav-dropdown-link w-dropdown-link">International Academic Faculty</a>
-                    <a href="{{route('about_learning')}}" class="nav-dropdown-link w-dropdown-link">Learning Environment</a>
-                    <a href="{{route('about_news')}}" class="nav-dropdown-link w-dropdown-link">News &amp; Events</a>
-                    <a href="{{route('about_contact_us')}}" class="nav-dropdown-link w-dropdown-link">Contact Us</a>
-                  </div>
-                </nav>
+              </nav>
+            </div>
+            <div data-hover="false" data-delay="600" class="student_enrichment nav-dropdown w-dropdown" data-ix="nav-dropdown">
+              <div class="nav-dropdown-toggle w-dropdown-toggle">
+                <div>Student Enrichment</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
               </div>
-              <div data-hover="false" data-delay="600" class="curriculum_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
-                <div class="nav-dropdown-toggle w-dropdown-toggle">
-                  <div>Curriculum</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+              <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
+                <div class="nav-dropdown-link-b">
+                  <a href="{{route('student_development')}}" class="nav-dropdown-link w-dropdown-link">Development and Experiential Learning</a>
+                  <a href="{{route('student_achievement')}}" class="nav-dropdown-link w-dropdown-link">Student Achievement and Experience</a>
                 </div>
-                <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
-                  <div class="nav-dropdown-link-b">
-                    <a href="{{route('curriculum_structure')}}" class="nav-dropdown-link w-dropdown-link">Programme Structure</a>
-                    <a href="{{route('curriculum_sequence')}}" class="nav-dropdown-link w-dropdown-link">Study Sequence</a>
-                  </div>
-                </nav>
+              </nav>
+            </div>
+            <div class="nav-dropdown">
+              <a href="{{route('student_voices')}}" class="nav-dropdown-toggle w-inline-block">
+                <div>Student Voices</div>
+              </a>
+            </div>
+            <div class="nav-dropdown">
+              <a href="{{route('career_prospects')}}" class="nav-dropdown-toggle w-inline-block">
+                <div>Career Prospects</div>
+              </a>
+            </div>
+            <div data-hover="false" data-delay="600" class="admissions_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
+              <div class="nav-dropdown-toggle w-dropdown-toggle">
+                <div>Admissions</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop admissions">
               </div>
-              <div data-hover="false" data-delay="600" class="student_enrichment nav-dropdown w-dropdown" data-ix="nav-dropdown">
-                <div class="nav-dropdown-toggle w-dropdown-toggle">
-                  <div>Student Enrichment</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+              <nav class="nav-dropdown-list admissions w-dropdown-list" data-ix="nav-dropdown-list">
+                <div class="nav-dropdown-link-b">
+                  <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Admission Requirements</a>
+                  <a href="{{route('admissions_programme')}}" class="nav-dropdown-link w-dropdown-link">Programme Brochure &amp; Videos</a>
+                  <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Tuition Fees</a>
+                  <a href="{{route('admissions_faq')}}" class="nav-dropdown-link w-dropdown-link">FAQs</a>
                 </div>
-                <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
-                  <div class="nav-dropdown-link-b">
-                    <a href="{{route('student_development')}}" class="nav-dropdown-link w-dropdown-link">Development and Experiential Learning</a>
-                    <a href="{{route('student_achievement')}}" class="nav-dropdown-link w-dropdown-link">Student Achievement and Experience</a>
-                  </div>
-                </nav>
+              </nav>
+            </div>
+            <div data-hover="false" data-delay="600" class="nav-dropdown hidden-desktop w-dropdown" data-ix="nav-dropdown">
+              <div class="nav-dropdown-toggle w-dropdown-toggle">
+                <div>Portals</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow">
               </div>
-              <div class="nav-dropdown">
-                <a href="{{route('student_voices')}}" class="nav-dropdown-toggle w-inline-block">
-                  <div>Student Voices</div>
-                </a>
-              </div>
-              <div class="nav-dropdown">
-                <a href="{{route('career_prospects')}}" class="nav-dropdown-toggle w-inline-block">
-                  <div>Career Prospects</div>
-                </a>
-              </div>
-              <div data-hover="false" data-delay="600" class="admissions_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
-                <div class="nav-dropdown-toggle w-dropdown-toggle">
-                  <div>Admissions</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop admissions">
+              <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
+                <div class="nav-dropdown-link-b">
+                  <a href="{{$footer->url_1}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_1}}</a>
+                  <a href="{{$footer->url_2}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_2}}</a>
+                  <a href="{{$footer->url_3}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_3}}</a>
                 </div>
-                <nav class="nav-dropdown-list admissions w-dropdown-list" data-ix="nav-dropdown-list">
-                  <div class="nav-dropdown-link-b">
-                    <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Admission Requirements</a>
-                    <a href="{{route('admissions_programme')}}" class="nav-dropdown-link w-dropdown-link">Programme Brochure &amp; Videos</a>
-                    <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Tuition Fees</a>
-                    <a href="{{route('admissions_faq')}}" class="nav-dropdown-link w-dropdown-link">FAQs</a>
-                  </div>
-                </nav>
-              </div>
-              <div data-hover="false" data-delay="600" class="nav-dropdown hidden-desktop w-dropdown" data-ix="nav-dropdown">
-                <div class="nav-dropdown-toggle w-dropdown-toggle">
-                  <div>Portals</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow">
-                </div>
-                <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
-                  <div class="nav-dropdown-link-b">
-                    <a href="{{$footer->url_1}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_1}}</a>
-                    <a href="{{$footer->url_2}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_2}}</a>
-                    <a href="{{$footer->url_3}}" class="nav-dropdown-link w-dropdown-link">{{$footer->title_3}}</a>
-                  </div>
-                </nav>
-              </div>
+              </nav>
             </div>
           </div>
-          <a href="#" class="menu-btn popup-link popup-close w-inline-block" data-ix="menu-btn">
-            <div class="menu-btn-align">
-              <div class="menu-btn-line-b">
-                <div class="menu-btn-line01"></div>
-                <div class="menu-btn-line02"></div>
-                <div class="menu-btn-line03"></div>
-              </div>
-              <div class="menu-btn-txt">
-                <div class="menu-btn-txt-open">Menu</div>
-                <div class="menu-btn-txt-close">Close</div>
-              </div>
+        </div>
+        <a href="#" class="menu-btn popup-link popup-close w-inline-block" data-ix="menu-btn">
+          <div class="menu-btn-align">
+            <div class="menu-btn-line-b">
+              <div class="menu-btn-line01"></div>
+              <div class="menu-btn-line02"></div>
+              <div class="menu-btn-line03"></div>
             </div>
-          </a>
+            <div class="menu-btn-txt">
+              <div class="menu-btn-txt-open">Menu</div>
+              <div class="menu-btn-txt-close">Close</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="pop-privacy" data-ix="pop">
+      <a href="#" class="pop-btn-close popup-close w-inline-block" data-ix="pop-btn-close"><img src="{{ asset_frontend('images/expand-white.svg') }}" loading="lazy" alt="" class="pop-btn-close-icon">
+        <div class="pop-btn-close-txt">Close</div>
+      </a>
+      <div class="popup-content popup-scroll">
+        <div class="section-content wf-section">
+          <div class="container-900 w-container">
+            <div class="heading2-b">
+              <h2>Privacy Policy</h2>
+            </div>
+            <div>{!! editor($footer->privacy) !!}</div>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="pop-disclaimer" data-ix="pop">
+      <a href="#" class="pop-btn-close popup-close w-inline-block" data-ix="pop-btn-close"><img src="{{ asset_frontend('images/expand-white.svg') }}" loading="lazy" alt="" class="pop-btn-close-icon">
+        <div class="pop-btn-close-txt">Close</div>
+      </a>
+      <div class="popup-content popup-scroll">
+        <div class="section-content wf-section">
+          <div class="container-900 w-container">
+            <div class="heading2-b">
+              <h2>Disclaimer</h2>
+            </div>
+            <div>{!! editor($footer->disclaimer) !!}</div>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="section-home-banner wf-section">
     <div data-delay="5000" data-animation="over" class="home-banner-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="10" data-duration="600" data-infinite="true" id="home-banner-slider">
       <div class="w-slider-mask">
@@ -569,7 +600,7 @@
       <div class="hide w-slider-arrow-left"></div>
       <div class="hide w-slider-arrow-right"></div>
       <div class="hide w-slider-nav"></div>
-    </div><img src="images/home-banner-mask.svg" loading="lazy" style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="home-banner-mask"><img src="images/home-banner-mask-mobile.svg" loading="lazy" style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="home-banner-mask-mobile">
+    </div><img src="{{ asset_frontend('images/home-banner-mask.svg') }}" loading="lazy" style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="home-banner-mask"><img src="{{ asset_frontend('images/home-banner-mask-mobile.svg') }}" loading="lazy" style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="home-banner-mask-mobile">
   </div>
   <div class="section-content bg-map wf-section">
     <div class="container-full w-container">

@@ -73,6 +73,11 @@
                 'sub_fields' =>
                 [
                     [
+                        'type' => 'image-upload',
+                        'field' => 'thumbnail',
+                        'title' => 'Thumbnail',
+                    ],
+                    [
                         'type' => 'textinput',
                         'field' => 'video',
                         'title' => 'Video',
