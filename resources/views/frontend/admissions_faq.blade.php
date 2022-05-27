@@ -78,7 +78,7 @@
             </a>
             <div class="faqs-expand" data-ix="faqs-expand">
               <div class="faqs-expand-content">
-                <div>{{$item2['content']}}</div>
+                <div>{!! editor($item2['content']) !!}</div>
               </div>
             </div>
           </div>

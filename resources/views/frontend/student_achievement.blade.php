@@ -46,7 +46,13 @@
         <div class="achievement-slider-b">
           <div data-delay="4000" data-animation="slide" class="achievement-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
             <div class="w-slider-mask">
+              <?php 
+              $image_count = 0;
+              ?>
               @foreach($item->image_list as $item2)
+              <?php
+              $image_count = $loop->index;
+              ?>
               <div class="achievement-slide w-slide"><img src="{{$item2['medias']['image'][0]['path']}}" loading="lazy" sizes="(max-width: 991px) 90vw, 59vw" alt="" class="achievement-slide-img">
                 @if(isset($item2['title']))
                 <div class="achievement-img-txt">
@@ -58,7 +64,7 @@
             </div>
             <div class="achievement-slider-arrow-l w-slider-arrow-left"></div>
             <div class="achievement-slider-arrow-r w-slider-arrow-right"></div>
-            <div id="achievement-slide-nav" class="achievement-slide-nav w-slider-nav w-round"></div>
+              <div id="achievement-slide-nav" class="achievement-slide-nav w-slider-nav w-round"></div>
           </div>
         </div>
       </div>
@@ -70,6 +76,16 @@
   <div class="achievement-img-b" data-ix="home-growing-img-b"><img src="{{ asset_frontend('images/home-growing-graphic01.svg') }}" loading="lazy" alt="" class="home-growing-graphic01" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/home-growing-graphic02.svg') }}" loading="lazy" alt="" class="home-growing-graphic02" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/development-graphic01.svg') }}" loading="lazy" alt="" class="achievement-graphic03" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/home-growing-img012x.png') }}" loading="lazy" sizes="(max-width: 479px) 45vw, 33vw" alt="" class="home-growing-img01" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/home-growing-img032x.png') }}" loading="lazy" sizes="(max-width: 479px) 67vw, 50vw" alt="" class="home-growing-img03" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/home-growing-img042x.png') }}" loading="lazy" sizes="(max-width: 479px) 45vw, 33vw" alt="" class="home-growing-img04" data-ix="home-growing-img-initial"></div>
 </div>
 <script>
+  window.onload = (event) => {
+    for(var i=0;i<$('.achievement-list').length;i++){
+      if($('.achievement-list').eq(i).find('.achievement-slide').length <= 1){
+        $('.achievement-list').eq(i).find('#achievement-slide-nav').hide();
+        $('.achievement-list').eq(i).find('.achievement-slider-arrow-l').hide();
+        $('.achievement-list').eq(i).find('.achievement-slider-arrow-r').hide();
+      }
+    }
+  };
+  // $('.achievement-slide').
   add_current_page = setInterval(jQ, 1000);
   
   function jQ(){

@@ -35,14 +35,12 @@
                 'type' => 'textinput',
                 'field' => 'page_title',
                 'title' => 'Base Page Title',
-                'has_language' => true
             ])
 
             @row([
                 'type' => 'textarea',
                 'field' => 'page_description',
                 'title' => 'Base Page Description',
-                'has_language' => true
             ])
 
             @row([

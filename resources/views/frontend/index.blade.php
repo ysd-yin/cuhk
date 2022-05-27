@@ -1090,4 +1090,4 @@
         </div>
     </div>
 </div>
-@include('frontend.common.footer');
+@include('frontend.common.footer')

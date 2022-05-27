@@ -16,7 +16,7 @@ class AboutMessageController extends BaseFrontendController
     public function index()
     {
         return parent::output(function($data){
-            $data['about_message'] = \App\AboutMessage::withDescription()->first();
+            $data['about_message'] = \App\AboutMessage::first();
             $data['seo'] = $this->getSeo($data['about_message']);
             return view('frontend.about_message', $data);
         });

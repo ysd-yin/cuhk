@@ -218,7 +218,7 @@
       <div class="container-full w-container">
         <div class="home-program-row">
           <div class="home-program-col-l">
-            <div data-w-id="13b163bc-3a28-5e8f-b1b8-2cef1ca34714" data-is-ix2-target="1" class="home-program-animate-mobile" data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-running-mobile.json') }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="15.015014403440953" data-duration="0"></div>
+            <div data-w-id="13b163bc-3a28-5e8f-b1b8-2cef1ca34714" data-is-ix2-target="1" class="home-program-animate-mobile" data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-running-mobile.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-renderer="svg" data-default-duration="15.015014403440953" data-duration="0"></div>
           </div>
           <div class="home-program-col-r">
             <div class="home-program-bottom-txt-b" data-ix="fade-in-from-left"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="" class="home-program-dot-mobile">

@@ -7,14 +7,12 @@
 
         @row([
             'type' => 'textinput',
-            'has_language' => true,
             'field' => 'title',
             'relation' => 'seo',
         ])
 
         @row([
             'type' => 'textarea',
-            'has_language' => true,
             'field' => 'description',
             'relation' => 'seo',
         ])

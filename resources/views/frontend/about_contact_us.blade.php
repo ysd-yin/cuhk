@@ -63,7 +63,7 @@
         <div class="subtitle">{{$about_contact_us->undergraduate_office_title}}</div>
       </div>
       <div class="contact-bottom-txt-b">
-        <a href="{{$about_contact_us->undergraduate_office_map}}" target="_blank" class="txt-link-white">{{$about_contact_us->undergraduate_office_address}}</a>
+        <a href="//{{$about_contact_us->undergraduate_office_map}}" target="_blank" class="txt-link-white">{{$about_contact_us->undergraduate_office_address}}</a>
       </div>
       <div class="contact-bottom-txt-b">
         <a href="tel:+85239437746" class="txt-link-white">Tel:{{$about_contact_us->undergraduate_office_tel}}</a>

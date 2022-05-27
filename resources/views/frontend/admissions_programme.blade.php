@@ -1,6 +1,35 @@
 @extends('layouts.frontend')
 
 @section('content')
+<style>
+  .video-row03 {
+    pointer-events: none;
+  }
+  .video-row04 {
+    pointer-events: none;
+  }
+  .pop-video-border {
+    pointer-events: none;
+  }
+  .pop-video-graphic01 {
+    pointer-events: none;
+  }
+  .pop-video-graphic02 {
+    pointer-events: none;
+  }
+  .pop-video-graphic03 {
+    pointer-events: none;
+  }
+  .pop-video-graphic04 {
+    pointer-events: none;
+  }
+  .video-col03 {
+    pointer-events: auto;
+  }
+  .video-col04 {
+    pointer-events: auto;
+  }
+</style>
 <div class="pop-video" data-ix="pop">
   <a href="#" class="pop-btn-close popup-close w-inline-block" data-ix="pop-btn-close"><img src="{{ asset_frontend('images/expand-white.svg') }}" loading="lazy" alt="" class="pop-btn-close-icon">
     <div class="pop-btn-close-txt">Close</div>
@@ -181,6 +210,5 @@
   function StopInteval() {
     clearInterval(add_current_page);
   }
-
 </script>
 @endsection

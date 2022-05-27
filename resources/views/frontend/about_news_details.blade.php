@@ -54,4 +54,13 @@
     clearInterval(add_current_page);
   }
   </script>
+  <style>
+    .content-link-btn{
+      background:rgba(0, 0, 0, 0);
+    }
+    .content-link-btn:hover{
+      transition:all 500ms ease;
+      background-image:linear-gradient(90deg, #5c33ad, #a72024)
+    }
+  </style>
 @endsection
