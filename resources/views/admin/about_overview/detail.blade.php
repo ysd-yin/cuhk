@@ -103,25 +103,25 @@
             ])
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'field' => 'icon_description_1',
                 'title' => 'Icon Description 1',
             ])
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'field' => 'icon_description_2',
                 'title' => 'Icon Description 2',
             ])
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'field' => 'icon_description_3',
                 'title' => 'Icon Description 3',
             ])
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'field' => 'icon_description_4',
                 'title' => 'Icon Description 4',
             ])

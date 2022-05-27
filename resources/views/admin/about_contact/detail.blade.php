@@ -67,7 +67,7 @@
             ])
 
             @row([
-                'type' => 'textarea',
+                'type' => 'editor',
                 'field' => 'undergraduate_office_address',
                 'title' => 'Undergraduate Office Address',
             ])
@@ -127,7 +127,7 @@
             ])
 
             @row([
-                'type' => 'textarea',
+                'type' => 'editor',
                 'field' => 'faculty_law_address',
                 'title' => 'Faculty of Law Address',
             ])

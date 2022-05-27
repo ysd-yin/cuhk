@@ -67,7 +67,7 @@
             ])  
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'field' => 'url_title_1',
                 'title' => ' Left URL Title'
             ])  
@@ -79,7 +79,7 @@
             ])  
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'field' => 'url_title_2',
                 'title' => ' Right URL Title'
             ])  
