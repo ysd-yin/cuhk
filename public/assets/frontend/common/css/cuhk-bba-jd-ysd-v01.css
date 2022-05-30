@@ -211,7 +211,7 @@ li {
   transform: translate(-50%, 0px);
 }
 
-.home-about-img-b.img-jd {
+.home-about-img-b.img-bba {
   margin-left: -20%;
   background-image: url('../images/home-about-bba-img2x.jpg');
   background-position: 50% 50%;
@@ -219,7 +219,7 @@ li {
   background-repeat: no-repeat;
 }
 
-.home-about-img-b.img-bba {
+.home-about-img-b.img-jd {
   margin-left: 20%;
   background-image: url('../images/home-about-jd-img2x.jpg');
   background-position: 50% 50%;
@@ -9271,27 +9271,27 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
     padding-top: 100%;
   }
 
-  .home-about-img-b.img-jd {
+  .home-about-img-b.img-bba {
     left: 0%;
     top: 50%;
     right: 0%;
     bottom: auto;
     margin-top: -35%;
     margin-left: 0%;
-    background-image: url('../images/home-about-jd-img2x.jpg');
+    background-image: url('../images/home-about-bba-img2x.jpg');
     -webkit-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
   }
 
-  .home-about-img-b.img-bba {
+  .home-about-img-b.img-jd {
     left: 0%;
     top: 50%;
     right: 0%;
     bottom: auto;
     margin-top: 35%;
     margin-left: 0%;
-    background-image: url('../images/home-about-bba-img2x.jpg');
+    background-image: url('../images/home-about-jd-img2x.jpg');
     -webkit-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
@@ -9303,16 +9303,16 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
     transform: translate(0px, 0px);
   }
 
-  .home-about-img-txt-rotate.bba-mobile {
-    -webkit-transform: rotate(-74deg) translate(0px, 0px);
-    -ms-transform: rotate(-74deg) translate(0px, 0px);
-    transform: rotate(-74deg) translate(0px, 0px);
+  .home-about-img-txt-rotate.jd-mobile {
+    -webkit-transform: rotate(-6deg) translate(0px, 0px);
+    -ms-transform: rotate(-6deg) translate(0px, 0px);
+    transform: rotate(-6deg) translate(0px, 0px);
   }
 
-  .home-about-img-txt-rotate.jd-mobile {
-    -webkit-transform: rotate(-63deg) translate(0px, 0px);
-    -ms-transform: rotate(-63deg) translate(0px, 0px);
-    transform: rotate(-63deg) translate(0px, 0px);
+  .home-about-img-txt-rotate.bba-mobile {
+    -webkit-transform: rotate(6deg) translate(0px, 0px);
+    -ms-transform: rotate(6deg) translate(0px, 0px);
+    transform: rotate(6deg) translate(0px, 0px);
   }
 
   .home-about-img-content {

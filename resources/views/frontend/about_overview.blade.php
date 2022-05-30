@@ -60,16 +60,16 @@
       </div>
     </div>
     <div class="codirectors-msg-img-content-mobile" data-ix="home-about-img-content-mobile">
-      <div class="home-about-img-b img-jd" data-ix="home-about-img-b-bba-mobile">
-        <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-jd-txt.svg') }}" loading="lazy" alt="" class="home-about-img-txt-rotate jd-mobile" data-ix="home-about-img-txt-rotate-mobile-jd">
-        <div class="home-about-img-txt-b">
-          <div class="home-about-img-txt" data-ix="home-about-img-txt">JD</div>
-        </div>
-      </div>
-      <div class="home-about-img-b img-bba" data-ix="home-about-img-b-jd-mobile">
-        <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-bba-txt.svg') }}" loading="lazy" alt="" class="home-about-img-txt-rotate bba-mobile" data-ix="home-about-img-txt-rotate-mobile-bba">
+      <div class="home-about-img-b img-bba" data-ix="home-about-img-b-bba-mobile">
+        <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-bba-txt-mobile.svg') }}" loading="lazy" alt="" class="home-about-img-txt-rotate bba-mobile" data-ix="home-about-img-txt-rotate-mobile-jd">
         <div class="home-about-img-txt-b">
           <div class="home-about-img-txt" data-ix="home-about-img-txt">BBA</div>
+        </div>
+      </div>
+      <div class="home-about-img-b img-jd" data-ix="home-about-img-b-jd-mobile">
+        <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-jd-txt-mobile.svg') }}" loading="lazy" alt="" class="home-about-img-txt-rotate jd-mobile" data-ix="home-about-img-txt-rotate-mobile-bba">
+        <div class="home-about-img-txt-b">
+          <div class="home-about-img-txt" data-ix="home-about-img-txt">JD</div>
         </div>
       </div>
       <div class="home-about-overlap-b" data-ix="home-about-overlap-b"><img src="{{ asset_frontend('images/home-about-overlap-mobile.svg') }}" loading="lazy" alt="" class="home-about-overlap-img">
