@@ -102,13 +102,13 @@
           <div class="overview-bottom-icon-b">
             <div class="overview-bottom-icon" data-w-id="268d51a8-1221-b2a5-a893-7a1bb3c8690a" data-animation-type="lottie" data-src="{{ asset_frontend('documents/overview-icon01.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.5" data-duration="0"></div>
           </div>
-          <div class="overview-bottom-txt">{{$about_overview->icon_description_1}}</div>
+          <div class="overview-bottom-txt">{!! editor($about_overview->icon_description_1) !!}</div>
         </div>
         <div class="overview-bottom-txt-b" data-ix="fade-in-from-left">
           <div class="overview-bottom-icon-b">
             <div class="overview-bottom-icon" data-w-id="73c48506-151a-3607-9df7-1d646b64e4d7" data-animation-type="lottie" data-src="{{ asset_frontend('documents/home-about-icon01.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0"></div>
           </div>
-          <div class="overview-bottom-txt">{{$about_overview->icon_description_2}}</div>
+          <div class="overview-bottom-txt">{!! editor($about_overview->icon_description_2) !!}</div>
         </div>
         <div class="overview-bottom-txt-b" data-ix="fade-in-from-left">
           <div class="overview-bottom-icon-b">
@@ -116,7 +116,7 @@
               <div class="overview-bottom-icon" data-w-id="84446eca-1220-91e5-7a8e-6e3e292bbac7" data-animation-type="lottie" data-src="{{ asset_frontend('documents/overview-icon02.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="4.004003840917587" data-duration="0"></div>
             </div>
           </div>
-          <div class="overview-bottom-txt">{{$about_overview->icon_description_3}}</div>
+          <div class="overview-bottom-txt">{!! editor($about_overview->icon_description_3) !!}</div>
         </div>
         <div class="overview-bottom-txt-b" data-ix="fade-in-from-left">
           <div class="overview-bottom-icon-b">
@@ -124,7 +124,7 @@
               <div class="overview-bottom-icon" data-w-id="eb237867-f0b2-1407-5fbb-56cb1530ecf0" data-animation-type="lottie" data-src="{{ asset_frontend('documents/overview-icon03.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="4.004003840917587" data-duration="0"></div>
             </div>
           </div>
-          <div class="overview-bottom-txt">{{$about_overview->icon_description_4}}</div>
+          <div class="overview-bottom-txt">{!! editor($about_overview->icon_description_4) !!}</div>
         </div>
       </div>
     </div>

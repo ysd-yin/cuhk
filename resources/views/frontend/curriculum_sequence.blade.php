@@ -100,7 +100,7 @@
         </div>
         <div class="study-sequence-year-fr-last" data-ix="study-sequence-year-graduate">
           <div class="study-sequence-year-fr-txt-b">
-            <div><strong>Graduate</strong></div>
+            <div><strong>Graduation</strong></div>
           </div>
         </div>
       </div>

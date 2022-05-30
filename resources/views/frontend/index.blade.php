@@ -423,7 +423,7 @@
             <div class="header-top-link-dropdown-b">
               <a href="#" class="header-top-link" data-ix="header-top-dropdown">Student Careers</a>
               <div class="header-top-dropdown-list" data-ix="nav-dropdown-list">
-                <div class="header-top-dropdown-link-b">
+                <div class="header-top-dropdown-link-b" style="text-align:left">
                   <a href="{{$header->careers_url_1}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_1}}</a>
                   <a href="{{$header->careers_url_2}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_2}}</a>
                 </div>
