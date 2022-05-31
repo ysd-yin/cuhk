@@ -201,7 +201,7 @@
                     <a href="{{route('admissions_programme')}}" class="txt-link-white">Programme Brochure &amp; Videos</a>
                   </li>
                   <li>
-                    <a href="{{route('admissions')}}" class="txt-link-white">Tuition Fees</a>
+                    <a href="{{route('admissions')}}#tuition-fee" class="txt-link-white">Tuition Fees</a>
                   </li>
                   <li>
                     <a href="{{route('admissions_faq')}}" class="txt-link-white">FAQs</a>

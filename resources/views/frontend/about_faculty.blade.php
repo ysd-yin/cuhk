@@ -87,7 +87,7 @@
       <div class="faculty-bottom-txt-b faculty-bottom-bba">
         <div class="faculty-bottom-txt-row">
           <div class="faculty-bottom-txt-col">
-            <div class="content-name">{{$about_faculty->url_title_1}}</div>
+            <div class="content-name">{!! editor($about_faculty->url_title_1) !!}</div>
           </div>
           <div data-is-ix2-target="1" class="img faculty-bottom-btn" data-w-id="22322b97-bf5f-f858-7add-d420a245173a" data-animation-type="lottie" data-src="{{ asset_frontend('documents/btn-arrow.json') }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
         </div>
@@ -98,7 +98,7 @@
       <div class="faculty-bottom-txt-b faculty-bottom-jd">
         <div class="faculty-bottom-txt-row">
           <div class="faculty-bottom-txt-col">
-            <div class="content-name">{{$about_faculty->url_title_2}}</div>
+            <div class="content-name">{!! editor($about_faculty->url_title_2) !!}</div>
           </div>
           <div data-is-ix2-target="1" class="img faculty-bottom-btn" data-w-id="420293cc-4406-84ef-0d64-d3b2c7fb4a36" data-animation-type="lottie" data-src="{{ asset_frontend('documents/btn-arrow.json') }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
         </div>

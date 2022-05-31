@@ -63,13 +63,13 @@
         <div class="subtitle">{{$about_contact_us->undergraduate_office_title}}</div>
       </div>
       <div class="contact-bottom-txt-b">
-        <a href="//{{$about_contact_us->undergraduate_office_map}}" target="_blank" class="txt-link-white">{{$about_contact_us->undergraduate_office_address}}</a>
+        <a href="//{{$about_contact_us->undergraduate_office_map}}" target="_blank" class="txt-link-white">{!! editor($about_contact_us->undergraduate_office_address) !!}</a>
       </div>
       <div class="contact-bottom-txt-b">
-        <a href="tel:+85239437746" class="txt-link-white">Tel:{{$about_contact_us->undergraduate_office_tel}}</a>
+        <a href="tel:+852{{$about_contact_us->undergraduate_office_tel}}" class="txt-link-white">Tel: {{$about_contact_us->undergraduate_office_tel}}</a>
       </div>
       <div class="contact-bottom-txt-b">
-        <a href="tel:+85226035181" class="txt-link-white">Fax:{{$about_contact_us->undergraduate_office_fax}}</a>
+        <a href="tel:+852{{$about_contact_us->undergraduate_office_fax}}" class="txt-link-white">Fax: {{$about_contact_us->undergraduate_office_fax}}</a>
       </div>
       <div>
         <a href="{{$about_contact_us->undergraduate_office_fb}}" target="_blank" class="btn-icon w-inline-block" data-ix="btn-icon"><img src="{{ asset_frontend('images/contact-icon-fb.svg') }}" loading="lazy" alt="" class="btn-icon-img"><img src="{{ asset_frontend('images/contact-icon-fb-hover.svg') }}" loading="lazy" alt="" class="btn-icon-img-hover"></a>
@@ -84,13 +84,13 @@
         <div class="subtitle">{{$about_contact_us->faculty_law_title}}</div>
       </div>
       <div class="contact-bottom-txt-b">
-        <a href="{{$about_contact_us->faculty_law_map}}" target="_blank" class="txt-link-white">{{$about_contact_us->faculty_law_address}}</a>
+        <a href="{{$about_contact_us->faculty_law_map}}" target="_blank" class="txt-link-white">{!! editor($about_contact_us->faculty_law_address) !!}</a>
       </div>
       <div class="contact-bottom-txt-b">
-        <a href="tel:+85239434310" class="txt-link-white">Tel:{{$about_contact_us->faculty_law_tel}}</a>
+        <a href="tel:+852{{$about_contact_us->faculty_law_tel}}" class="txt-link-white">Tel: {{$about_contact_us->faculty_law_tel}}</a>
       </div>
       <div class="contact-bottom-txt-b">
-        <a href="tel:+85229942505" class="txt-link-white">Fax:{{$about_contact_us->faculty_law_fax}}</a>
+        <a href="tel:+852{{$about_contact_us->faculty_law_fax}}" class="txt-link-white">Fax: {{$about_contact_us->faculty_law_fax}}</a>
       </div>
       <div>
         <a href="{{$about_contact_us->faculty_law_fb}}" target="_blank" class="btn-icon w-inline-block" data-ix="btn-icon"><img src="{{ asset_frontend('images/contact-icon-fb.svg') }}" loading="lazy" alt="" class="btn-icon-img"><img src="{{ asset_frontend('images/contact-icon-fb-hover.svg') }}" loading="lazy" alt="" class="btn-icon-img-hover"></a>

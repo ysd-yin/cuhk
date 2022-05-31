@@ -43,13 +43,13 @@
       <div>{!! editor($about_overview->first_description)!!}</div><img src="{{ asset_frontend('images/overview-logos2x.png') }}" loading="lazy" width="300" alt="" class="overview-logo">
     </div>
     <div class="home-about-img-content" data-ix="home-about-img-content">
-      <div class="home-about-img-b img-jd" data-ix="home-about-img-b-bba">
+      <div class="home-about-img-b img-bba" data-ix="home-about-img-b-bba">
         <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-bba-txt.svg') }}" loading="lazy" alt="" class="home-about-img-txt-rotate" data-ix="home-about-img-txt-rotate">
         <div class="home-about-img-txt-b">
           <div class="home-about-img-txt" data-ix="home-about-img-txt">BBA</div>
         </div>
       </div>
-      <div class="home-about-img-b img-bba" data-ix="home-about-img-b-jd">
+      <div class="home-about-img-b img-jd" data-ix="home-about-img-b-jd">
         <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-jd-txt.svg') }}" loading="lazy" alt="" class="home-about-img-txt-rotate" data-ix="home-about-img-txt-rotate">
         <div class="home-about-img-txt-b">
           <div class="home-about-img-txt" data-ix="home-about-img-txt">JD</div>
