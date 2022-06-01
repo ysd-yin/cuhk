@@ -1,3 +1,4 @@
+<html data-wf-page="6268bf44417efc6a0f57da05" data-wf-site="622e9dcd9a2c51920e6316d0">
 @extends('layouts.frontend')
 
 @section('content')
