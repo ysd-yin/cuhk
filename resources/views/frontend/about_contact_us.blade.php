@@ -3,7 +3,9 @@
 @section('content')
 <div class="section-inner-banner wf-section">
   <div class="inner-banner-img-b">
-    <div class="inner-banner-img contact" data-ix="inner-banner-img"></div>
+    @if($image = $about_contact_us->getMedia('top_banner'))
+      <div class="inner-banner-img contact" data-ix="inner-banner-img" style="background-image:url('{{ $image->getResizedImage(2000) }}')"></div>
+    @endif
   </div>
   <div class="inner-banner-txt-b">
     <div>
@@ -58,12 +60,16 @@
 </div>
 <div class="wf-section">
   <div class="contact-bottom-row" data-ix="contact-bottom-row"><img src="{{ asset_frontend('images/contact-graphic01.svg') }}" loading="lazy" alt="" class="contact-bottom-graphic01" data-ix="contact-bottom-initial"><img src="{{ asset_frontend('images/contact-graphic02.svg') }}" loading="lazy" alt="" class="contact-bottom-graphic02" data-ix="contact-bottom-initial">
-    <div class="contact-bottom-col contact-bottom-bg-bba" data-ix="contact-bottom-initial">
+    <div class="contact-bottom-col contact-bottom-bg-bba" data-ix="contact-bottom-initial" 
+    @if($image = $about_contact_us->getMedia('undergraduate_office_image'))
+    style="background-image:url('{{ $image->getResizedImage(2000) }}')"
+    @endif
+    >
       <div class="subtitle-b">
         <div class="subtitle">{{$about_contact_us->undergraduate_office_title}}</div>
       </div>
       <div class="contact-bottom-txt-b">
-        <a href="//{{$about_contact_us->undergraduate_office_map}}" target="_blank" class="txt-link-white">{!! editor($about_contact_us->undergraduate_office_address) !!}</a>
+        <a href="{{$about_contact_us->undergraduate_office_map}}" target="_blank" class="txt-link-white">{!! editor($about_contact_us->undergraduate_office_address) !!}</a>
       </div>
       <div class="contact-bottom-txt-b">
         <a href="tel:+852{{$about_contact_us->undergraduate_office_tel}}" class="txt-link-white">Tel: {{$about_contact_us->undergraduate_office_tel}}</a>
@@ -79,7 +85,11 @@
         <a href="{{$about_contact_us->undergraduate_office_youtube}}" target="_blank" class="btn-icon w-inline-block" data-ix="btn-icon"><img src="{{ asset_frontend('images/contact-icon-youtube.svg') }}" loading="lazy" alt="" class="btn-icon-img"><img src="{{ asset_frontend('images/contact-icon-youtube-hover.svg') }}" loading="lazy" alt="" class="btn-icon-img-hover"></a>
       </div>
     </div>
-    <div class="contact-bottom-col contact-bottom-bg-jd" data-ix="contact-bottom-initial">
+    <div class="contact-bottom-col contact-bottom-bg-jd" data-ix="contact-bottom-initial"
+    @if($image = $about_contact_us->getMedia('faculty_law_image'))
+    style="background-image:url('{{ $image->getResizedImage(2000) }}')"
+    @endif
+    >
       <div class="subtitle-b">
         <div class="subtitle">{{$about_contact_us->faculty_law_title}}</div>
       </div>

@@ -59,6 +59,10 @@
                 'field' => 'careers_url_2',
                 'title' => 'Studenr Careers URL 2'
             ])
+
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b>
              
         </div>
         @include('admin.base.footer') 

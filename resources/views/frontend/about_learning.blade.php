@@ -4,7 +4,9 @@
 @section('content')
 <div class="section-inner-banner wf-section">
   <div class="inner-banner-img-b">
-    <div class="inner-banner-img learning" data-ix="inner-banner-img"></div>
+    @if($image = $about_learning->getMedia('top_banner'))
+      <div class="inner-banner-img learning" data-ix="inner-banner-img" style="background-image:url('{{ $image->getResizedImage(2000) }}')"></div>
+    @endif
   </div>
   <div class="inner-banner-txt-b">
     <div>

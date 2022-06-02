@@ -3,7 +3,9 @@
 @section('content')
 <div class="section-inner-banner wf-section">
   <div class="inner-banner-img-b">
-    <div class="inner-banner-img achievement" data-ix="inner-banner-img"></div>
+    @if($image = $student_achievement->getMedia('top_banner'))
+    <div class="inner-banner-img achievement" data-ix="inner-banner-img" style="background-image:url('{{ $image->getResizedImage(2000) }}')"></div>
+    @endif
   </div>
   <div class="inner-banner-txt-b">
     <div>
@@ -73,7 +75,16 @@
   </div>
 </div>
 <div class="section-content achievement wf-section">
-  <div class="achievement-img-b" data-ix="home-growing-img-b"><img src="{{ asset_frontend('images/home-growing-graphic01.svg') }}" loading="lazy" alt="" class="home-growing-graphic01" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/home-growing-graphic02.svg') }}" loading="lazy" alt="" class="home-growing-graphic02" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/development-graphic01.svg') }}" loading="lazy" alt="" class="achievement-graphic03" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/home-growing-img012x.png') }}" loading="lazy" sizes="(max-width: 479px) 45vw, 33vw" alt="" class="home-growing-img01" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/home-growing-img032x.png') }}" loading="lazy" sizes="(max-width: 479px) 67vw, 50vw" alt="" class="home-growing-img03" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/home-growing-img042x.png') }}" loading="lazy" sizes="(max-width: 479px) 45vw, 33vw" alt="" class="home-growing-img04" data-ix="home-growing-img-initial"></div>
+  <div class="achievement-img-b" data-ix="home-growing-img-b"><img src="{{ asset_frontend('images/home-growing-graphic01.svg') }}" loading="lazy" alt="" class="home-growing-graphic01" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/home-growing-graphic02.svg') }}" loading="lazy" alt="" class="home-growing-graphic02" data-ix="home-growing-img-initial"><img src="{{ asset_frontend('images/development-graphic01.svg') }}" loading="lazy" alt="" class="achievement-graphic03" data-ix="home-growing-img-initial">
+    @if($image = $student_achievement->getMedia('bottom_banner_1'))
+      <img src="{{ $image->getResizedImage(2000) }}" loading="lazy" sizes="(max-width: 479px) 45vw, 33vw" alt="" class="home-growing-img01" data-ix="home-growing-img-initial">
+    @endif
+    @if($image = $student_achievement->getMedia('bottom_banner_2'))
+      <img src="{{ $image->getResizedImage(2000) }}" loading="lazy" sizes="(max-width: 479px) 67vw, 50vw" alt="" class="home-growing-img03" data-ix="home-growing-img-initial">
+    @endif
+    @if($image = $student_achievement->getMedia('bottom_banner_3'))
+      <img src="{{ $image->getResizedImage(2000) }}" loading="lazy" sizes="(max-width: 479px) 45vw, 33vw" alt="" class="home-growing-img04" data-ix="home-growing-img-initial"></div>
+    @endif
 </div>
 <script>
   window.onload = (event) => {

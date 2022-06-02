@@ -54,6 +54,11 @@
                 'field' => 'second_left_url',
             ])
 
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+    
+
             @row([
                 'type' => 'textarea',
                 'title' => 'Icon 1',
@@ -111,6 +116,10 @@
                 'field' => 'third_url',
             ])
 
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+
             @row([
                 'type' => 'textinput',
                 'title' => 'Forth Section title 1',
@@ -134,6 +143,10 @@
                 'title' => 'Forth Section URL',
                 'field' => 'forth_url',
             ])
+
+            <b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+                If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
 
             @row([
                 'type' => 'textinput',
@@ -206,6 +219,10 @@
                 'field' => 'fifth_url',
             ])
 
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+
             @row([
                 'type' => 'textinput',
                 'title' => 'Sixth Section title 1',
@@ -229,6 +246,10 @@
                 'title' => 'Sixth Section URL',
                 'field' => 'sixth_url',
             ])
+
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
 
             @row([
                 'type' => 'textinput',

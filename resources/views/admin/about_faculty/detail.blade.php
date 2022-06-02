@@ -89,6 +89,10 @@
                 'title' => ' Left URL'
             ])  
 
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+
             @row([
                 'type' => 'image-upload',
                 'field' => 'right_image',
@@ -106,7 +110,10 @@
                 'field' => 'url_2',
                 'title' => ' Right URL'
             ])  
-             
+            
+             <b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+                If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
         </div>
         @include('admin.base.footer') 
     </div>

@@ -3,7 +3,9 @@
 @section('content')
 <div class="section-inner-banner wf-section">
   <div class="inner-banner-img-b">
-    <div class="inner-banner-img overview" data-ix="inner-banner-img"></div>
+    @if($image = $about_overview->getMedia('top_banner'))
+      <div class="inner-banner-img overview" data-ix="inner-banner-img" style="background-image:url('{{ $image->getResizedImage(2000) }}')"></div>
+    @endif
   </div>
   <div class="inner-banner-txt-b">
     <div>
@@ -81,7 +83,9 @@
 </div>
 <div class="overview-bottom w-clearfix">
   <div class="overview-img-b">
-    <div class="overview-img"></div>
+    @if($image = $about_overview->getMedia('bottom_banner'))
+    <div class="overview-img" style="background-image:url('{{ $image->getResizedImage(2000) }}')"></div>
+    @endif
   </div>
   <div class="overview-title-b">
     <div>

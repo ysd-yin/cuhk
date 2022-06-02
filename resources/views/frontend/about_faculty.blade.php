@@ -3,7 +3,9 @@
 @section('content')
 <div class="section-inner-banner wf-section">
   <div class="inner-banner-img-b">
-    <div class="inner-banner-img faculty" data-ix="inner-banner-img"></div>
+    @if($image = $about_faculty->getMedia('top_banner'))
+      <div class="inner-banner-img faculty" data-ix="inner-banner-img" style="background-image:url('{{ $image->getResizedImage(2000) }}')"></div>
+    @endif
   </div>
   <div class="inner-banner-txt-b">
     <div>
@@ -83,7 +85,11 @@
 <div class="wf-section">
   <div class="faculty-bottom-row" data-ix="faculty-bottom-row"><img src="{{ asset_frontend('images/international-academic-faculty-graphic02.svg') }}" loading="lazy" alt="" class="faculty-bottom-graphic02" data-ix="faculty-bottom-scroll-initial">
     <a data-w-id="56fbd2f8-268b-81e6-007f-f751f33b1400" href="{{$about_faculty->url_1}}" target="_blank" class="faculty-bottom-col w-inline-block" data-ix="faculty-bottom-scroll-initial">
-      <div class="faculty-bottom-img-b"><img src="{{ asset_frontend('images/international-academic-faculty-graphic03.svg') }}" loading="lazy" alt="" class="faculty-bottom-graphic03" data-ix="faculty-bottom-scroll-initial"><img src="{{ asset_frontend('images/international-academic-faculty-img-bba2x.png') }}" loading="lazy" sizes="(max-width: 991px) 100vw, 50vw" alt="" class="faculty-bottom-img"></div>
+      <div class="faculty-bottom-img-b"><img src="{{ asset_frontend('images/international-academic-faculty-graphic03.svg') }}" loading="lazy" alt="" class="faculty-bottom-graphic03" data-ix="faculty-bottom-scroll-initial">
+        @if($image = $about_faculty->getMedia('left_image'))
+          <img src="{{ asset_frontend('images/international-academic-faculty-img-bba2x.png') }}" loading="lazy" sizes="(max-width: 991px) 100vw, 50vw" alt="" class="faculty-bottom-img">
+        @endif
+      </div>
       <div class="faculty-bottom-txt-b faculty-bottom-bba">
         <div class="faculty-bottom-txt-row">
           <div class="faculty-bottom-txt-col">
@@ -94,7 +100,11 @@
       </div>
     </a>
     <a data-w-id="71c7f29e-71db-4892-f09d-4cec181d1cd6" href="{{$about_faculty->url_2}}" target="_blank" class="faculty-bottom-col w-inline-block" data-ix="faculty-bottom-scroll-initial">
-      <div class="faculty-bottom-img-b"><img src="{{ asset_frontend('images/international-academic-faculty-graphic01.svg') }}" loading="lazy" alt="" class="faculty-bottom-graphic01" data-ix="faculty-bottom-scroll-initial"><img src="{{ asset_frontend('images/international-academic-faculty-img-law2x.png') }}" loading="lazy" sizes="(max-width: 991px) 100vw, 50vw" alt="" class="faculty-bottom-img"></div>
+      <div class="faculty-bottom-img-b"><img src="{{ asset_frontend('images/international-academic-faculty-graphic01.svg') }}" loading="lazy" alt="" class="faculty-bottom-graphic01" data-ix="faculty-bottom-scroll-initial">
+        @if($image = $about_faculty->getMedia('right_image'))
+          <img src="{{ asset_frontend('images/international-academic-faculty-img-law2x.png') }}" loading="lazy" sizes="(max-width: 991px) 100vw, 50vw" alt="" class="faculty-bottom-img">
+        @endif
+      </div>
       <div class="faculty-bottom-txt-b faculty-bottom-jd">
         <div class="faculty-bottom-txt-row">
           <div class="faculty-bottom-txt-col">

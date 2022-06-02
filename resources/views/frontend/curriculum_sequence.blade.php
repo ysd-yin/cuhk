@@ -3,7 +3,9 @@
 @section('content')
 <div class="section-inner-banner wf-section">
   <div class="inner-banner-img-b">
-    <div class="inner-banner-img study-sequence" data-ix="inner-banner-img"></div>
+    @if($image = $curriculum_sequence->getMedia('top_banner'))
+      <div class="inner-banner-img study-sequence" data-ix="inner-banner-img" style="background-image:url('{{ $image->getResizedImage(2000) }}')"></div>
+    @endif
   </div>
   <div class="inner-banner-txt-b">
     <div>
@@ -481,7 +483,10 @@
   </div>
 </div>
 <div class="bottom-banner" data-ix="study-sequence-course">
-  <div class="study-sequence-course-bg"></div><img src="{{ asset_frontend('images/study-squence-course-graphic-l01.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-l01" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-l02.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-l02" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-l03.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-l03" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-r01.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-r01" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-l02.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-r02" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-r03.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-r03" data-ix="study-sequence-course-graphic-initial">
+  @if($image = $curriculum_sequence->getMedia('bottom_banner_banner'))
+  <div class="study-sequence-course-bg" style="background-image:url('{{ $image->getResizedImage(2000) }}')"></div>
+  @endif
+  <img src="{{ asset_frontend('images/study-squence-course-graphic-l01.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-l01" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-l02.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-l02" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-l03.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-l03" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-r01.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-r01" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-l02.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-r02" data-ix="study-sequence-course-graphic-initial"><img src="{{ asset_frontend('images/study-squence-course-graphic-r03.svg') }}" loading="lazy" alt="" class="bottom-banner-graphic-r03" data-ix="study-sequence-course-graphic-initial">
   <div class="bottom-banner-txt-b">
     <div class="section-content wf-section">
       <div class="container-full w-container" data-ix="fade-in-from-bottom">
