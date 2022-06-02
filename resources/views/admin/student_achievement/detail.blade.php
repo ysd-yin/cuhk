@@ -29,6 +29,11 @@
     <div class="card">
         <div class="card-header">{{ $config['page_name'] }}</div>
         <div class="card-body" id="app-main">
+            @row([
+                'type' => 'image-upload',
+                'field' => 'top_banner',
+                'title' => 'Banner Image'
+            ])
 
             @row([
                 'type' => 'textinput',
@@ -45,6 +50,24 @@
             @row([
                 'type' => 'editor',
                 'field' => 'description',
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'bottom_banner_1',
+                'title' => 'Bottom Banner Image 1'
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'bottom_banner_2',
+                'title' => 'Bottom Banner Image 2'
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'bottom_banner_3',
+                'title' => 'Bottom Banner Image 3'
             ])
     
         </div>

@@ -29,7 +29,12 @@
     <div class="card">
         <div class="card-header">{{ $config['page_name'] }}</div>
         <div class="card-body" id="app-main">
-
+            @row([
+                'type' => 'image-upload',
+                'field' => 'top_banner',
+                'title' => 'Banner Image'
+            ])
+            
             @row([
                 'type' => 'textinput',
                 'field' => 'news_title',

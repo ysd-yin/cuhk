@@ -29,6 +29,11 @@
     <div class="card">
         <div class="card-header">{{ $config['page_name'] }}</div>
         <div class="card-body" id="app-main">
+            @row([
+                'type' => 'image-upload',
+                'field' => 'top_banner',
+                'title' => 'Banner Image'
+            ])
 
             @row([
                 'type' => 'textinput',
@@ -58,6 +63,12 @@
                 'type' => 'textinput',
                 'field' => 'email',
                 'title' => 'Email',
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'undergraduate_office_image',
+                'title' => 'Undergraduate Office Image'
             ])
 
             @row([
@@ -118,6 +129,12 @@
                 'type' => 'textinput',
                 'field' => 'undergraduate_office_youtube',
                 'title' => 'Undergraduate Office Youtube',
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'faculty_law_image',
+                'title' => 'Faculty of Law Image'
             ])
              
             @row([

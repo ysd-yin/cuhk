@@ -94,7 +94,7 @@
     add_current_page = setInterval(jQ, 1000);
     
     function jQ(){
-      $('.about_menu .nav-dropdown-link-b a').eq(1).addClass(" w--current")
+      $('.about_menu .nav-dropdown-link-b a').eq(0).addClass(" w--current")
     }
     
     function StopInteval() {

@@ -31,6 +31,12 @@
         <div class="card-body" id="app-main">
 
             @row([
+                'type' => 'image-upload',
+                'field' => 'top_banner',
+                'title' => 'Banner Image'
+            ])
+
+            @row([
                 'type' => 'textinput',
                 'title' => 'Banner Title 1',
                 'field' => 'banner_title_1',
@@ -88,6 +94,12 @@
                 'type' => 'editor',
                 'field' => 'second_description',
                 'title' => 'Second Description',
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'bottom_banner',
+                'title' => 'Bottom Image'
             ])
 
             @row([
