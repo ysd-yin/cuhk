@@ -56,6 +56,11 @@
                 'field' => 'url',
             ])
 
+                        
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+
             @row([
                 'type' => 'textarea',
                 'field' => 'jupas_description',
@@ -106,6 +111,11 @@
                 'title' => 'Non Jupas URL',
             ])
 
+                        
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+
             @row([
                 'type' => 'textinput',
                 'field' => 'apply_internal_title',
@@ -117,6 +127,11 @@
                 'field' => 'apply_internal_url',
                 'title' => 'Apply International Admissions URL',
             ])
+
+                        
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
 
             @row([
                 'type' => 'editor',
@@ -179,6 +194,11 @@
                 'field' => 'tuition_url',
                 'title' => 'Tuition Fee URL',
             ])
+
+                        
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
              
         </div>
         @include('admin.base.footer') 
