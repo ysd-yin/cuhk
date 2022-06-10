@@ -42,13 +42,17 @@
                 'title' => 'Title 1',
                 'field' => 'title_1',
             ])
-
+            <b>
+                By default the system will set the default color when it is black, but it's flexible to change the color if you want.
+            </b>
             @row([
                 'type' => 'editor',
                 'title' => 'Title 2',
                 'field' => 'title_2',
             ])
-
+            <b>
+                By default the system will set the default color when it is black, but it's flexible to change the color if you want.
+            </b>
             {{-- @row([
                 'type' => 'textinput',
                 'title' => 'Sub title',
@@ -60,6 +64,9 @@
                 'title' => 'Sub title',
                 'field' => 'title',
             ])
+            <b>
+                By default the system will set the default color when it is black, but it's flexible to change the color if you want.
+            </b>
 
             @row([
                 'type' => 'textinput',
