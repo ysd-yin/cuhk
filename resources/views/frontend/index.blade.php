@@ -417,85 +417,85 @@
         </div>
         <div class="nav-menu popup-scroll">
           <div class="header-top">
-            <a href="{{route('about_news')}}" class="header-top-link">News &amp; Events</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
-            <a href="{{route('admissions_programme')}}" class="header-top-link">Programme Brochure &amp; Videos</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
-            <a href="{{$header->current_url}}" target="_blank" class="header-top-link">Current Students</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+            <a href="{{route('about_news')}}" class="header-top-link">{{$header->upper_menu_title_1}}</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+            <a href="{{route('admissions_programme')}}" class="header-top-link">{{$header->upper_menu_title_2}}</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
+            <a href="{{$header->current_url}}" target="_blank" class="header-top-link">{{$header->upper_menu_title_3}}</a><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
             <div class="header-top-link-dropdown-b">
-              <a href="#" class="header-top-link" data-ix="header-top-dropdown">Student Careers</a>
+              <a href="#" class="header-top-link" data-ix="header-top-dropdown">{{$header->upper_menu_title_4}}</a>
               <div class="header-top-dropdown-list" data-ix="nav-dropdown-list">
-                <div class="header-top-dropdown-link-b" style="text-align:left">
+                <div class="header-top-dropdown-link-b">
                   <a href="{{$header->careers_url_1}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_1}}</a>
                   <a href="{{$header->careers_url_2}}" target="_blank" class="header-top-dropdown-link">{{$header->careers_title_2}}</a>
                 </div>
               </div>
             </div><img src="{{ asset_frontend('images/header-dot.svg') }}" loading="lazy" alt="" class="header-top-dot">
-            <a href="{{route('about_contact_us')}}" class="header-top-link">Contact Us</a>
+            <a href="{{route('about_contact_us')}}" class="header-top-link">{{$header->upper_menu_title_5}}</a>
           </div>
           <div class="nav-main-menu-b">
             <div data-hover="false" data-delay="600" class="about_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
               <div class="nav-dropdown-toggle w-dropdown-toggle">
-                <div>About</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+                <div>{{$header->about_menu}}</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
               </div>
               <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
                 <div class="nav-dropdown-link-b">
-                  <a href="{{route('about_message')}}" class="nav-dropdown-link w-dropdown-link">Programme Co‐Directors&#x27; Message</a>
-                  <a href="{{route('about_overview')}}" class="nav-dropdown-link w-dropdown-link">Programme Overview</a>
-                  <a href="{{route('about_management')}}" class="nav-dropdown-link w-dropdown-link">Programme Management</a>
-                  <a href="{{route('about_faculty')}}" class="nav-dropdown-link w-dropdown-link">International Academic Faculty</a>
-                  <a href="{{route('about_learning')}}" class="nav-dropdown-link w-dropdown-link">Learning Environment</a>
-                  <a href="{{route('about_news')}}" class="nav-dropdown-link w-dropdown-link">News &amp; Events</a>
-                  <a href="{{route('about_contact_us')}}" class="nav-dropdown-link w-dropdown-link">Contact Us</a>
+                  <a href="{{route('about_message')}}" class="nav-dropdown-link w-dropdown-link">{{$header->about_menu_1}}</a>
+                  <a href="{{route('about_overview')}}" class="nav-dropdown-link w-dropdown-link">{{$header->about_menu_2}}</a>
+                  <a href="{{route('about_management')}}" class="nav-dropdown-link w-dropdown-link">{{$header->about_menu_3}}</a>
+                  <a href="{{route('about_faculty')}}" class="nav-dropdown-link w-dropdown-link">{{$header->about_menu_4}}</a>
+                  <a href="{{route('about_learning')}}" class="nav-dropdown-link w-dropdown-link">{{$header->about_menu_5}}</a>
+                  <a href="{{route('about_news')}}" class="nav-dropdown-link w-dropdown-link">{{$header->about_menu_6}}</a>
+                  <a href="{{route('about_contact_us')}}" class="nav-dropdown-link w-dropdown-link">{{$header->about_menu_7}}</a>
                 </div>
               </nav>
             </div>
             <div data-hover="false" data-delay="600" class="curriculum_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
               <div class="nav-dropdown-toggle w-dropdown-toggle">
-                <div>Curriculum</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+                <div>{{$header->curriculum_menu}}</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
               </div>
               <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
                 <div class="nav-dropdown-link-b">
-                  <a href="{{route('curriculum_structure')}}" class="nav-dropdown-link w-dropdown-link">Programme Structure</a>
-                  <a href="{{route('curriculum_sequence')}}" class="nav-dropdown-link w-dropdown-link">Study Sequence</a>
+                  <a href="{{route('curriculum_structure')}}" class="nav-dropdown-link w-dropdown-link">{{$header->curriculum_menu_1}}</a>
+                  <a href="{{route('curriculum_sequence')}}" class="nav-dropdown-link w-dropdown-link">{{$header->curriculum_menu_2}}</a>
                 </div>
               </nav>
             </div>
             <div data-hover="false" data-delay="600" class="student_enrichment nav-dropdown w-dropdown" data-ix="nav-dropdown">
               <div class="nav-dropdown-toggle w-dropdown-toggle">
-                <div>Student Enrichment</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
+                <div>{{$header->student_menu}}</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop">
               </div>
               <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
                 <div class="nav-dropdown-link-b">
-                  <a href="{{route('student_development')}}" class="nav-dropdown-link w-dropdown-link">Development and Experiential Learning</a>
-                  <a href="{{route('student_achievement')}}" class="nav-dropdown-link w-dropdown-link">Student Achievement and Experience</a>
+                  <a href="{{route('student_development')}}" class="nav-dropdown-link w-dropdown-link">{{$header->student_menu_1}}</a>
+                  <a href="{{route('student_achievement')}}" class="nav-dropdown-link w-dropdown-link">{{$header->student_menu_2}}</a>
                 </div>
               </nav>
             </div>
             <div class="nav-dropdown">
               <a href="{{route('student_voices')}}" class="nav-dropdown-toggle w-inline-block">
-                <div>Student Voices</div>
+                <div>{{$header->student_voices_menu}}</div>
               </a>
             </div>
             <div class="nav-dropdown">
               <a href="{{route('career_prospects')}}" class="nav-dropdown-toggle w-inline-block">
-                <div>Career Prospects</div>
+                <div>{{$header->career_menu}}</div>
               </a>
             </div>
             <div data-hover="false" data-delay="600" class="admissions_menu nav-dropdown w-dropdown" data-ix="nav-dropdown">
               <div class="nav-dropdown-toggle w-dropdown-toggle">
-                <div>Admissions</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop admissions">
+                <div>{{$header->admissions_menu}}</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow"><img src="{{ asset_frontend('images/menu-dropdown-arrow.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow-desktop admissions">
               </div>
               <nav class="nav-dropdown-list admissions w-dropdown-list" data-ix="nav-dropdown-list">
                 <div class="nav-dropdown-link-b">
-                  <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Admission Requirements</a>
-                  <a href="{{route('admissions_programme')}}" class="nav-dropdown-link w-dropdown-link">Programme Brochure &amp; Videos</a>
-                  <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">Tuition Fees</a>
-                  <a href="{{route('admissions_faq')}}" class="nav-dropdown-link w-dropdown-link">FAQs</a>
+                  <a href="{{route('admissions')}}" class="nav-dropdown-link w-dropdown-link">{{$header->admissions_menu_1}}</a>
+                  <a href="{{route('admissions_programme')}}" class="nav-dropdown-link w-dropdown-link">{{$header->admissions_menu_2}}</a>
+                  <a href="{{route('admissions')}}#tuition-fee" class="nav-dropdown-link w-dropdown-link">{{$header->admissions_menu_3}}</a>
+                  <a href="{{route('admissions_faq')}}" class="nav-dropdown-link w-dropdown-link">{{$header->admissions_menu_4}}</a>
                 </div>
               </nav>
             </div>
             <div data-hover="false" data-delay="600" class="nav-dropdown hidden-desktop w-dropdown" data-ix="nav-dropdown">
               <div class="nav-dropdown-toggle w-dropdown-toggle">
-                <div>Portals</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow">
+                <div>{{$footer->protals}}</div><img src="{{ asset_frontend('images/menu-dropdown.svg') }}" loading="lazy" alt="" class="nav-dropdown-arrow">
               </div>
               <nav class="nav-dropdown-list w-dropdown-list" data-ix="nav-dropdown-list">
                 <div class="nav-dropdown-link-b">
@@ -560,9 +560,11 @@
             <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url({{$item->getMedia('image')->getResizedImage(2000)}})"></div>
             <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
               <div class="home-banner-tag-arrow"></div>
-              <div class="home-banner-tag-txt-b">
-                <div>{{$item->title}}</div>
-              </div>
+              @if($item->title != '')
+                <div class="home-banner-tag-txt-b">
+                  <div>{!! editor($item->title) !!}</div>
+                </div>
+              @endif
             </div>
           </div>
         @endforeach
@@ -578,12 +580,12 @@
             <div class="home-banner-txt-b active">
               <div>
                 <div class="txt-mask">
-                  <div class="home-banner-txt txt-color-purple" data-ix="home-banner-txt"><span class="txt-stroke-white">{{$item2->title_1}}</span></div>
+                  <div class="home-banner-txt txt-color-purple" data-ix="home-banner-txt"><span class="txt-stroke-white">{!! editor($item2->title_1) !!}</span></div>
                 </div>
               </div>
               <div>
                 <div class="txt-mask">
-                  <div class="home-banner-txt txt-color-gold" data-ix="home-banner-txt"><span class="txt-stroke-white">{{$item2->title_2}}</span></div>
+                  <div class="home-banner-txt txt-color-gold" data-ix="home-banner-txt"><span class="txt-stroke-white">{!! editor($item2->title_2) !!}</span></div>
                 </div>
               </div>
               @if(isset($item2->url))
@@ -605,57 +607,51 @@
   <div class="section-content bg-map wf-section">
     <div class="container-full w-container">
         <div class="heading-b">
-            <div class="txt-mask">
+            <div class="txt-mask" style="display:unset;">
                 <div class="heading txt-color-purple" data-ix="txt-appear-from-bottom">
                     {{$home_page->second_title_1}}</div>
             </div>
-            <div class="txt-mask">
-                <div class="heading txt-color-purple align-right" data-ix="txt-appear-from-bottom"><span
+            <div class="txt-mask" style="display:unset;">
+                <div class="heading txt-color-purple align-right" data-ix="txt-appear-from-bottom" style="float:left"><span
                         class="txt-stroke" data-ix="txt-appear-from-bottom">{{$home_page->second_title_2}}</span></div>
             </div>
         </div>
     </div>
     <div class="container w-container">
-        <div class="home-about-img-content" data-ix="home-about-img-content">
-            <div class="home-about-img-b img-jd" data-ix="home-about-img-b-bba">
-                <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-bba-txt.svg') }}" loading="lazy" alt=""
-                    class="home-about-img-txt-rotate" data-ix="home-about-img-txt-rotate">
-                <div class="home-about-img-txt-b">
-                    <div class="home-about-img-txt" data-ix="home-about-img-txt">BBA</div>
-                </div>
-            </div>
-            <div class="home-about-img-b img-bba" data-ix="home-about-img-b-jd">
-                <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-jd-txt.svg') }}" loading="lazy" alt=""
-                    class="home-about-img-txt-rotate" data-ix="home-about-img-txt-rotate">
-                <div class="home-about-img-txt-b">
-                    <div class="home-about-img-txt" data-ix="home-about-img-txt">JD</div>
-                </div>
-            </div>
-            <div class="home-about-overlap-b" data-ix="home-about-overlap-b"><img src="{{ asset_frontend('images/home-about-overlap.svg') }}"
-                    loading="lazy" alt="" class="home-about-overlap-img">
-                <div class="home-about-overlap-txt">2 Degrees<br>in<br>5 Years</div>
-            </div>
+      <div class="home-about-img-content" data-ix="home-about-img-content">
+        <div class="home-about-img-b img-bba" data-ix="home-about-img-b-bba">
+          <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-bba-txt.svg') }}" loading="lazy" alt="" class="home-about-img-txt-rotate" data-ix="home-about-img-txt-rotate">
+          <div class="home-about-img-txt-b">
+            <div class="home-about-img-txt" data-ix="home-about-img-txt">BBA</div>
+          </div>
         </div>
-        <div class="codirectors-msg-img-content-mobile" data-ix="home-about-img-content-mobile">
-            <div class="home-about-img-b img-jd" data-ix="home-about-img-b-bba-mobile">
-                <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-jd-txt.svg') }}" loading="lazy" alt=""
-                    class="home-about-img-txt-rotate jd-mobile" data-ix="home-about-img-txt-rotate-mobile-jd">
-                <div class="home-about-img-txt-b">
-                    <div class="home-about-img-txt" data-ix="home-about-img-txt">JD</div>
-                </div>
-            </div>
-            <div class="home-about-img-b img-bba" data-ix="home-about-img-b-jd-mobile">
-                <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-bba-txt.svg') }}" loading="lazy" alt=""
-                    class="home-about-img-txt-rotate bba-mobile" data-ix="home-about-img-txt-rotate-mobile-bba">
-                <div class="home-about-img-txt-b">
-                    <div class="home-about-img-txt" data-ix="home-about-img-txt">BBA</div>
-                </div>
-            </div>
-            <div class="home-about-overlap-b" data-ix="home-about-overlap-b"><img
-                    src="{{ asset_frontend('images/home-about-overlap-mobile.svg') }}" loading="lazy" alt="" class="home-about-overlap-img">
-                <div class="home-about-overlap-txt">2 Degrees<br>in 5 Years</div>
-            </div>
+        <div class="home-about-img-b img-jd" data-ix="home-about-img-b-jd">
+          <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-jd-txt.svg') }}" loading="lazy" alt="" class="home-about-img-txt-rotate" data-ix="home-about-img-txt-rotate">
+          <div class="home-about-img-txt-b">
+            <div class="home-about-img-txt" data-ix="home-about-img-txt">JD</div>
+          </div>
         </div>
+        <div class="home-about-overlap-b" data-ix="home-about-overlap-b"><img src="{{ asset_frontend('images/home-about-overlap.svg') }}" loading="lazy" alt="" class="home-about-overlap-img">
+          <div class="home-about-overlap-txt">2 Degrees<br>in<br>5 Years</div>
+        </div>
+      </div>
+      <div class="codirectors-msg-img-content-mobile" data-ix="home-about-img-content-mobile">
+        <div class="home-about-img-b img-bba" data-ix="home-about-img-b-bba-mobile">
+          <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-bba-txt-mobile.svg') }}" loading="lazy" alt="" class="home-about-img-txt-rotate bba-mobile" data-ix="home-about-img-txt-rotate-mobile-jd">
+          <div class="home-about-img-txt-b">
+            <div class="home-about-img-txt" data-ix="home-about-img-txt">BBA</div>
+          </div>
+        </div>
+        <div class="home-about-img-b img-jd" data-ix="home-about-img-b-jd-mobile">
+          <div class="home-about-img-border"></div><img src="{{ asset_frontend('images/home-about-jd-txt-mobile.svg') }}" loading="lazy" alt="" class="home-about-img-txt-rotate jd-mobile" data-ix="home-about-img-txt-rotate-mobile-bba">
+          <div class="home-about-img-txt-b">
+            <div class="home-about-img-txt" data-ix="home-about-img-txt">JD</div>
+          </div>
+        </div>
+        <div class="home-about-overlap-b" data-ix="home-about-overlap-b"><img src="{{ asset_frontend('images/home-about-overlap-mobile.svg') }}" loading="lazy" alt="" class="home-about-overlap-img">
+          <div class="home-about-overlap-txt">2 Degrees<br>in 5 Years</div>
+        </div>
+      </div>
         <div class="home-about-row">
             <div class="home-about-col" data-ix="fade-in-from-bottom">
                 <div class="heading txt-color-gold">{{$home_page->second_left_description}}</div>
@@ -679,7 +675,7 @@
                                 data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
                                 data-default-duration="2.0020019204587935" data-duration="0"></div>
                         </div>
-                        <div>{{$home_data->icon_1}}</div>
+                        <div>{!! editor($home_data->icon_1) !!}</div>
                     </div>
                     <div class="home-about-txt-b" data-ix="fade-in-from-left">
                         <div class="home-about-icon-b">
@@ -688,7 +684,7 @@
                                 data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
                                 data-default-duration="2.0020019204587935" data-duration="0"></div>
                         </div>
-                        <div>{{$home_data->icon_2}}</div>
+                        <div>{!! editor($home_data->icon_2) !!}</div>
                     </div>
                     <div class="home-about-txt-b" data-ix="fade-in-from-left">
                         <div class="home-about-icon-b">
@@ -697,7 +693,7 @@
                                 data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
                                 data-default-duration="2.0020019204587935" data-duration="0"></div>
                         </div>
-                        <div>{{$home_data->icon_3}}</div>
+                        <div>{!! editor($home_data->icon_3) !!}</div>
                     </div>
                 </div>
                 <div class="btn-b show-in-mobile" data-ix="fade-in-from-left">
@@ -739,7 +735,7 @@
                     data-animation-type="lottie" data-src="{{ asset_frontend('documents/home-learn-icon.json') }}" data-loop="0"
                     data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.0020019204587935"
                     data-duration="0" data-ix2-initial-state="0"></div>
-                <div>{{$item2['description']}}</div>
+                <div>{!! editor($item2['description']) !!}</div>
             </div>
             @endforeach
             <div class="btn-b align-right" data-ix="fade-in-from-left">

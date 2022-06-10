@@ -118,8 +118,8 @@
         $total += $curriculum_structure->unit_3;
         $total += $curriculum_structure->unit_4;
           ?>
-        <div class="study-sequence-img-txt01">{{$total}}</div>
-        <div class="study-sequence-img-txt02 txt-stroke"><span class="study-sequence-img-txt03">Units</span> in Total</div>
+        <div class="study-sequence-img-txt01">{{$curriculum_sequence->unit}}</div>
+        <div class="study-sequence-img-txt02 txt-stroke"><span class="study-sequence-img-txt03">{{$curriculum_sequence->unit_text_1}}</span> {{$curriculum_sequence->unit_text_2}}</div>
       </div>
       <div>{!! editor($curriculum_sequence->course_description) !!}</div>
     </div>
@@ -157,10 +157,10 @@
             <div class="tb">
               <div class="tb-row bg-gold">
                 <div class="tb-col study-sequence01">
-                  <div><strong>Term/Course Code</strong></div>
+                  <div><strong>{{$curriculum_sequence_year_1->table_title_1}}</strong></div>
                 </div>
                 <div class="tb-col study-sequence02">
-                  <div><strong>Course Title</strong></div>
+                  <div><strong>{{$curriculum_sequence_year_1->table_title_2}}</strong></div>
                 </div>
               </div>
               <div class="tb-row bg-lightgold">
@@ -218,10 +218,10 @@
             <div class="tb">
               <div class="tb-row bg-gold">
                 <div class="tb-col study-sequence01">
-                  <div><strong>Term/Course Code</strong></div>
+                  <div><strong>{{$curriculum_sequence_year_2->table_title_1}}</strong></div>
                 </div>
                 <div class="tb-col study-sequence02">
-                  <div><strong>Course Title</strong></div>
+                  <div><strong>{{$curriculum_sequence_year_2->table_title_2}}</strong></div>
                 </div>
               </div>
               <div class="tb-row bg-lightgold">
@@ -279,10 +279,10 @@
             <div class="tb">
               <div class="tb-row bg-gold">
                 <div class="tb-col study-sequence01">
-                  <div><strong>Term/Course Code</strong></div>
+                  <div><strong>{{$curriculum_sequence_year_3->table_title_1}}</strong></div>
                 </div>
                 <div class="tb-col study-sequence02">
-                  <div><strong>Course Title</strong></div>
+                  <div><strong>{{$curriculum_sequence_year_3->table_title_2}}</strong></div>
                 </div>
               </div>
               <div class="tb-row bg-lightgold">
@@ -340,10 +340,10 @@
             <div class="tb">
               <div class="tb-row bg-gold">
                 <div class="tb-col study-sequence01">
-                  <div><strong>Term/Course Code</strong></div>
+                  <div><strong>{{$curriculum_sequence_year_4->table_title_1}}</strong></div>
                 </div>
                 <div class="tb-col study-sequence02">
-                  <div><strong>Course Title</strong></div>
+                  <div><strong>{{$curriculum_sequence_year_4->table_title_2}}</strong></div>
                 </div>
               </div>
               <div class="tb-row bg-lightgold">
@@ -417,10 +417,10 @@
             <div class="tb">
               <div class="tb-row bg-gold">
                 <div class="tb-col study-sequence01">
-                  <div><strong>Term/Course Code</strong></div>
+                  <div><strong>{{$curriculum_sequence_year_5->table_title_1}}</strong></div>
                 </div>
                 <div class="tb-col study-sequence02">
-                  <div><strong>Course Title</strong></div>
+                  <div><strong>{{$curriculum_sequence_year_5->table_title_2}}</strong></div>
                 </div>
               </div>
               <div class="tb-row bg-lightgold">
@@ -476,7 +476,7 @@
         </div>
       </div>
       <div data-ix="fade-in-from-bottom">
-        <div class="subtitle">Notes:</div>
+        <div class="subtitle">{{$curriculum_sequence->notes_title}}:</div>
         {!! editor($curriculum_sequence->notes) !!}
       </div>
     </div>

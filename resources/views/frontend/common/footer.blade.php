@@ -22,86 +22,86 @@
             <div class="footer-sitemap-row">
               <div class="footer-sitemap-col">
                 <div class="footer-sitemap-list">
-                  <div class="footer-sitemap-title">About</div>
+                  <div class="footer-sitemap-title">{{$header->about_menu}}</div>
                   <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                     <li>
-                      <a href="{{route('about_message')}}" class="txt-link-white">Programme Co‐Directors&#x27; Message</a>
+                      <a href="{{route('about_message')}}" class="txt-link-white">{{$header->about_menu_1}}</a>
                     </li>
                     <li>
-                      <a href="{{route('about_overview')}}" class="txt-link-white">Programme Overview</a>
+                      <a href="{{route('about_overview')}}" class="txt-link-white">{{$header->about_menu_2}}</a>
                     </li>
                     <li>
-                      <a href="{{route('about_management')}}" class="txt-link-white">Programme Management</a>
+                      <a href="{{route('about_management')}}" class="txt-link-white">{{$header->about_menu_3}}</a>
                     </li>
                     <li>
-                      <a href="{{route('about_faculty')}}" class="txt-link-white">International Academic Faculty</a>
+                      <a href="{{route('about_faculty')}}" class="txt-link-white">{{$header->about_menu_4}}</a>
                     </li>
                     <li>
-                      <a href="{{route('about_learning')}}" class="txt-link-white">Learning Environment</a>
+                      <a href="{{route('about_learning')}}" class="txt-link-white">{{$header->about_menu_5}}</a>
                     </li>
                     <li>
-                      <a href="{{route('about_news')}}" class="txt-link-white">News &amp; Events</a>
+                      <a href="{{route('about_news')}}" class="txt-link-white">{{$header->about_menu_6}}</a>
                     </li>
                     <li>
-                      <a href="{{route('about_contact_us')}}" class="txt-link-white">Contact Us</a>
+                      <a href="{{route('about_contact_us')}}" class="txt-link-white">{{$header->about_menu_7}}</a>
                     </li>
                   </ul>
                 </div>
                 <div class="footer-sitemap-list">
-                  <div class="footer-sitemap-title">Curriculum</div>
+                  <div class="footer-sitemap-title">{{$header->curriculum_menu}}</div>
                   <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                     <li>
-                      <a href="{{route('curriculum_structure')}}" class="txt-link-white">Programme Structure</a>
+                      <a href="{{route('curriculum_structure')}}" class="txt-link-white">{{$header->curriculum_menu_1}}</a>
                     </li>
                     <li>
-                      <a href="{{route('curriculum_sequence')}}" class="txt-link-white">Study Sequence</a>
+                      <a href="{{route('curriculum_sequence')}}" class="txt-link-white">{{$header->curriculum_menu_2}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="footer-sitemap-col">
                 <div class="footer-sitemap-list">
-                  <div class="footer-sitemap-title">Student Enrichment</div>
+                  <div class="footer-sitemap-title">{{$header->student_menu}}</div>
                   <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                     <li>
-                      <a href="{{route('student_development')}}" class="txt-link-white">Development and Experiential Learning</a>
+                      <a href="{{route('student_development')}}" class="txt-link-white">{{$header->student_menu_1}}</a>
                     </li>
                     <li>
-                      <a href="{{route('student_achievement')}}" class="txt-link-white">Student Achievement and Experience</a>
+                      <a href="{{route('student_achievement')}}" class="txt-link-white">{{$header->student_menu_2}}</a>
                     </li>
                   </ul>
                 </div>
                 <div class="footer-sitemap-list">
                   <div class="footer-sitemap-title">
-                    <a href="{{route('student_voices')}}" class="txt-link-white">Student Voices</a>
+                    <a href="{{route('student_voices')}}" class="txt-link-white">{{$header->student_voices_menu}}</a>
                   </div>
                 </div>
                 <div class="footer-sitemap-list">
                   <div class="footer-sitemap-title">
-                    <a href="{{route('career_prospects')}}" class="txt-link-white">Career Prospects</a>
+                    <a href="{{route('career_prospects')}}" class="txt-link-white">{{$header->career_menu}}</a>
                   </div>
                 </div>
               </div>
               <div class="footer-sitemap-col">
                 <div class="footer-sitemap-list">
-                  <div class="footer-sitemap-title">Admissions</div>
+                  <div class="footer-sitemap-title">{{$header->admissions_menu}}</div>
                   <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                     <li>
-                      <a href="{{route('admissions')}}" class="txt-link-white">Admission Requirements</a>
+                      <a href="{{route('admissions')}}" class="txt-link-white">{{$header->admissions_menu_1}}</a>
                     </li>
                     <li>
-                      <a href="{{route('admissions_programme')}}" class="txt-link-white">Programme Brochure &amp; Videos</a>
+                      <a href="{{route('admissions_programme')}}" class="txt-link-white">{{$header->admissions_menu_2}}</a>
                     </li>
                     <li>
-                      <a href="{{route('admissions')}}#tuition-fee" class="txt-link-white">Tuition Fees</a>
+                      <a href="{{route('admissions')}}#tuition-fee" class="txt-link-white">{{$header->admissions_menu_3}}</a>
                     </li>
                     <li>
-                      <a href="{{route('admissions_faq')}}" class="txt-link-white">FAQs</a>
+                      <a href="{{route('admissions_faq')}}" class="txt-link-white">{{$header->admissions_menu_4}}</a>
                     </li>
                   </ul>
                 </div>
                 <div class="footer-sitemap-list">
-                  <div class="footer-sitemap-title">Portals</div>
+                  <div class="footer-sitemap-title">{{$footer->protals}}</div>
                   <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                     <li>
                       <a href="{{$footer->url_1}}" target="_blank" class="txt-link-white">{{$footer->title_1}}</a>
@@ -120,98 +120,98 @@
           <div class="footer-sitemap-mobile">
             <div class="footer-sitemap-list">
               <a href="#" class="footer-sitemap-title w-inline-block" data-ix="footer-sitemap-btn">
-                <div>About</div><img src="{{ asset_frontend('images/expand-gold.svg') }}" loading="lazy" alt="" class="footer-sitemap-expand-icon">
+                <div>{{$header->about_menu}}</div><img src="{{ asset_frontend('images/expand-gold.svg') }}" loading="lazy" alt="" class="footer-sitemap-expand-icon">
               </a>
               <div class="footer-sitemap-expand" data-ix="footer-sitemap-expand">
                 <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                   <li>
-                    <a href="{{route('about_message')}}" class="txt-link-white">Programme Co‐Directors&#x27; Message</a>
+                    <a href="{{route('about_message')}}" class="txt-link-white">{{$header->about_menu_1}}</a>
                   </li>
                   <li>
-                    <a href="{{route('about_overview')}}" class="txt-link-white">Programme Overview</a>
+                    <a href="{{route('about_overview')}}" class="txt-link-white">{{$header->about_menu_2}}</a>
                   </li>
                   <li>
-                    <a href="{{route('about_management')}}" class="txt-link-white">Programme Management</a>
+                    <a href="{{route('about_management')}}" class="txt-link-white">{{$header->about_menu_3}}</a>
                   </li>
                   <li>
-                    <a href="{{route('about_faculty')}}" class="txt-link-white">International Academic Faculty</a>
+                    <a href="{{route('about_faculty')}}" class="txt-link-white">{{$header->about_menu_4}}</a>
                   </li>
                   <li>
-                    <a href="{{route('about_learning')}}" class="txt-link-white">Learning Environment</a>
+                    <a href="{{route('about_learning')}}" class="txt-link-white">{{$header->about_menu_5}}</a>
                   </li>
                   <li>
-                    <a href="{{route('about_news')}}" class="txt-link-white">News &amp; Events</a>
+                    <a href="{{route('about_news')}}" class="txt-link-white">{{$header->about_menu_6}}</a>
                   </li>
                   <li>
-                    <a href="{{route('about_contact_us')}}" class="txt-link-white">Contact Us</a>
+                    <a href="{{route('about_contact_us')}}" class="txt-link-white">{{$header->about_menu_7}}</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="footer-sitemap-list">
               <a href="#" class="footer-sitemap-title w-inline-block" data-ix="footer-sitemap-btn">
-                <div>Curriculum</div><img src="{{ asset_frontend('images/expand-gold.svg') }}" loading="lazy" alt="" class="footer-sitemap-expand-icon">
+                <div>{{$header->curriculum_menu}}</div><img src="{{ asset_frontend('images/expand-gold.svg') }}" loading="lazy" alt="" class="footer-sitemap-expand-icon">
               </a>
               <div class="footer-sitemap-expand" data-ix="footer-sitemap-expand">
                 <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                   <li>
-                    <a href="{{route('curriculum_structure')}}" class="txt-link-white">Programme Structure</a>
+                    <a href="{{route('curriculum_structure')}}" class="txt-link-white">{{$header->curriculum_menu_1}}</a>
                   </li>
                   <li>
-                    <a href="{{route('curriculum_sequence')}}" class="txt-link-white">Study Sequence</a>
+                    <a href="{{route('curriculum_sequence')}}" class="txt-link-white">{{$header->curriculum_menu_2}}</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="footer-sitemap-list">
               <a href="#" class="footer-sitemap-title w-inline-block" data-ix="footer-sitemap-btn">
-                <div>Student Enrichment</div><img src="{{ asset_frontend('images/expand-gold.svg') }}" loading="lazy" alt="" class="footer-sitemap-expand-icon">
+                <div>{{$header->student_menu}}</div><img src="{{ asset_frontend('images/expand-gold.svg') }}" loading="lazy" alt="" class="footer-sitemap-expand-icon">
               </a>
               <div class="footer-sitemap-expand" data-ix="footer-sitemap-expand">
                 <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                   <li>
-                    <a href="{{route('student_development')}}" class="txt-link-white">Development and Experiential Learning</a>
+                    <a href="{{route('student_development')}}" class="txt-link-white">{{$header->student_menu_1}}</a>
                   </li>
                   <li>
-                    <a href="{{route('student_achievement')}}" class="txt-link-white">Student Achievement and Experience</a>
+                    <a href="{{route('student_achievement')}}" class="txt-link-white">{{$header->student_menu_2}}</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="footer-sitemap-list">
               <a href="{{route('student_voices')}}" class="footer-sitemap-title w-inline-block">
-                <div>Student Voices</div>
+                <div>{{$header->student_voices_menu}}</div>
               </a>
             </div>
             <div class="footer-sitemap-list">
               <a href="{{route('career_prospects')}}" class="footer-sitemap-title w-inline-block">
-                <div>Career Prospects</div>
+                <div>{{$header->career_menu}}</div>
               </a>
             </div>
             <div class="footer-sitemap-list">
               <a href="#" class="footer-sitemap-title w-inline-block" data-ix="footer-sitemap-btn">
-                <div>Admissions</div><img src="{{ asset_frontend('images/expand-gold.svg') }}" loading="lazy" alt="" class="footer-sitemap-expand-icon">
+                <div>{{$header->admissions_menu}}</div><img src="{{ asset_frontend('images/expand-gold.svg') }}" loading="lazy" alt="" class="footer-sitemap-expand-icon">
               </a>
               <div class="footer-sitemap-expand" data-ix="footer-sitemap-expand">
                 <ul role="list" class="footer-sitemap-listing w-list-unstyled">
                   <li>
-                    <a href="{{route('admissions')}}" class="txt-link-white">Admission Requirements</a>
+                    <a href="{{route('admissions')}}" class="txt-link-white">{{$header->admissions_menu_1}}</a>
                   </li>
                   <li>
-                    <a href="{{route('admissions_programme')}}" class="txt-link-white">Programme Brochure &amp; Videos</a>
+                    <a href="{{route('admissions_programme')}}" class="txt-link-white">{{$header->admissions_menu_2}}</a>
                   </li>
                   <li>
-                    <a href="{{route('admissions')}}#tuition-fee" class="txt-link-white">Tuition Fees</a>
+                    <a href="{{route('admissions')}}#tuition-fee" class="txt-link-white">{{$header->admissions_menu_3}}</a>
                   </li>
                   <li>
-                    <a href="{{route('admissions_faq')}}" class="txt-link-white">FAQs</a>
+                    <a href="{{route('admissions_faq')}}" class="txt-link-white">{{$header->admissions_menu_4}}</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="footer-sitemap-list">
               <a href="#" class="footer-sitemap-title w-inline-block" data-ix="footer-sitemap-btn">
-                <div>Portals</div><img src="{{ asset_frontend('images/expand-gold.svg') }}" loading="lazy" alt="" class="footer-sitemap-expand-icon">
+                <div>{{$footer->protals}}</div><img src="{{ asset_frontend('images/expand-gold.svg') }}" loading="lazy" alt="" class="footer-sitemap-expand-icon">
               </a>
               <div class="footer-sitemap-expand" data-ix="footer-sitemap-expand">
                 <ul role="list" class="footer-sitemap-listing w-list-unstyled">

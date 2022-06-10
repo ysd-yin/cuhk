@@ -107,6 +107,24 @@
             ])
 
             @row([
+                'type' => 'textinput',
+                'field' => 'unit',
+                'title' => 'Unit',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'unit_text_1',
+                'title' => 'Unit Text 1',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'unit_text_2',
+                'title' => 'Unit Text 2',
+            ])
+
+            @row([
                 'type' => 'editor',
                 'field' => 'course_description',
                 'title' => 'Course Description',
@@ -140,6 +158,12 @@
                 'type' => 'textinput',
                 'field' => 'year_5',
                 'title' => 'Year 5 Course Title',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'notes_title',
+                'title' => 'Notes title',
             ])
 
             @row([

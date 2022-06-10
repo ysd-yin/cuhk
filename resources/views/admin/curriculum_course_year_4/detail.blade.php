@@ -29,6 +29,17 @@
     <div class="card">
         <div class="card-header">{{ $config['page_name'] }}</div>
         <div class="card-body" id="app-main">
+            @row([
+                'type' => 'textinput',
+                'field' => 'table_title_1',
+                'title' => 'Tablt Title 1',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'table_title_2',
+                'title' => 'Tablt Title 2',
+            ])
 
             @repeater([
                 'field' => 'team_1',

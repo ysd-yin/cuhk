@@ -38,13 +38,13 @@
             ]) --}}
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'title' => 'Title 1',
                 'field' => 'title_1',
             ])
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'title' => 'Title 2',
                 'field' => 'title_2',
             ])
@@ -56,7 +56,7 @@
             ]) --}}
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'title' => 'Sub title',
                 'field' => 'title',
             ])

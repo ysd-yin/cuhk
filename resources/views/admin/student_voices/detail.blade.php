@@ -53,7 +53,7 @@
             ]) --}}
 
             @row([
-                'type' => 'textarea',
+                'type' => 'editor',
                 'field' => 'post',
                 'title' => 'Post'
             ])

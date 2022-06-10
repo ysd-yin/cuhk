@@ -44,8 +44,8 @@
           </div>
         </div>
         <div class="admission-r-b" data-ix="fade-in-from-bottom">
-          <p>{{$admissions->jupas_description}}</p>
-          <div class="subtitle">{{$admissions->jupas_requirements}}</div>
+          <p>{!! editor($admissions->jupas_description) !!}</p>
+          <div class="subtitle">{!! editor($admissions->jupas_requirements) !!}</div>
           <div class="tb admission">
             <div class="tb-row bg-gold">
               <div class="tb-col admission01">
@@ -161,7 +161,7 @@
       <div class="container-full w-container" data-ix="fade-in-from-bottom">
         <div>
           <h2 class="txt-color-white">{{$admissions->tuition_title}}</h2>
-          <div class="txt-color-white">{{$admissions->tuition_description}}</div>
+          <div class="txt-color-white">{!! editor($admissions->tuition_description) !!}</div>
           <div class="btn-b m-align-center">
             <a data-w-id="3a2eeea4-c435-af02-0868-38417c39e388" href="{{$admissions->tuition_url}}" target="_blank" class="btn-arrow w-inline-block">
               <div data-is-ix2-target="1" class="img" data-w-id="3a2eeea4-c435-af02-0868-38417c39e389" data-animation-type="lottie" data-src="{{ asset_frontend('documents/btn-arrow.json') }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>

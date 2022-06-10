@@ -30,7 +30,7 @@
       <div class="student-voices-details-img"><img src="{{$student_voices_details[0]->getMedia('image')->getResizedImage(500)}}" loading="lazy" sizes="(max-width: 479px) 54vw, (max-width: 767px) 36vw, (max-width: 991px) 39vw, (max-width: 1279px) 35vw, (max-width: 1439px) 26vw, 100vw" alt="" class="img"><img src="{{ asset_frontend('images/student-voices-slide-mask-mobile2x.png') }}" loading="lazy" alt="" class="student-voices-details-img-mask"></div>
       <div class="student-voices-details-content-b">
         <div class="student-voices-details-txt-b">
-          <div class="content-name"><em>{{$student_voices_details[0]['name']}}</em></div>
+          <div class="content-name"><em>{{$student_voices_details[0]['title']}}</em></div>
           <p>{{$student_voices_details[0]['post']}}</p>
           <div class="student-voices-details-txt-quote"><img src="{{ asset_frontend('images/student-voices-graphic-quote.svg') }}" loading="lazy" alt="" class="student-voices-details-quote">
             <div>{!! editor($student_voices_details[0]['description']) !!}</div>
@@ -66,8 +66,8 @@
                   <div>{!! editor($item->description) !!}</div>
                 </div>
                 <div class="student-voices-slide-txt-info">
-                  <div class="content-name"><em>{{$item->name}}</em></div>
-                  <div>{{$item->post}}</div>
+                  <div class="content-name"><em>{{$item->title}}</em></div>
+                  <div>{!! editor($item->post) !!}</div>
                 </div>
               </div>
               <div class="student-voices-content-line"></div>

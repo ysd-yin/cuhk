@@ -34,11 +34,11 @@
       <div class="management-col">
         <div class="management-b" data-ix="card-scroll-appear">
           @if($index['medias'])
-          <img src="{{$index['medias']['image'][0]['path']}}" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 43vw, 27vw" alt="" class="img">
+          <img src="{{$index['medias']['image'][0]['path']}}" loading="lazy" alt="" class="img">
           @endif
           <div class="management-txt-b">
             <div class="content-name"><em>{{$index['name']}}</em></div>
-            <div>{{$index['post']}}</div>
+            <div>{!! editor($index['post']) !!}</div>
           </div>
           <div class="gradient-line management-line"></div>
         </div>

@@ -40,8 +40,8 @@
           $total += $curriculum_structure->unit_3;
           $total += $curriculum_structure->unit_4;
             ?>
-          <div class="structure-chart-txt01"><?=$total?></div>
-          <div class="structure-chart-txt02 txt-stroke"><span class="structure-chart-txt03">Units</span> in Total</div>
+          <div class="structure-chart-txt01">{{$curriculum_structure->unit}}</div>
+          <div class="structure-chart-txt02 txt-stroke"><span class="structure-chart-txt03">{{$curriculum_structure->unit_text_1}}</span> {{$curriculum_structure->unit_text_2}}</div>
         </div>
         <div class="structure-chart-info-b">
           <div class="structure-chart-info-txt-b">
@@ -169,92 +169,130 @@
     </div>
   </div>
   <div class="home-program-desktop">
-    <div class="home-program-img-b"><img src="{{ asset_frontend('images/program-bg2x.png') }}" loading="lazy" sizes="100vw" alt="" class="img">
-      <div data-w-id="13b163bc-3a28-5e8f-b1b8-2cef1ca346de" data-is-ix2-target="1" class="home-program-animate" data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-running.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-renderer="svg" data-default-duration="18.018017284129144" data-duration="0"></div>
+    <div class="home-program-img-b"><img src="{{ asset_frontend('images/program-bg2x.png') }}" loading="lazy" sizes="100vw"
+            alt="" class="img">
+        <div data-w-id="eedf9f81-20e3-1655-8456-6d61252a8e1c" data-is-ix2-target="1" class="home-program-animate"
+            data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-running-v02.json') }}" data-loop="1"
+            data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="18.018017284129144"
+            data-duration="0" data-ix2-initial-state="0"></div>
     </div>
     <div class="home-program-content-b">
-      <div class="container-full w-container">
-        <div class="home-program-row">
-          <div class="home-program-col" data-ix="fade-in-from-bottom">
-            <div class="home-program-bottom-txt-b"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="">
-              <div class="subtitle">Year 1-3</div>
-              <div>{{$home_data->year_1}}</div>
+        <div class="container-full w-container">
+            <div class="home-program-row">
+                <div class="home-program-col" data-ix="fade-in-from-bottom">
+                    <div class="home-program-bottom-txt-b"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="">
+                        <div class="subtitle">Year 1-3</div>
+                        <div>{{$home_data->year_1}}</div>
+                    </div>
+                </div>
+                <div class="home-program-col" data-ix="fade-in-from-bottom">
+                    <div class="home-program-bottom-txt-b"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="">
+                        <div class="subtitle">Year 4</div>
+                        <div>{{$home_data->year_4_1}}</div>
+                        <div class="home-program-dot-more" data-w-id="a92d5e77-7021-13ea-8ad0-b8839173cd68"
+                            data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1"
+                            data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                            data-default-duration="4.004003840917587" data-duration="0"></div>
+                        <div>{{$home_data->year_4_2}}
+                        </div>
+                    </div>
+                </div>
+                <div class="home-program-col" data-ix="fade-in-from-bottom">
+                    <div class="home-program-bottom-txt-b"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="">
+                        <div class="subtitle">Year 5</div>
+                        <div>{{$home_data->year_5_1}}</div>
+                        <div class="home-program-dot-more" data-w-id="db684137-764d-ce87-7451-2248a6036e1a"
+                            data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1"
+                            data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                            data-default-duration="4.004003840917587" data-duration="0"></div>
+                        <div>{{$home_data->year_5_2}}</div>
+                        <div class="home-program-bottom-list"><img src="{{ asset_frontend('images/program-icon-grad-s.svg') }}"
+                                loading="lazy" alt="" class="home-program-bottom-list-icon">
+                            <div>{{$home_data->year_5_3}}</div>
+                        </div>
+                        <div class="home-program-bottom-list"><img src="{{ asset_frontend('images/program-icon-grad-l.svg') }}"
+                                loading="lazy" alt="" class="home-program-bottom-list-icon">
+                            <div>{{$home_data->year_5_4}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-program-col" data-ix="fade-in-from-bottom">
+                    <div class="home-program-bottom-txt-b"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="">
+                        <div class="subtitle">PCLL</div>
+                        <div class="home-program-dot-more" data-w-id="6bf826ce-2358-0cfa-e6b0-dfe22682b7a9"
+                            data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1"
+                            data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                            data-default-duration="4.004003840917587" data-duration="0"></div>
+                        <div>{{$home_data->year_pcll}}</div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="home-program-col" data-ix="fade-in-from-bottom">
-            <div class="home-program-bottom-txt-b"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="">
-              <div class="subtitle">Year 4</div>
-              <div>{{$home_data->year_4_1}}</div>
-              <div class="home-program-dot-more" data-w-id="13b163bc-3a28-5e8f-b1b8-2cef1ca346f0" data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="4.004003840917587" data-duration="0"></div>
-              <div>{{$home_data->year_4_2}}</div>
-            </div>
-          </div>
-          <div class="home-program-col" data-ix="fade-in-from-bottom">
-            <div class="home-program-bottom-txt-b"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="">
-              <div class="subtitle">Year 5</div>
-              <div>{{$home_data->year_5_1}}</div>
-              <div class="home-program-dot-more" data-w-id="13b163bc-3a28-5e8f-b1b8-2cef1ca346fa" data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="4.004003840917587" data-duration="0"></div>
-              <div>{{$home_data->year_5_2}}</div>
-              <div class="home-program-bottom-list"><img src="{{ asset_frontend('images/program-icon-grad-s.svg') }}" loading="lazy" alt="" class="home-program-bottom-list-icon">
-                <div>{{$home_data->year_5_3}}</div>
-              </div>
-              <div class="home-program-bottom-list"><img src="{{ asset_frontend('images/program-icon-grad-l.svg') }}" loading="lazy" alt="" class="home-program-bottom-list-icon">
-                <div>{{$home_data->year_5_4}}</div>
-              </div>
-            </div>
-          </div>
-          <div class="home-program-col" data-ix="fade-in-from-bottom">
-            <div class="home-program-bottom-txt-b"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="">
-              <div class="subtitle">PCLL</div>
-              <div class="home-program-dot-more" data-w-id="13b163bc-3a28-5e8f-b1b8-2cef1ca3470a" data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="4.004003840917587" data-duration="0"></div>
-              <div>{{$home_data->year_pcll}}</div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="home-program-mobile">
-    <div class="home-program-img-b"><img src="{{ asset_frontend('images/program-bg2x.png') }}" loading="lazy" sizes="100vw" alt="" class="img"></div>
-    <div class="home-program-content-b">
+</div>
+<div class="home-program-mobile">
+  <div class="home-program-img-b"><img src="{{ asset_frontend('images/program-bg2x.png') }}" loading="lazy" sizes="100vw"
+          alt="" class="img"></div>
+  <div class="home-program-content-b">
       <div class="container-full w-container">
-        <div class="home-program-row">
-          <div class="home-program-col-l">
-            <div data-w-id="13b163bc-3a28-5e8f-b1b8-2cef1ca34714" data-is-ix2-target="1" class="home-program-animate-mobile" data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-running-mobile.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-renderer="svg" data-default-duration="15.015014403440953" data-duration="0"></div>
-          </div>
-          <div class="home-program-col-r">
-            <div class="home-program-bottom-txt-b" data-ix="fade-in-from-left"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="" class="home-program-dot-mobile">
-              <div class="subtitle">Year 1-3</div>
-              <div>Study BBA, LLB and University Core courses</div>
-            </div>
-            <div class="home-program-bottom-txt-b" data-ix="fade-in-from-left"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="" class="home-program-dot-mobile">
-              <div class="subtitle">Year 4</div>
-              <div>Study BBA, JD and University core courses</div>
-              <div class="home-program-dot-more" data-w-id="13b163bc-3a28-5e8f-b1b8-2cef1ca34722" data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="4.004003840917587" data-duration="0"></div>
-              <div>Flexible opt-out option: Graduate with a BBA degree or a BBA (Minor in Law) degree</div>
-            </div>
-            <div class="home-program-bottom-txt-b" data-ix="fade-in-from-left"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="" class="home-program-dot-mobile">
-              <div class="subtitle">Year 5</div>
-              <div>Full engaged in JD study</div>
-              <div class="home-program-dot-more" data-w-id="13b163bc-3a28-5e8f-b1b8-2cef1ca3472b" data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="4.004003840917587" data-duration="0"></div>
-              <div>Graduate with</div>
-              <div class="home-program-bottom-list"><img src="{{ asset_frontend('images/program-icon-grad-s.svg') }}" loading="lazy" alt="" class="home-program-bottom-list-icon">
-                <div>Bachelor’s degree</div>
+          <div class="home-program-row">
+              <div class="home-program-col-l">
+                  <div data-w-id="35ccb048-8ec1-0315-9598-fabda659d2b0" data-is-ix2-target="1"
+                      class="home-program-animate-mobile" data-animation-type="lottie"
+                      data-src="{{ asset_frontend('documents/program-running-mobile.json') }}" data-loop="0" data-direction="1"
+                      data-autoplay="0" data-renderer="svg" data-default-duration="15.015014403440953"
+                      data-duration="0"></div>
               </div>
-              <div class="home-program-bottom-list"><img src="{{ asset_frontend('images/program-icon-grad-l.svg') }}" loading="lazy" alt="" class="home-program-bottom-list-icon">
-                <div>Master’s degree</div>
+              <div class="home-program-col-r">
+                  <div class="home-program-bottom-txt-b" data-ix="fade-in-from-left"><img
+                          src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="" class="home-program-dot-mobile">
+                      <div class="subtitle">Year 1-3</div>
+                      <div>{{$home_data->year_1}}</div>
+                  </div>
+                  <div class="home-program-bottom-txt-b" data-ix="fade-in-from-left"><img
+                          src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="" class="home-program-dot-mobile">
+                      <div class="subtitle">Year 4</div>
+                      <div>{{$home_data->year_4_1}}</div>
+                      <div class="home-program-dot-more" data-w-id="13de1669-0259-5af9-3c9a-61cd665137f7"
+                          data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1"
+                          data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                          data-default-duration="4.004003840917587" data-duration="0"></div>
+                      <div>{{$home_data->year_4_2}}
+                      </div>
+                  </div>
+                  <div class="home-program-bottom-txt-b" data-ix="fade-in-from-left"><img
+                          src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="" class="home-program-dot-mobile">
+                      <div class="subtitle">Year 5</div>
+                      <div>{{$home_data->year_5_1}}</div>
+                      <div class="home-program-dot-more" data-w-id="2995db3e-123f-3565-c6f7-8906ca937c61"
+                          data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1"
+                          data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                          data-default-duration="4.004003840917587" data-duration="0"></div>
+                      <div>{{$home_data->year_5_2}}</div>
+                      <div class="home-program-bottom-list"><img src="{{ asset_frontend('images/program-icon-grad-s.svg') }}"
+                              loading="lazy" alt="" class="home-program-bottom-list-icon">
+                          <div>{{$home_data->year_5_3}}</div>
+                      </div>
+                      <div class="home-program-bottom-list"><img src="{{ asset_frontend('images/program-icon-grad-l.svg') }}"
+                              loading="lazy" alt="" class="home-program-bottom-list-icon">
+                          <div>{{$home_data->year_5_4}}</div>
+                      </div>
+                  </div>
+                  <div class="home-program-bottom-txt-b last" data-ix="fade-in-from-left"><img
+                          src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="" class="home-program-dot-mobile">
+                      <div class="subtitle">PCLL</div>
+                      <div class="home-program-dot-more" data-w-id="fe7b6105-4f54-c073-940e-a4d322a2df20"
+                          data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1"
+                          data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                          data-default-duration="4.004003840917587" data-duration="0"></div>
+                      <div>{{$home_data->year_pcll}}</div>
+                  </div>
               </div>
-            </div>
-            <div class="home-program-bottom-txt-b last" data-ix="fade-in-from-left"><img src="{{ asset_frontend('images/program-dot.svg') }}" loading="lazy" alt="" class="home-program-dot-mobile">
-              <div class="subtitle">PCLL</div>
-              <div class="home-program-dot-more" data-w-id="13b163bc-3a28-5e8f-b1b8-2cef1ca3473a" data-animation-type="lottie" data-src="{{ asset_frontend('documents/program-dot-more.json') }}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="4.004003840917587" data-duration="0"></div>
-              <div>Graduates may apply for admission to the PCLL Programme</div>
-            </div>
           </div>
-        </div>
       </div>
-    </div>
   </div>
+</div>
+</div>
 </div>
 <script>
   add_current_page = setInterval(jQ, 1000);

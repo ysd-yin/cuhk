@@ -60,19 +60,19 @@
     
 
             @row([
-                'type' => 'textarea',
+                'type' => 'editor',
                 'title' => 'Icon 1',
                 'field' => 'icon_1',
             ])
 
             @row([
-                'type' => 'textarea',
+                'type' => 'editor',
                 'title' => 'Icon 2',
                 'field' => 'icon_2',
             ])
 
             @row([
-                'type' => 'textarea',
+                'type' => 'editor',
                 'title' => 'Icon 3',
                 'field' => 'icon_3',
             ])
@@ -103,7 +103,7 @@
                 'sub_fields' =>
                 [
                     [
-                        'type' => 'textarea',
+                        'type' => 'editor',
                         'title' => 'Description',
                         'field' => 'description'
                     ],

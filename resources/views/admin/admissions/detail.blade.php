@@ -62,13 +62,13 @@
     If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
 
             @row([
-                'type' => 'textarea',
+                'type' => 'editor',
                 'field' => 'jupas_description',
                 'title' => 'Jupas Description',
             ])
 
             @row([
-                'type' => 'textinput',
+                'type' => 'editor',
                 'field' => 'jupas_requirements',
                 'title' => 'Jupas Requirements',
             ])
@@ -184,7 +184,7 @@
             ])
 
             @row([
-                'type' => 'textarea',
+                'type' => 'editor',
                 'field' => 'tuition_description',
                 'title' => 'Tuition Fee Description',
             ])

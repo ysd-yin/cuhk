@@ -54,6 +54,24 @@
 
             @row([
                 'type' => 'textinput',
+                'field' => 'unit',
+                'title' => 'Unit',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'unit_text_1',
+                'title' => 'Unit Text 1',
+            ])
+
+            @row([
+                'type' => 'textinput',
+                'field' => 'unit_text_2',
+                'title' => 'Unit Text 2',
+            ])
+
+            @row([
+                'type' => 'textinput',
                 'field' => 'unit_title_1',
                 'title' => 'Unit Title 1'
             ])

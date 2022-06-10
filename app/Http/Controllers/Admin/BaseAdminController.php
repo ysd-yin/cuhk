@@ -277,11 +277,11 @@ class BaseAdminController extends Controller
         $table_columns = collect($model->getTableColumns());
 
         if($table_columns->search('created_by')  !== false){
-            $query->with('created_user');
+            $query = $query->with('created_user');
         }
 
         if($table_columns->search('updated_by')  !== false){
-            $query->with('updated_user');
+            $query = $query->with('updated_user');
         }
         
         if($sort_field_direction = $this->getValidSortableField()){
@@ -296,25 +296,24 @@ class BaseAdminController extends Controller
                         when ($table.is_show = 0 or ($table.is_show = 1 and ($table.publish_at > NOW() or $table.offline_at < NOW()))) then 3
                     end)" . $sort_field_direction['direction'];
 
-                $query->orderByRaw($order_by_sql_str);
+                $query = $query->orderByRaw($order_by_sql_str);
             }else{
-                $query->orderBy($sort_field_direction['field'], $sort_field_direction['direction']);
+                $query = $query->orderBy($sort_field_direction['field'], $sort_field_direction['direction']);
             }
 
-            $query->orderBy($sort_field_direction['field'], $sort_field_direction['direction']);
         }else{
             if($order_by){
                 foreach ($order_by as $field => $order) {
-                    $query->orderBy($field, $order);
+                    $query = $query->orderBy($field, $order);
                 }
             }
         }
 
         if($model->hasDescriptionModel()){
-            $query->withDescription($language_id);
+            $query = $query->withDescription($language_id);
         }
 
-        $this->postsQuery(\Route::getCurrentRoute()->parameters(), $query);
+        $query = $this->postsQuery(\Route::getCurrentRoute()->parameters(), $query);
 
         if($auto_get){
 
@@ -364,7 +363,6 @@ class BaseAdminController extends Controller
         $model = new $modelClass;
 
         if(empty($id)){
-            $model->addDefaultMeta();
             $model->is_show = 1;
           
         }else{
@@ -382,9 +380,13 @@ class BaseAdminController extends Controller
             $model->languages = $model->descriptions() ? $model->descriptions->keyBy('language_id') : false;
 
         }
+
+        $model->addDefaultMeta();
+
         $this->authorize('view', $model);
         return $model;
     }
+
 
     public function getSortableFields($table_columns = []){
         $cols = collect($this->model->getTableColumns());

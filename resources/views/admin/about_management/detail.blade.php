@@ -65,7 +65,7 @@
                         'field' => 'name'
                     ],
                     [
-                        'type' => 'textarea',
+                        'type' => 'editor',
                         'title' => 'Post',
                         'field' => 'post'
                     ]

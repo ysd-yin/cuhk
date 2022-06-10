@@ -60,10 +60,10 @@
                     </div>
                   </div>
                   <div class="student-voices-slide-txt-info">
-                    <div class="content-name" data-ix="fade-in-from-left"><em>{{$item->name}}</em></div>
+                    <div class="content-name" data-ix="fade-in-from-left"><em>{{$item->title}}</em></div>
                     <ul role="list" class="w-list-unstyled">
                       <li>
-                        <div class="txt-color-bk">{{$item->post}}</div>
+                        <div class="txt-color-bk">{!! editor($item->post) !!}</div>
                       </li>
                     </ul>
                   </div>
@@ -93,8 +93,8 @@
                 <div class="student-voices-content">{!! editor($item->description) !!}</div>
               </div>
               <div class="student-voices-slide-txt-info">
-                <div class="content-name"><em>{{$item->name}}</em></div>
-                <div>{{$item->post}}</div>
+                <div class="content-name"><em>{{$item->title}}</em></div>
+                <div>{!! editor($item->post) !!}</div>
               </div>
             </div>
             <div class="student-voices-content-line"></div>

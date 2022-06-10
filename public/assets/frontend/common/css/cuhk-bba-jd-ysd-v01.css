@@ -945,12 +945,12 @@ li {
 
 .header-logo-bba {
   width: 101px;
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 
 .header-logo-law {
   width: 139px;
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 
 .header-logo-bba-jd {
@@ -1788,6 +1788,12 @@ li {
   padding-left: 2.5%;
   -webkit-perspective: 2000px;
   perspective: 2000px;
+}
+@media screen and (min-width: 2000px){
+  .management-col{
+    padding-right:7%;
+    padding-left:7%;
+  }
 }
 
 .management-b {
@@ -5443,7 +5449,7 @@ li {
   z-index: 1;
   width: 85%;
   min-height: 360px;
-  padding: 5% 5% 5% 27%;
+  padding: 5% 5% 5% 30%;
   background-image: url('../images/student-voices-details-content-bg2x.svg');
   background-position: 0% 0%;
   background-size: 100%;
@@ -5457,6 +5463,7 @@ li {
   right: auto;
   bottom: auto;
   width: 43.5%;
+  z-index: 2;
 }
 
 .student-voices-details-txt-b {
@@ -6466,7 +6473,7 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
   .heading.txt-color-purple.home-career-title {
     font-size: 70px;
     line-height: 82px;
@@ -6489,11 +6496,11 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
     position: relative;
     display: inline-block;
     overflow: visible;
-    width: 72%;
+    width: 71%;
     height: auto;
     max-width: 1050px;
     margin-top: 10px;
-    padding: 0px 5% 0px 0%;
+    padding: 0px 1% 0px 0%;
     float: right;
   }
 

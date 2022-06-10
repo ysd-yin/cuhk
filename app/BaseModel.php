@@ -711,20 +711,34 @@ class BaseModel extends Model
     public function addDefaultMeta(){
         $columns = $this->getTableColumns();
         foreach ($columns as $column) {
-            $this->$column = null;
+            if(!isset($this->$column)){
+                $this->$column = null;
+            }
         }
 
         if($this->hasDescriptionModel()){
             $columns = $this->getTableColumns($this->descriptionTable());
             $language_ids = active_langs()->pluck('id')->toArray();
             $languages_data = [];
-            foreach ($language_ids as $language_id) {
-                $languages_data[$language_id] = [];
 
-                foreach ($columns as $column) {
-                    $languages_data[$language_id][$column] = null;
+            foreach ($language_ids as $language_id) {
+
+                if(!isset($this->languages[$language_id])){
+                    $description_class = $this->getDescriptionModel();
+
+                    $languages_data[$language_id] = new $description_class;
+
+                    foreach ($columns as $column) {
+                        if(!isset($this->languages[$language_id]->$column)){
+                            $languages_data[$language_id]->$column = null;
+                        }
+                    }
+
+                }else{
+                    $languages_data[$language_id] = $this->languages[$language_id];
                 }
             }
+
             $this->languages = $languages_data;
         }
 

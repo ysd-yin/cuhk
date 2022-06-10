@@ -29,6 +29,11 @@
     <div class="card">
         <div class="card-header">{{ $config['page_name'] }}</div>
         <div class="card-body" id="app-main">
+            @row([
+                'type' => 'textinput',
+                'field' => 'protals',
+                'title' => 'Portals Title'
+            ])
 
             @row([
                 'type' => 'textinput',

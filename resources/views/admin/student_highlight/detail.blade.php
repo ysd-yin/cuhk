@@ -42,7 +42,7 @@
 
             @row([
                 'type' => 'textinput',
-                'field' => 'name',
+                'field' => 'title',
                 'title' => 'Name'
             ])
 
@@ -53,7 +53,7 @@
             ]) --}}
 
             @row([
-                'type' => 'textarea',
+                'type' => 'editor',
                 'field' => 'post',
                 'title' => 'Post'
             ])
