@@ -654,6 +654,7 @@ li {
 }
 
 .txt-color-bk {
+  display:inline-block;
   color: #222;
 }
 
@@ -663,7 +664,7 @@ li {
 
 .content-name {
   margin-bottom: 5px;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 31px;
   font-weight: 700;
 }
@@ -1804,6 +1805,7 @@ li {
 }
 
 .management-txt-b {
+  font-size:16px;
   position: relative;
   z-index: 1;
   min-height: 40%;
@@ -4121,7 +4123,7 @@ li {
 
 .development-listing-item {
   width: 50%;
-  padding-right: 5%;
+  /* padding-right: 5%; */
 }
 
 .development-b02-row {
@@ -9890,11 +9892,11 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
   font-style: normal;
   font-display: swap;
 }
-ul {
+.achievement-list-all ul{
   list-style: none;
 }
 
-ul li::before{
+.achievement-list-all ul li::before{
   /* color:#9b7759; */
   content: "\2022";
   color: #9b7759;
