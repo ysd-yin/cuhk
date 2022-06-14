@@ -612,7 +612,7 @@
                     {{$home_page->second_title_1}}</div>
             </div>
             <div class="txt-mask" style="display:unset;">
-                <div class="heading txt-color-purple align-right" data-ix="txt-appear-from-bottom"><span
+                <div class="heading txt-color-purple align-right learning_2" data-ix="txt-appear-from-bottom" style="float:left;"><span
                         class="txt-stroke" data-ix="txt-appear-from-bottom">{{$home_page->second_title_2}}</span></div>
             </div>
         </div>
@@ -905,6 +905,7 @@
             <div class="txt-mask">
                 <div class="heading txt-color-purple" data-ix="txt-appear-from-bottom">{{$home_data->fifth_title_1}}</div>
             </div>
+            &nbsp
             <div class="txt-mask">
                 <div class="heading txt-color-purple txt-stroke" data-ix="txt-appear-from-bottom">{{$home_data->fifth_title_2}}</div>
             </div>

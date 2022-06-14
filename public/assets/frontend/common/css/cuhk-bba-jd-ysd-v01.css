@@ -1783,7 +1783,7 @@ li {
 }
 
 .management-col {
-  width: 25%;
+  max-width: 33%;
   margin-bottom: 5%;
   padding-right: 2.5%;
   padding-left: 2.5%;
@@ -1800,9 +1800,9 @@ li {
     padding-right:7%;
     padding-left:7%;
   } */
-  .management-col {
+  /* .management-col {
     width: 33%;;
-  }
+  } */
 }
 
 .management-b {
@@ -2227,7 +2227,8 @@ li {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 900px;
+  /* max-width: 900px; */
+  max-width:90%;
   padding-right: 5%;
   padding-left: 5%;
 }
@@ -6222,6 +6223,11 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
   opacity: 0;
 }
 
+@media screen and (min-width: 1184px) {
+  .learning_2{
+    padding-left:40%;
+  }
+}
 @media screen and (min-width: 1280px) {
   .structure-subcol-l {
     width: 50%;

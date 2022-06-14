@@ -8,42 +8,6 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-// 
-import tinymce from 'tinymce/tinymce';
-import 'tinymce/icons/default';
-import 'tinymce/themes/silver';
-import 'tinymce/plugins/paste';
-import 'tinymce/plugins/hr';
-import 'tinymce/plugins/advlist';
-import 'tinymce/plugins/autolink';
-import 'tinymce/plugins/lists';
-import 'tinymce/plugins/link';
-import 'tinymce/plugins/image';
-import 'tinymce/plugins/charmap';
-import 'tinymce/plugins/print';
-import 'tinymce/plugins/preview';
-import 'tinymce/plugins/anchor';
-import 'tinymce/plugins/textcolor';
-import 'tinymce/plugins/searchreplace';
-import 'tinymce/plugins/visualblocks';
-import 'tinymce/plugins/code';
-import 'tinymce/plugins/fullscreen';
-import 'tinymce/plugins/insertdatetime';
-import 'tinymce/plugins/media';
-import 'tinymce/plugins/table';
-import 'tinymce/plugins/contextmenu';
-import 'tinymce/plugins/code';
-import 'tinymce/plugins/help';
-import 'tinymce/plugins/wordcount';
-import 'tinymce/plugins/pagebreak';
-import 'tinymce/plugins/nonbreaking';
-import 'tinymce/plugins/visualchars';
-import 'tinymce/plugins/save';
-import 'tinymce/plugins/directionality';
-import 'tinymce/plugins/emoticons';
-import 'tinymce/plugins/template';
-import 'tinymce/plugins/emoticons/js/emojis';
-//
 import BootstrapVue from 'bootstrap-vue';
 import VJstree from 'vue-jstree';
 import vue2Dropzone from 'vue2-dropzone';
@@ -184,11 +148,6 @@ var editorParams = {
                     "ffffff", "",
                 ],
                 templates: [
-                    {
-                        title: 'Register Button Example',
-                        description: 'Adds a Register Button Example',
-                        content: '<a href="#" class="content-link-btn w-inline-block" data-ix="content-link-btn">Register by 24 May</a>'
-                      },
                 ],
                 file_picker_types: 'image',
                 file_picker_callback: function (cb, value, meta) {
