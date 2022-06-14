@@ -56,7 +56,10 @@
               <?php
               $image_count = $loop->index;
               ?>
-              <div class="achievement-slide w-slide"><img src="{{$item2['medias']['image'][0]['path']}}" loading="lazy" sizes="(max-width: 991px) 90vw, 59vw" alt="" class="achievement-slide-img">
+              <div class="achievement-slide w-slide">
+                @if(isset($item2['medias']['image'][0]))
+                  <img src="{{$item2['medias']['image'][0]['path']}}" loading="lazy" sizes="(max-width: 991px) 90vw, 59vw" alt="" class="achievement-slide-img">
+                @endif
                 @if(isset($item2['title']))
                 <div class="achievement-img-txt">
                   <div>{{$item2['title']}}</div>

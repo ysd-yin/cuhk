@@ -612,7 +612,7 @@
                     {{$home_page->second_title_1}}</div>
             </div>
             <div class="txt-mask" style="display:unset;">
-                <div class="heading txt-color-purple align-right" data-ix="txt-appear-from-bottom" style="float:left"><span
+                <div class="heading txt-color-purple align-right" data-ix="txt-appear-from-bottom"><span
                         class="txt-stroke" data-ix="txt-appear-from-bottom">{{$home_page->second_title_2}}</span></div>
             </div>
         </div>

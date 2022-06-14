@@ -148,9 +148,9 @@
         </div>
       </div>
     </div>
+    <div id="tuition-fee"></div>
   </div>
 </div>
-<div id="tuition-fee"></div>
 <div class="bottom-banner" data-ix="study-sequence-course">
   @if($image = $admissions->getMedia('tuition_banner'))
     <div class="tuition-bg" style="background-image:url('{{ $image->getResizedImage(2000) }}')"></div>

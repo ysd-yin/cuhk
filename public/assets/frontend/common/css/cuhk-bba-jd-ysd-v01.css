@@ -1783,17 +1783,25 @@ li {
 }
 
 .management-col {
-  width: 33.33%;
+  width: 25%;
   margin-bottom: 5%;
   padding-right: 2.5%;
   padding-left: 2.5%;
   -webkit-perspective: 2000px;
   perspective: 2000px;
 }
-@media screen and (min-width: 2000px){
-  .management-col{
+@media screen and (max-width: 1300px){
+  .nav-dropdown div{
+    font-size:20px;
+  }
+}
+@media screen and (max-width: 1700px){
+  /* .management-col{
     padding-right:7%;
     padding-left:7%;
+  } */
+  .management-col {
+    width: 33%;;
   }
 }
 
@@ -1808,7 +1816,7 @@ li {
   font-size:16px;
   position: relative;
   z-index: 1;
-  min-height: 40%;
+  min-height: 30%;
   margin-top: -45%;
   padding: 30px 30px 30px 25%;
   background-image: url('../images/management-mask.svg');

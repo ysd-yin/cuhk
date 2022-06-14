@@ -57,12 +57,18 @@
                     [
                         'type' => 'image-upload',
                         'title' => 'Image',
-                        'field' => 'image'
+                        'field' => 'image',
+                        'options' => [
+                            'width' => '20%'
+                        ]
                     ],
                     [
                         'type' => 'textinput',
                         'title' => 'Name',
-                        'field' => 'name'
+                        'field' => 'name',
+                        'options' => [
+                            'width' => '30%'
+                        ]
                     ],
                     [
                         'type' => 'editor',

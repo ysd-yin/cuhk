@@ -31,7 +31,7 @@
       <div class="student-voices-details-content-b">
         <div class="student-voices-details-txt-b">
           <div class="content-name"><em>{{$student_voices_details[0]['title']}}</em></div>
-          <p>{{$student_voices_details[0]['post']}}</p>
+          <p>{!! editor($student_voices_details[0]['post']) !!}</p>
           <div class="student-voices-details-txt-quote"><img src="{{ asset_frontend('images/student-voices-graphic-quote.svg') }}" loading="lazy" alt="" class="student-voices-details-quote">
             <div>{!! editor($student_voices_details[0]['description']) !!}</div>
           </div>
