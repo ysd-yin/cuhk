@@ -1783,7 +1783,8 @@ li {
 }
 
 .management-col {
-  max-width: 33%;
+  /* max-width: 33%; */
+  width:33%;
   margin-bottom: 5%;
   padding-right: 2.5%;
   padding-left: 2.5%;
@@ -7753,6 +7754,16 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
   }
 }
 
+@media screen and (min-width: 2000px) {
+  .management-col{
+    margin:100px auto;
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+  /* .management-col{
+    max-width:33%;
+  } */
+}
 @media screen and (max-width: 767px) {
   body {
     font-size: 17px;
