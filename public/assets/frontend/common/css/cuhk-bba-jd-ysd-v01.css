@@ -7755,10 +7755,14 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
 }
 
 @media screen and (min-width: 2000px) {
+  .management-row{
+    width: 70%;
+    margin: 0 auto;
+  }
   .management-col{
     margin:100px auto;
-    padding-right: 7%;
-    padding-left: 7%;
+    /* padding-right: 7%;
+    padding-left: 7%; */
   }
   /* .management-col{
     max-width:33%;
