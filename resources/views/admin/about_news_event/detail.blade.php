@@ -41,12 +41,32 @@
                 'title' => 'Date'
             ])
 
-            @row([
+            {{-- @row([
                 'type' => 'image-upload',
                 'field' => 'thumbnail',
                 'title' => 'Thumbnail'
-            ])
+            ]) --}}
 
+            @row([
+                'type' => 'radio',
+                'field' => 'effect',
+                'title' => 'Show Effect',
+                'options' => [
+                    'default' => 0,
+                    'value_key' => 'value',
+                    'title_key' => 'title',
+                    'list' => [
+                        [
+                            'title' => 'Yes',
+                            'value' => 1,
+                        ],
+                        [
+                            'title' => 'No',
+                            'value' => 0,
+                        ],
+                    ]
+                ]
+            ])
 
             @row([
                 'type' => 'editor',

@@ -15,9 +15,11 @@
     </div>
   </div>
   <div class="news-events-details-heading-content">
-    @if($image = $news[0]->getMedia('thumbnail'))
+    {{-- @if($image = $news[0]->getMedia('thumbnail')) --}}
+    @if($news[0]->effect == "1")
       <div class="news-events-details-graphic-l" data-ix="news-events-details-graphic-l"><img src="{{ asset_frontend('images/news-events-details-graphic-l012x.svg') }}" loading="lazy" alt="" class="news-events-details-graphic-l01" data-ix="bg-graphic-initial"><img src="{{ asset_frontend('images/news-events-details-graphic-l032x.svg') }}" loading="lazy" alt="" class="news-events-details-graphic-l03" data-ix="bg-graphic-initial"><img src="{{ asset_frontend('images/news-events-details-graphic-l022x.svg') }}" loading="lazy" alt="" class="news-events-details-graphic-l02" data-ix="bg-graphic-initial"></div>
       <div class="news-events-details-graphic-r w-clearfix" data-ix="news-events-details-graphic-r"><img src="{{ asset_frontend('images/news-events-details-graphic-r012x.svg') }}" loading="lazy" alt="" class="news-events-details-graphic-r01" data-ix="bg-graphic-initial"><img src="{{ asset_frontend('images/news-events-details-graphic-r022x.svg') }}" loading="lazy" alt="" class="news-events-details-graphic-r03" data-ix="bg-graphic-initial"><img src="{{ asset_frontend('images/news-events-details-graphic-l022x.svg') }}" loading="lazy" alt="" class="news-events-details-graphic-r02" data-ix="bg-graphic-initial"></div>
+    {{-- @endif --}}
     @endif
     <div class="container-900 w-container">
       <div class="news-events-details-heading-b" data-ix="fade-in-from-bottom">
@@ -32,9 +34,9 @@
     </div>
   </div>
   <div class="container-900 w-container" data-ix="fade-in-from-bottom">
-    @if($image = $news[0]->getMedia('thumbnail'))
+    {{-- @if($image = $news[0]->getMedia('thumbnail'))
       <img src="{{$image->getResizedImage(1000)}}" loading="lazy" sizes="(max-width: 991px) 90vw, (max-width: 1279px) 81vw, (max-width: 1439px) 60vw, 100vw" alt="" class="news-events-details-img">
-    @endif
+    @endif --}}
     {!!editor($news[0]->content)!!}
     <div class="news-events-details-bottom">
       <div class="line-animate" data-ix="line-animate"></div>

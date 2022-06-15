@@ -946,12 +946,12 @@ li {
 
 .header-logo-bba {
   width: 101px;
-  /* margin-right: 15px; */
+  margin-right: 15px;
 }
 
 .header-logo-law {
   width: 139px;
-  /* margin-right: 15px; */
+  margin-right: 15px;
 }
 
 .header-logo-bba-jd {
@@ -1238,7 +1238,7 @@ li {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   color: #5c33ad;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 29px;
   font-weight: 600;
   text-decoration: none;
@@ -1781,11 +1781,15 @@ li {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+.management-col p{
+  line-height:22px;
+}
 
 .management-col {
   /* max-width: 33%; */
   width:33%;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
+  margin-bottom: 2%;
   padding-right: 2.5%;
   padding-left: 2.5%;
   -webkit-perspective: 2000px;
@@ -1819,7 +1823,8 @@ li {
   z-index: 1;
   min-height: 30%;
   margin-top: -45%;
-  padding: 30px 30px 30px 25%;
+  /* padding: 30px 30px 0px 25%; */
+  padding: 10px 10px 0px 25%;
   background-image: url('../images/management-mask.svg');
   background-position: 50% 0%;
   background-size: 100%;
@@ -2229,7 +2234,7 @@ li {
   z-index: 1;
   width: 100%;
   /* max-width: 900px; */
-  max-width:90%;
+  /* max-width:70%; */
   padding-right: 5%;
   padding-left: 5%;
 }
@@ -5384,7 +5389,7 @@ li {
   top: 0%;
   right: auto;
   bottom: auto;
-  width: 43.5%;
+  max-width: 43.5%;
 }
 
 .student-voices-content-line {
@@ -5457,6 +5462,7 @@ li {
 }
 
 .student-voices-details-content-b {
+  font-size:17px;
   position: relative;
   z-index: 1;
   width: 85%;
@@ -5474,7 +5480,7 @@ li {
   top: 0%;
   right: auto;
   bottom: auto;
-  width: 43.5%;
+  max-width: 37%;
   z-index: 2;
 }
 
@@ -6223,7 +6229,11 @@ html.w-mod-js *[data-ix="student-voices-expand"] {
 html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
   opacity: 0;
 }
-
+@media screen and (min-width: 1184px) {
+  .container-900{
+    max-width:70%;
+  }
+}
 @media screen and (min-width: 1184px) {
   .learning_2{
     padding-left:40%;
@@ -6489,8 +6499,30 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
     line-height: 27px;
   }
 }
+@media screen and (max-width:934px){
+  .management-txt-b {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width:935px){
+  .management-txt-b {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 5px;
+  }
+}
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1233px) {
   .heading.txt-color-purple.home-career-title {
     font-size: 70px;
     line-height: 82px;
@@ -6513,7 +6545,7 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
     position: relative;
     display: inline-block;
     overflow: visible;
-    width: 71%;
+    width: 68%;
     height: auto;
     max-width: 1050px;
     margin-top: 10px;
@@ -7754,13 +7786,13 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
   }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1500px) {
   .management-row{
     width: 70%;
     margin: 0 auto;
   }
   .management-col{
-    margin:100px auto;
+    /* margin:100px auto; */
     /* padding-right: 7%;
     padding-left: 7%; */
   }
@@ -7768,7 +7800,25 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
     max-width:33%;
   } */
 }
+@media screen and (max-width: 607px) {
+  .management-col{
+    width:100% !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .management-col{
+    width:50%;
+  }
+}
+.student-voices-details-txt-quote div{
+  overflow:scroll;
+  height:900px;
+}
 @media screen and (max-width: 767px) {
+  .student-voices-details-txt-quote div{
+    overflow:scroll;
+    height:700px;
+  }
   body {
     font-size: 17px;
     line-height: 25px;
@@ -9207,6 +9257,8 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
   }
 
   .student-voices-details-txt-b {
+    /* max-height: 800px; */
+    /* overflow: scroll; */
     z-index: 2;
     -webkit-transform: perspective(2000px);
     transform: perspective(2000px);
@@ -9293,7 +9345,11 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
     margin-left: 0px;
   }
 }
-
+@media screen and (max-width: 1500px) {
+  .student-voices-details-img{
+    width:35%;
+  }
+}
 @media screen and (max-width: 479px) {
   .section-content.home-growing {
     padding-bottom: 60px;

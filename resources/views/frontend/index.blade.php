@@ -974,7 +974,7 @@
                                         <div class="content-name" data-ix="fade-in-from-left"><em>{{$item->name}}</em></div>
                                         <ul role="list" class="w-list-unstyled">
                                             <li>
-                                                <div class="txt-color-bk">{{$item->post}}</div>
+                                                <div class="txt-color-bk">{!! editor($item->post)!!}</div>
                                             </li>
                                         </ul>
                                     </div>
