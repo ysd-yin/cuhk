@@ -77,6 +77,27 @@
 
     If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
 
+    @row([
+        'type' => 'radio',
+        'field' => 'effect',
+        'title' => 'Show Effect',
+        'options' => [
+            'default' => 0,
+            'value_key' => 'value',
+            'title_key' => 'title',
+            'list' => [
+                [
+                    'title' => 'Yes',
+                    'value' => 1,
+                ],
+                [
+                    'title' => 'No',
+                    'value' => 0,
+                ],
+            ]
+        ]
+    ])
+
             @row([
                 'type' => 'image-upload',
                 'field' => 'image',

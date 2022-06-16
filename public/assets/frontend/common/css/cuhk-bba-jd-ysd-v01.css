@@ -7812,12 +7812,15 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
 }
 .student-voices-details-txt-quote div{
   overflow:scroll;
-  height:900px;
+  max-height:900px;
 }
 @media screen and (max-width: 767px) {
+  .section-home-banner{
+    height:35vh;
+  }
   .student-voices-details-txt-quote div{
     overflow:scroll;
-    height:700px;
+    max-height:700px;
   }
   body {
     font-size: 17px;

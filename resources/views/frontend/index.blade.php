@@ -556,8 +556,13 @@
     <div data-delay="5000" data-animation="over" class="home-banner-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="10" data-duration="600" data-infinite="true" id="home-banner-slider">
       <div class="w-slider-mask">
         @foreach ($home_banner as $item)
-        <div class="home-banner-slide w-slide" data-ix="home-banner-slide">
+        <div class="home-banner-slide w-slide" 
+        @if($item->effect == '1')
+        data-ix="home-banner-slide"
+        @endif
+        >
             <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url({{$item->getMedia('image')->getResizedImage(2000)}})"></div>
+            {{-- <img class="home-banner-img banner0{{$loop->index+1}}" src="{{$item->getMedia('image')->getResizedImage(2000)}}" data-ix="home-banner-img"> --}}
             <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
               <div class="home-banner-tag-arrow"></div>
               @if($item->title != '')
