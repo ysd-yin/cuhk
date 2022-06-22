@@ -56,7 +56,9 @@
 
 <b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
 
-    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br>
+    
+    <b>If it is an external website link, please include https:// at the beginning, for example, https://www.cuhk.edu.hk</b><br>
     
 
             @row([
@@ -118,7 +120,9 @@
 
 <b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
 
-    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br>
+    
+    <b>If it is an external website link, please include https:// at the beginning, for example, https://www.cuhk.edu.hk</b><br>
 
             @row([
                 'type' => 'textinput',
@@ -144,9 +148,11 @@
                 'field' => 'forth_url',
             ])
 
-            <b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
 
-                If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br>
+    
+    <b>If it is an external website link, please include https:// at the beginning, for example, https://www.cuhk.edu.hk</b><br>
 
             @row([
                 'type' => 'textinput',
@@ -221,7 +227,9 @@
 
 <b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
 
-    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br>
+    
+    <b>If it is an external website link, please include https:// at the beginning, for example, https://www.cuhk.edu.hk</b><br>
 
             @row([
                 'type' => 'textinput',
@@ -249,7 +257,9 @@
 
 <b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
 
-    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br>
+    
+    <b>If it is an external website link, please include https:// at the beginning, for example, https://www.cuhk.edu.hk</b><br>
 
             @row([
                 'type' => 'textinput',

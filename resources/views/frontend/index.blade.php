@@ -562,7 +562,7 @@
         data-ix="home-banner-slide"
         @endif
         >
-          <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url({{$item3->getMedia('image')->getResizedImage(2000)}})"></div>
+          <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url('{{$item3->getMedia('image')->getResizedImage(2000)}}')"></div>
             {{-- <img class="home-banner-img banner0{{$loop->index+1}}" src="{{$item->getMedia('image')->getResizedImage(2000)}}" data-ix="home-banner-img"> --}}
             @if($item3->title != '')
             <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
@@ -597,8 +597,15 @@
                 </div>
               </div>
               @if(isset($item2->url))
+              <?php
+              $first_4 = substr($item2->url,0,4);
+              $target="_self";
+              if($first_4 == 'http'){
+                $target="_blank";
+              }
+              ?>
               <div class="home-banner-btn-b">
-                <a data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de629" href="{{$item2->url}}" class="btn-arrow w-inline-block">
+                <a data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de629" href="{{$item2->url}}" target="<?=$target?>" class="btn-arrow w-inline-block">
                   <div data-is-ix2-target="1" class="img" data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de62a" data-animation-type="lottie" data-src="{{asset_frontend('documents/btn-arrow.json')}}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
                 </a>
               </div>

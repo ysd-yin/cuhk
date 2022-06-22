@@ -91,7 +91,9 @@
 
 <b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
 
-    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br>
+
+    <b>If it is an external website link, please include https:// at the beginning, for example, https://www.cuhk.edu.hk</b><br>
 
             @row([
                 'type' => 'image-upload',
@@ -111,9 +113,11 @@
                 'title' => ' Right URL'
             ])  
             
-             <b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
+<b>If the link is a internal page, e.g. about-programme-overview (do not contain "/" at the front) <br>
 
-                If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br><br>
+    If the link is a internal file, e.g. /storage/media/Admissions/brochure.pdf (Please contain "/" at the front)</b><br>
+    
+    <b>If it is an external website link, please include https:// at the beginning, for example, https://www.cuhk.edu.hk</b><br>
         </div>
         @include('admin.base.footer') 
     </div>
