@@ -554,24 +554,26 @@
     </div>
   <div class="section-home-banner wf-section">
     <div data-delay="5000" data-animation="over" class="home-banner-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="10" data-duration="600" data-infinite="true" id="home-banner-slider">
-      <div class="w-slider-mask">
-        @foreach ($home_banner as $item)
+      <div class="w-slider-mask"> <!-- //Image  -->
+        @foreach ($home_banner as $item3) 
+        @if($item3->getMedia('image') != '')
         <div class="home-banner-slide w-slide" 
-        @if($item->effect == '1')
+        @if($item3->effect == '1')
         data-ix="home-banner-slide"
         @endif
         >
-            <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url({{$item->getMedia('image')->getResizedImage(2000)}})"></div>
+          <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url({{$item3->getMedia('image')->getResizedImage(2000)}})"></div>
             {{-- <img class="home-banner-img banner0{{$loop->index+1}}" src="{{$item->getMedia('image')->getResizedImage(2000)}}" data-ix="home-banner-img"> --}}
+            @if($item3->title != '')
             <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
               <div class="home-banner-tag-arrow"></div>
-              @if($item->title != '')
                 <div class="home-banner-tag-txt-b">
-                  <div>{!! editor($item->title) !!}</div>
+                  <div>{!! editor($item3->title) !!}</div>
                 </div>
-              @endif
             </div>
+            @endif
           </div>
+          @endif
         @endforeach
       </div>
       <div class="hidden w-slider-arrow-left"></div>
@@ -581,6 +583,7 @@
     <div data-delay="4000" data-animation="fade" class="home-banner-txt-slider w-slider" id="home-banner-txt-slider">
       <div class="home-banner-txt-slide-mask w-slider-mask">
         @foreach ($home_banner as $item2)
+        @if($item2->getMedia('image') != '')
         <div class="home-banner-txt-slide w-slide" data-ix="home-thumbnail-slide">
             <div class="home-banner-txt-b active">
               <div>
@@ -602,6 +605,7 @@
               @endif
             </div>
           </div>
+          @endif
         @endforeach
       </div>
       <div class="hide w-slider-arrow-left"></div>

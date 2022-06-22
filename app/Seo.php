@@ -27,7 +27,7 @@ class Seo extends BaseModel
             $seo['og_image'] = $image;
         }else{
             $seo_model = $mainModel->seo ?? $systemSetting;
-            $seo['og_image'] = $seo_model->getMedia('og_image')->path ?? null;
+            $seo['og_image'] = $seo_model->getMedia('og_image')->path ?? $systemSetting->getMedia('og_image')->path ?? null;
         }
 
         return $seo;
@@ -43,13 +43,13 @@ class Seo extends BaseModel
                 if(!$model){
                     continue;
                 }
-                if(isset($model->seo->language->title) && !empty($model->seo->language->title)){
-                    array_push($modelsTitle, $model->seo->language->title);
+                if(isset($model->seo->title) && !empty($model->seo->title)){
+                    array_push($modelsTitle, $model->seo->title);
                 }
                 $parent = $model->parent;
                 while ($parent) {
-                    if(isset($parent->seo->language->title) && !empty($parent->seo->language->title)){
-                        array_push($modelsTitle, $parent->seo->language->title);
+                    if(isset($parent->seo->title) && !empty($parent->seo->title)){
+                        array_push($modelsTitle, $parent->seo->title);
                     }
                     $parent = $parent->parent;
                 }

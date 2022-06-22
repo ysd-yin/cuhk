@@ -79,7 +79,7 @@
               </div>
             </div>
             <div class="development-b01-col-txt">
-              <div>BBA-JD students enjoy an integrated student advising service jointly offered by CUHK Business School and CUHK LAW. An academic advisor from each Faculty as well as the BBA-JD Programme Team will provide guidance on both academic development and pastoral care, ensuring that you have to tools to create a dynamic and rewarding university experience for yourself. </div>
+              <div>{!! editor($student_development->bottom_content) !!}</div>
             </div>
           </div>
         </div>

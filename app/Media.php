@@ -83,7 +83,7 @@ class Media extends BaseModel
         if(!Storage::exists($resizedPath)){
             if(config('filesystems.default') == 'public'){
                 $need_resize = str_replace("www.", '', config('app.url')) == str_replace("www.", '', url(''));
-            }elseif(config('filesystems.default') == 'ftp'){
+            }else if(in_array(config('filesystems.default'), ['ftp', 'sftp'])){
                 $need_resize = true;
             }
         }

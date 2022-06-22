@@ -50,7 +50,7 @@
           <div class="study-sequence-year-content-b" data-ix="study-sequence-year-content-b">
             <div class="study-sequence-year-icon jd"></div>
             <div class="study-sequence-year-txt-b">
-              <div class="study-sequence-year-txt01">{{$curriculum_sequence->year_1_top_unit}}</div>
+              <div class="study-sequence-year-txt01">{{$curriculum_sequence->year_1_bottom_unit}}</div>
               <div class="study-sequence-year-txt02">{{$curriculum_sequence->year_1_bottom}}</div>
             </div>
           </div>

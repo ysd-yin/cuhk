@@ -41,7 +41,7 @@ h2 {
 }
 
 p {
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 li {
@@ -2751,6 +2751,8 @@ li {
 }
 
 .faculty-row {
+  width:70%;
+  margin:0 auto;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2881,6 +2883,8 @@ li {
 }
 
 .faculty-row-mobile {
+  width:70%;
+  margin: 0 auto;
   position: relative;
   display: none;
   margin-top: 45px;
@@ -9436,11 +9440,11 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
   }
 
   .home-banner-img.banner01 {
-    background-image: url('../images/home-banner01-mobile2x.jpg');
+    /* background-image: url('../images/home-banner01-mobile2x.jpg'); */
   }
 
   .home-banner-img.banner02 {
-    background-image: url('../images/home-banner02-mobile2x.jpg');
+    /* background-image: url('../images/home-banner02-mobile2x.jpg'); */
   }
 
   .codirectors-msg-img-content-mobile {

@@ -17,8 +17,11 @@ class AboutNewsController extends BaseFrontendController
     {
         return parent::output(function($data){
             $data['about_news'] = \App\AboutNewsEvent::online()->arrange()->get();
-            $data['news_page'] = \App\NewsPage::withDescription()->online()->firstOrFail();
+            $data['news_page'] = \App\NewsPage::online()->first();
+            // print_r($data['news_page']);
             $data['seo'] = $this->getSeo($data['news_page']);
+            // print_r($data['seo']);
+            // exit;
             return view('frontend.about_news', $data);
         });
     }
