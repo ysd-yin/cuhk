@@ -32,7 +32,8 @@
 
             @row([
                 'type' => 'image-upload',
-                'field' => 'image (500 width X 533 height px)',
+                'field' => 'image',
+                'title' => 'image (500 width X 533 height px)',
             ])
 
             @row([
