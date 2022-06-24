@@ -36,7 +36,7 @@
               <div class="admission-l-txt02">Code: {{$admissions->jupas_code}}</div>
             </div>
             <div class="admission-l-btn-b">
-              <a data-w-id="b382882b-6a90-b3e7-cfc1-2a1bb703c7f7" href="{{$admissions->url}}" class="admission-l-btn w-inline-block">
+              <a data-w-id="b382882b-6a90-b3e7-cfc1-2a1bb703c7f7" href="{{$admissions->url}}" target="_blank" class="admission-l-btn w-inline-block">
                 <div>Apply Now</div>
                 <div data-is-ix2-target="1" class="admission-l-btn-arrow" data-w-id="b382882b-6a90-b3e7-cfc1-2a1bb703c7fb" data-animation-type="lottie" data-src="{{ asset_frontend('documents/btn-arrow-white.json') }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
               </a>
@@ -78,12 +78,12 @@
               <div class="admission-l-txt02">{{$admissions->non_jupas_title}}</div>
             </div>
             <div class="admission-l-btn-b">
-              <a data-w-id="88af4511-1997-6b5f-7d39-6ff04b8fe1fc" href="{{$admissions->non_jupas_url}}" class="admission-l-btn w-inline-block">
+              <a data-w-id="88af4511-1997-6b5f-7d39-6ff04b8fe1fc" href="{{$admissions->non_jupas_url}}" target="_blank" class="admission-l-btn w-inline-block">
                 <div><strong>{{$admissions->apply_non_jupas_title}}</strong></div>
                 <div data-is-ix2-target="1" class="admission-l-btn-arrow" data-w-id="88af4511-1997-6b5f-7d39-6ff04b8fe1ff" data-animation-type="lottie" data-src="{{ asset_frontend('documents/btn-arrow-white.json') }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
               </a>
               <div class="admission-l-line"></div>
-              <a data-w-id="67a60c37-ee39-e17b-69b2-d7bf485b83e5" href="{{$admissions->apply_internal_url}}" class="admission-l-btn w-inline-block">
+              <a data-w-id="67a60c37-ee39-e17b-69b2-d7bf485b83e5" href="{{$admissions->apply_internal_url}}" target="_blank" class="admission-l-btn w-inline-block">
                 <div><strong>{{$admissions->apply_internal_title}}</strong></div>
                 <div data-is-ix2-target="1" class="admission-l-btn-arrow" data-w-id="67a60c37-ee39-e17b-69b2-d7bf485b83e9" data-animation-type="lottie" data-src="{{ asset_frontend('documents/btn-arrow-white.json') }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
               </a>

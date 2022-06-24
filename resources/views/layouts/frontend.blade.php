@@ -2,11 +2,13 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>{{ $seo['title'] ?? '' }}</title>
-        <meta name="description" content="{{ $seo['description'] ?? '' }}" />
+        {{-- <title>{{ $seo['title'] ?? '' }}</title> --}}
+        <title><?=$seo['title'] ?? ''?></title>
+        {{-- <meta name="description" content="{{ $seo['description'] ?? '' }}" /> --}}
+        <meta name="description" content="<?=$seo['description'] ?? ''?>" />
         <meta name="keywords" content="{{ $seo['keywords'] ?? '' }}" />
-        <meta property="og:title" content="{{ $seo['title'] ?? '' }}"/> 
-        <meta property="og:description" content="{{ $seo['description'] ?? '' }}"/> 
+        <meta property="og:title" content="<?=$seo['title'] ?? ''?>"/> 
+        <meta property="og:description" content="<?=$seo['description'] ?? ''?>"/> 
         <meta property="og:image" content="{{ $seo['og_image'] ?? '' }}"/> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="canonical" href="{{ url()->current() }}" />

@@ -32,7 +32,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'top_banner',
-                'title' => 'Banner Image'
+                'title' => 'Banner Image (2000 width X 667 height px)'
             ])
 
             @row([
@@ -55,7 +55,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'top_image',
-                'title' => 'Top Section Image',
+                'title' => 'Top Section Image (500 width X 348 height px)',
             ])
 
             @row([
@@ -86,7 +86,7 @@
                     [
                         'type' => 'image-upload',
                         'field' => 'image',
-                        'title' => 'Image',
+                        'title' => 'Image (1260 width X 440 height px)',
                         'options' => [
                             'width' => '15%'
                         ]
@@ -113,7 +113,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'bottom_image',
-                'title' => 'Bottom Section Image',
+                'title' => 'Bottom Section Image (500 width X 348 height px)',
             ])
 
             @row([

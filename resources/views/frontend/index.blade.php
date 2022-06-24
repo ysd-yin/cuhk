@@ -2,7 +2,12 @@
 <html data-wf-page="622e9dcd9a2c5174716316d2" data-wf-site="622e9dcd9a2c51920e6316d0">
 <head>
   <meta charset="utf-8">
-  <title>CUHK BBA-JD Double Degree Programme</title>
+  <title>{{ $seo['title'] ?? '' }}</title>
+  <meta name="description" content="{{ $seo['description'] ?? '' }}" />
+  <meta name="keywords" content="{{ $seo['keywords'] ?? '' }}" />
+  <meta property="og:title" content="{{ $seo['title'] ?? '' }}"/> 
+  <meta property="og:description" content="{{ $seo['description'] ?? '' }}"/> 
+  <meta property="og:image" content="{{ $seo['og_image'] ?? '' }}"/> 
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="{{ asset_frontend('css/normalize.css') }}" rel="stylesheet" type="text/css">
   <link href="{{ asset_frontend('css/components.css') }}" rel="stylesheet" type="text/css">
@@ -552,28 +557,62 @@
         </div>
       </div>
     </div>
+    <?php
+    // Create the function, so you can use it
+    function isMobile() {
+        return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
+    }
+    ?>
   <div class="section-home-banner wf-section">
     <div data-delay="5000" data-animation="over" class="home-banner-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="10" data-duration="600" data-infinite="true" id="home-banner-slider">
       <div class="w-slider-mask"> <!-- //Image  -->
         @foreach ($home_banner as $item3) 
-        @if($item3->getMedia('image') != '')
-        <div class="home-banner-slide w-slide" 
-        @if($item3->effect == '1')
-        data-ix="home-banner-slide"
-        @endif
-        >
-          <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url('{{$item3->getMedia('image')->getResizedImage(2000)}}')"></div>
-            {{-- <img class="home-banner-img banner0{{$loop->index+1}}" src="{{$item->getMedia('image')->getResizedImage(2000)}}" data-ix="home-banner-img"> --}}
-            @if($item3->title != '')
-            <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
-              <div class="home-banner-tag-arrow"></div>
-                <div class="home-banner-tag-txt-b">
-                  <div>{!! editor($item3->title) !!}</div>
-                </div>
+         <?php 
+          if(!isMobile()){
+            ?>
+            @if($item3->getMedia('image') != '')
+            <div class="home-banner-slide w-slide" 
+            @if($item3->effect == '1')
+            data-ix="home-banner-slide"
+            @endif
+            >
+            <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url('{{$item3->getMedia('image')->getResizedImage(2000)}}')"></div>
+              {{-- <img class="home-banner-img banner0{{$loop->index+1}}" src="{{$item->getMedia('image')->getResizedImage(2000)}}" data-ix="home-banner-img"> --}}
+              @if($item3->title != '')
+              <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
+                <div class="home-banner-tag-arrow"></div>
+                  <div class="home-banner-tag-txt-b">
+                    <div>{!! editor($item3->title) !!}</div>
+                  </div>
+              </div>
+              @endif
             </div>
             @endif
-          </div>
-          @endif
+            <?php
+          }
+          else{
+            ?>
+            @if($item3->getMedia('mobile_image') != '')
+            <div class="home-banner-slide w-slide" 
+            @if($item3->effect == '1')
+            data-ix="home-banner-slide"
+            @endif
+            >
+            <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url('{{$item3->getMedia('mobile_image')->getResizedImage(2000)}}')"></div>
+              {{-- <img class="home-banner-img banner0{{$loop->index+1}}" src="{{$item->getMedia('image')->getResizedImage(2000)}}" data-ix="home-banner-img"> --}}
+              @if($item3->title != '')
+              <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
+                <div class="home-banner-tag-arrow"></div>
+                  <div class="home-banner-tag-txt-b">
+                    <div>{!! editor($item3->title) !!}</div>
+                  </div>
+              </div>
+              @endif
+            </div>
+            @endif
+            <?php
+          }
+         ?>
         @endforeach
       </div>
       <div class="hidden w-slider-arrow-left"></div>
@@ -583,6 +622,9 @@
     <div data-delay="4000" data-animation="fade" class="home-banner-txt-slider w-slider" id="home-banner-txt-slider">
       <div class="home-banner-txt-slide-mask w-slider-mask">
         @foreach ($home_banner as $item2)
+        <?php 
+          if(!isMobile()){
+        ?>
         @if($item2->getMedia('image') != '')
         <div class="home-banner-txt-slide w-slide" data-ix="home-thumbnail-slide">
             <div class="home-banner-txt-b active">
@@ -613,6 +655,43 @@
             </div>
           </div>
           @endif
+          <?php
+          }
+          else{
+            ?>
+            @if($item2->getMedia('mobile_image') != '')
+            <div class="home-banner-txt-slide w-slide" data-ix="home-thumbnail-slide">
+                <div class="home-banner-txt-b active">
+                  <div>
+                    <div class="txt-mask">
+                      <div class="home-banner-txt txt-color-purple" data-ix="home-banner-txt"><span class="txt-stroke-white">{!! editor($item2->title_1) !!}</span></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="txt-mask">
+                      <div class="home-banner-txt txt-color-gold" data-ix="home-banner-txt"><span class="txt-stroke-white">{!! editor($item2->title_2) !!}</span></div>
+                    </div>
+                  </div>
+                  @if(isset($item2->url))
+                  <?php
+                  $first_4 = substr($item2->url,0,4);
+                  $target="_self";
+                  if($first_4 == 'http'){
+                    $target="_blank";
+                  }
+                  ?>
+                  <div class="home-banner-btn-b">
+                    <a data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de629" href="{{$item2->url}}" target="<?=$target?>" class="btn-arrow w-inline-block">
+                      <div data-is-ix2-target="1" class="img" data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de62a" data-animation-type="lottie" data-src="{{asset_frontend('documents/btn-arrow.json')}}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
+                    </a>
+                  </div>
+                  @endif
+                </div>
+              </div>
+              @endif
+            <?php
+          }
+          ?>
         @endforeach
       </div>
       <div class="hide w-slider-arrow-left"></div>

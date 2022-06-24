@@ -56,7 +56,7 @@
                     [
                         'type' => 'image-upload',
                         'field' => 'image',
-                        'title' => 'Image',
+                        'title' => 'Image (1600 width X 1040 height px)',
                     ],
                     [
                         'type' => 'textinput',

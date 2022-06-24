@@ -32,7 +32,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'top_banner',
-                'title' => 'Banner Image'
+                'title' => 'Banner Image (2000 width X 667 height px)'
             ])
 
             @row([
@@ -55,7 +55,7 @@
                 [
                     [
                         'type' => 'image-upload',
-                        'title' => 'Image',
+                        'title' => 'Image (1600 width X 1160 height px)',
                         'field' => 'image'
                     ],
                     [

@@ -103,6 +103,13 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'image',
+                'title' => 'Desktop Image (2880 width X 1520 height px)'
+            ])
+
+            @row([
+                'type' => 'image-upload',
+                'field' => 'mobile_image',
+                'title' => 'Mobile Image (960 width X 1520 height px)'
             ])
              
             @include('admin.base.status')

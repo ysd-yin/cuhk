@@ -32,7 +32,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'top_banner',
-                'title' => 'Banner Image'
+                'title' => 'Banner Image (2000 width X 667 height px)'
             ])
 
             @row([
@@ -68,7 +68,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'undergraduate_office_image',
-                'title' => 'Undergraduate Office Image'
+                'title' => 'Undergraduate Office Image (1440 width X 992 height px)'
             ])
 
             @row([
@@ -134,7 +134,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'faculty_law_image',
-                'title' => 'Faculty of Law Image'
+                'title' => 'Faculty of Law Image (1440 width X 992 height px)'
             ])
              
             @row([

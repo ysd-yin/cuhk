@@ -32,7 +32,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'top_banner',
-                'title' => 'Banner Image'
+                'title' => 'Banner Image (2000 width X 667 height px)'
             ])
 
             @row([
@@ -60,7 +60,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_1',
-                'title' => 'Ball 1 Image'
+                'title' => 'Ball 1 Image (70 width X 70 height px)'
             ])
 
             @row([
@@ -72,7 +72,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_2',
-                'title' => 'Ball 2 Image'
+                'title' => 'Ball 2 Image (70 width X 70 height px)'
             ])
 
             @row([
@@ -84,7 +84,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_3',
-                'title' => 'Ball 3 Image'
+                'title' => 'Ball 3 Image (70 width X 70 height px)'
             ])
 
             @row([
@@ -96,7 +96,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_4',
-                'title' => 'Ball 4 Image'
+                'title' => 'Ball 4 Image (70 width X 70 height px)'
             ])
 
             @row([
@@ -108,7 +108,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_5',
-                'title' => 'Ball 5 Image'
+                'title' => 'Ball 5 Image (70 width X 70 height px)'
             ])
 
             @row([
@@ -120,7 +120,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_6',
-                'title' => 'Ball 6 Image'
+                'title' => 'Ball 6 Image (70 width X 70 height px)'
             ])
 
             @row([
@@ -132,7 +132,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_7',
-                'title' => 'Ball 7 Image'
+                'title' => 'Ball 7 Image (70 width X 70 height px)'
             ])
 
             @row([
@@ -144,7 +144,7 @@
             @row([
                 'type' => 'image-upload',
                 'field' => 'ball_8',
-                'title' => 'Ball 8 Image'
+                'title' => 'Ball 8 Image (70 width X 70 height px)'
             ])
 
             @row([
