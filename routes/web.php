@@ -17,6 +17,7 @@ Route::get('refresh-csrf', function() {
 })->name('refresh-csrf');
 
 Route::get('/', 'IndexController@index')->name('index');
+Route::get('/test', 'IndexController@test')->name('test');
 
 Route::get('/about-programme-co-directors-message', 'AboutMessageController@index')->name('about_message');
 Route::get('/about-programme-overview', 'AboutOverviewController@index')->name('about_overview');

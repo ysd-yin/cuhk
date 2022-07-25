@@ -20,7 +20,7 @@ class Seo extends BaseModel
         if(!empty($description)){
             $seo['description'] = $description;
         }else{
-            $seo['description'] = (isset($mainModel->seo->language->description) && $mainModel->seo->language->description) ? $mainModel->seo->language->description : $systemSetting->page_description;
+            $seo['description'] = (isset($mainModel->seo->description) && $mainModel->seo->description) ? $mainModel->seo->description : $systemSetting->page_description;
         }
 
         if(!empty($image)){

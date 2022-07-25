@@ -13,10 +13,6 @@
   <link href="{{ asset_frontend('css/components.css') }}" rel="stylesheet" type="text/css">
   <link href="{{ asset_frontend('css/cuhk-bba-jd-ysd-v01.css') }}" rel="stylesheet" type="text/css">
   <style>
-    .section-home-banner {
-    /* height: 100vh; */
-    height:850px;
-  }
     @media only screen and (max-width: 991px) {
     .student-voices-slide-txt, .student-voices-content {
       -webkit-line-clamp: 4 !important;
@@ -580,7 +576,10 @@
             data-ix="home-banner-slide"
             @endif
             >
-            <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url('{{$item3->getMedia('image')->getResizedImage(2000)}}')"></div>
+            {{-- <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url('{{$item3->getMedia('image')->getResizedImage(2000)}}')"> --}}
+            <div class="12345 home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img">
+              <img src="{{$item3->getMedia('image')->getResizedImage(2000)}}" data-ix="home-banner-img" style="height:780px;text-align:center;">
+            </div>
               {{-- <img class="home-banner-img banner0{{$loop->index+1}}" src="{{$item->getMedia('image')->getResizedImage(2000)}}" data-ix="home-banner-img"> --}}
               @if($item3->title != '')
               <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
