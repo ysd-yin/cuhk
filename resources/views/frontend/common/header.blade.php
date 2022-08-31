@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="{{ asset_frontend('css/normalize.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset_frontend('css/components.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset_frontend('css/cuhk-bba-jd-ysd-v01.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset_frontend('css/cuhk-bba-jd-ysd-v01.css') }}?v=1" rel="stylesheet" type="text/css">
     <style>
         @media (min-width:992px) {
           html.w-mod-js:not(.w-mod-ix) [data-w-id="a7ffb6b4-624d-d0b3-c54f-dc44bfad4b13"] {
@@ -537,3 +537,4 @@
       </div>
     </div>
   </div>
+  <div class="all">

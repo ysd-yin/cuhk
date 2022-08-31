@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  Last Published: Fri May 13 2022 06:38:35 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="62f605946e8ca5453a99c699" data-wf-site="62f605946e8ca5398b99c697">
+<html data-wf-page="622e9dcd9a2c5174716316d2" data-wf-site="622e9dcd9a2c51920e6316d0">
 <head>
   <meta charset="utf-8">
   <title>{{ $seo['title'] ?? '' }}</title>
@@ -338,80 +338,80 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <style>
-    .txt-stroke {
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1.5px #392064;
-    }
-    @media(max-width: 767px) {
       .txt-stroke {
-        -webkit-text-stroke: 0.8px #392064;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1.5px #392064;
       }
-    }
-    .txt-stroke-with-whitebg {
-      -webkit-text-fill-color: #ffffff;
-      -webkit-text-stroke: 1.5px #392064;
-    }
-    @media(max-width: 767px) {
+      @media(max-width: 767px) {
+        .txt-stroke {
+          -webkit-text-stroke: 0.8px #392064;
+        }
+      }
       .txt-stroke-with-whitebg {
-        -webkit-text-stroke: 0.8px #392064;
+        -webkit-text-fill-color: #ffffff;
+        -webkit-text-stroke: 1.5px #392064;
       }
-    }
-    .txt-stroke-white {
-      -webkit-text-stroke: 1.5px #ffffff;
-    }
-    @media(max-width: 767px) {
+      @media(max-width: 767px) {
+        .txt-stroke-with-whitebg {
+          -webkit-text-stroke: 0.8px #392064;
+        }
+      }
       .txt-stroke-white {
-        -webkit-text-stroke: 0.8px #ffffff;
+        -webkit-text-stroke: 1.5px #ffffff;
       }
-    }
-    .txt-stroke-white-nobg {
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1.5px #ffffff;
-    }
-    @media(max-width: 767px) {
+      @media(max-width: 767px) {
+        .txt-stroke-white {
+          -webkit-text-stroke: 0.8px #ffffff;
+        }
+      }
       .txt-stroke-white-nobg {
-        -webkit-text-stroke: 0.8px #ffffff;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1.5px #ffffff;
       }
-    }
-    @media print {
-      .nav-menu {
-        display: none;
+      @media(max-width: 767px) {
+        .txt-stroke-white-nobg {
+          -webkit-text-stroke: 0.8px #ffffff;
+        }
       }
-      .header {
-        position: absolute;
+      @media print {
+        .nav-menu {
+          display: none;
+        }
+        .header {
+          position: absolute;
+        }
       }
-    }
-    .w-slider-dot {
-      height: 16px;
-      width: 16px;
-      background: none;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url('https://uploads-ssl.webflow.com/622e9dcd9a2c51920e6316d0/622f46fe33d4a6db44d6bebf_slider-dot.svg');
-    }
-    .w-slider-dot.w-active {
-      height: 16px;
-      width: 16px;
-      background: none;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url('https://uploads-ssl.webflow.com/622e9dcd9a2c51920e6316d0/622f46fec43d0c98be95261a_slider-dot-active.svg');
-    }
-  </style>
-<style>
-    .home-banner-mask,
-    .home-banner-mask-mobile,
-    .home-banner-slider {
-      pointer-events: none;
-    }
-    .home-banner-slide-nav,
-    .home-banner-link {
-      pointer-events: auto;
-    }
-    .home-banner-btn-b {
-      pointer-events: auto;
-    }
-  </style>
+      .w-slider-dot {
+        height: 16px;
+        width: 16px;
+        background: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('https://uploads-ssl.webflow.com/622e9dcd9a2c51920e6316d0/622f46fe33d4a6db44d6bebf_slider-dot.svg');
+      }
+      .w-slider-dot.w-active {
+        height: 16px;
+        width: 16px;
+        background: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('https://uploads-ssl.webflow.com/622e9dcd9a2c51920e6316d0/622f46fec43d0c98be95261a_slider-dot-active.svg');
+      }
+    </style>
+  <style>
+      .home-banner-slider {
+        pointer-events: none;
+      }
+      .home-banner-txt-slider {
+        pointer-events: none;
+      }
+      .home-banner-slide-nav {
+        pointer-events: auto;
+      }
+      .home-banner-btn-b {
+        pointer-events: auto;
+      }
+    </style>
 </head>
 <body>
 
@@ -567,89 +567,142 @@
         return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
     }
     ?>
-    <div class="section-home-banner wf-section">
-      <div data-delay="5000" data-animation="over" class="home-banner-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="10" data-duration="600" data-infinite="true" id="home-banner-slider">
-        <div class="w-slider-mask">
-          @foreach ($home_banner as $item3) 
-          <div class="home-banner-slide w-slide"
-          @if($item3->effect == '1')
-          data-ix="home-banner-slide"
-          @endif
-          >
-          <?php
-          $first_4 = substr($item3->url,0,4);
-          $target="_self";
-          if($first_4 == 'http'){
-            $target="_blank";
-          }
-          ?>
-            <a href="{{$item3->url}}" target="<?=$target?>" class="home-banner-link w-inline-block">
-              <div class="home-banner-wrap">
-                <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" 
-                  <?php 
-                  if(!isMobile()){
-                    ?>
-                    style="background-image:url('{{$item3->getMedia('image')->getResizedImage(2000)}}')"
-                    <?php
-                  }
-                  else{
-                    ?>
-                    style="background-image:url('{{$item3->getMedia('mobile_image')->getResizedImage(2000)}}')"
-                    <?php
-                  }
-                    ?>
-                  ></div>
-                <div class="home-banner-content">
-                  <div class="container v-banner w-container">
-                    <div class="home-banner-txt-b active">
-                      @if($item3->title_1 != '')
-                      <div>
-                        <div class="txt-mask">
-                          <div class="home-banner-txt txt-color-purple" data-ix="home-banner-txt"><span class="txt-stroke-white">{!! editor($item3->title_1) !!}</span></div>
-                        </div>
-                      </div>
-                      @endif
-                      @if($item3->title_2 != '')
-                      <div>
-                        <div class="txt-mask">
-                          <div class="home-banner-txt txt-color-gold" data-ix="home-banner-txt"><span class="txt-stroke-white">{!! editor($item3->title_2) !!}</span></div>
-                        </div>
-                      </div>
-                      @endif
-                      <div class="home-banner-btn-b">
-                        <div data-w-id="58d95f45-3602-4c40-8544-9a1465fc13ba" class="btn-arrow"
-                        @if($item3->position == 'left')
-                          style = "float:left"
-                        @elseif($item3->position == 'center')
-                          style = "margin:0 auto"
-                        @elseif($item3->position == 'right')
-                          style = "float:right"
-                        @endif
-                        >
-                          <div data-is-ix2-target="1" class="img" data-w-id="05f8950b-0161-edaf-6bde-1cb7ef8b13ba" data-animation-type="lottie" data-src="{{ asset_frontend('documents/btn-arrow.json') }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                @if($item3->title != '')
-                <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
-                  <div class="home-banner-tag-arrow"></div>
+  <div class="section-home-banner wf-section">
+    <div data-delay="5000" data-animation="over" class="home-banner-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="10" data-duration="600" data-infinite="true" id="home-banner-slider">
+      <div class="w-slider-mask"> <!-- //Image  -->
+        @foreach ($home_banner as $item3) 
+         <?php 
+          if(!isMobile()){
+            ?>
+            @if($item3->getMedia('image') != '')
+            <div class="home-banner-slide w-slide" 
+            @if($item3->effect == '1')
+            data-ix="home-banner-slide"
+            @endif
+            >
+            <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url('{{$item3->getMedia('image')->getResizedImage(2000)}}')"></div>
+              {{-- <img class="home-banner-img banner0{{$loop->index+1}}" src="{{$item->getMedia('image')->getResizedImage(2000)}}" data-ix="home-banner-img"> --}}
+              @if($item3->title != '')
+              <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
+                <div class="home-banner-tag-arrow"></div>
                   <div class="home-banner-tag-txt-b">
                     <div>{!! editor($item3->title) !!}</div>
                   </div>
-                </div>
-                @endif
               </div>
-            </a>
-          </div>
-          @endforeach
-        </div>
-        <div class="hidden w-slider-arrow-left"></div>
-        <div class="hidden w-slider-arrow-right"></div>
-        <div class="home-banner-slide-nav w-slider-nav w-round"></div>
-      </div><img src="{{ asset_frontend('images/home-banner-mask.svg') }}" loading="lazy" style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="home-banner-mask"><img src="{{ asset_frontend('images/home-banner-mask-mobile.svg') }}" loading="lazy" style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="home-banner-mask-mobile">
+              @endif
+            </div>
+            @endif
+            <?php
+          }
+          else{
+            ?>
+            @if($item3->getMedia('mobile_image') != '')
+            <div class="home-banner-slide w-slide" 
+            @if($item3->effect == '1')
+            data-ix="home-banner-slide"
+            @endif
+            >
+            <div class="home-banner-img banner0{{$loop->index+1}}" data-ix="home-banner-img" style="background-image:url('{{$item3->getMedia('mobile_image')->getResizedImage(2000)}}')"></div>
+              {{-- <img class="home-banner-img banner0{{$loop->index+1}}" src="{{$item->getMedia('image')->getResizedImage(2000)}}" data-ix="home-banner-img"> --}}
+              @if($item3->title != '')
+              <div style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="home-banner-tag">
+                <div class="home-banner-tag-arrow"></div>
+                  <div class="home-banner-tag-txt-b">
+                    <div>{!! editor($item3->title) !!}</div>
+                  </div>
+              </div>
+              @endif
+            </div>
+            @endif
+            <?php
+          }
+         ?>
+        @endforeach
+      </div>
+      <div class="hidden w-slider-arrow-left"></div>
+      <div class="hidden w-slider-arrow-right"></div>
+      <div class="home-banner-slide-nav w-slider-nav w-round"></div>
     </div>
+    <div data-delay="4000" data-animation="fade" class="home-banner-txt-slider w-slider" id="home-banner-txt-slider">
+      <div class="home-banner-txt-slide-mask w-slider-mask">
+        @foreach ($home_banner as $item2)
+        <?php 
+          if(!isMobile()){
+        ?>
+        @if($item2->getMedia('image') != '')
+        <div class="home-banner-txt-slide w-slide" data-ix="home-thumbnail-slide">
+            <div class="home-banner-txt-b active">
+              <div>
+                <div class="txt-mask">
+                  <div class="home-banner-txt txt-color-purple" data-ix="home-banner-txt"><span class="txt-stroke-white">{!! editor($item2->title_1) !!}</span></div>
+                </div>
+              </div>
+              <div>
+                <div class="txt-mask">
+                  <div class="home-banner-txt txt-color-gold" data-ix="home-banner-txt"><span class="txt-stroke-white">{!! editor($item2->title_2) !!}</span></div>
+                </div>
+              </div>
+              @if(isset($item2->url))
+              <?php
+              $first_4 = substr($item2->url,0,4);
+              $target="_self";
+              if($first_4 == 'http'){
+                $target="_blank";
+              }
+              ?>
+              <div class="home-banner-btn-b" style="text-align:{{$item2->position}}">
+                <a data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de629" href="{{$item2->url}}" target="<?=$target?>" class="btn-arrow w-inline-block">
+                  <div data-is-ix2-target="1" class="img" data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de62a" data-animation-type="lottie" data-src="{{asset_frontend('documents/btn-arrow.json')}}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
+                </a>
+              </div>
+              @endif
+            </div>
+          </div>
+          @endif
+          <?php
+          }
+          else{
+            ?>
+            @if($item2->getMedia('mobile_image') != '')
+            <div class="home-banner-txt-slide w-slide" data-ix="home-thumbnail-slide">
+                <div class="home-banner-txt-b active">
+                  <div>
+                    <div class="txt-mask">
+                      <div class="home-banner-txt txt-color-purple" data-ix="home-banner-txt"><span class="txt-stroke-white">{!! editor($item2->title_1) !!}</span></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="txt-mask">
+                      <div class="home-banner-txt txt-color-gold" data-ix="home-banner-txt"><span class="txt-stroke-white">{!! editor($item2->title_2) !!}</span></div>
+                    </div>
+                  </div>
+                  @if(isset($item2->url))
+                  <?php
+                  $first_4 = substr($item2->url,0,4);
+                  $target="_self";
+                  if($first_4 == 'http'){
+                    $target="_blank";
+                  }
+                  ?>
+                  <div class="home-banner-btn-b" style="text-align:{{$item2->position}}">
+                    <a data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de629" href="{{$item2->url}}" target="<?=$target?>" class="btn-arrow w-inline-block">
+                      <div data-is-ix2-target="1" class="img" data-w-id="d54a4ed4-5e5f-c241-7849-3c8e458de62a" data-animation-type="lottie" data-src="{{asset_frontend('documents/btn-arrow.json')}}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.0010009602293968" data-duration="0" data-ix2-initial-state="0"></div>
+                    </a>
+                  </div>
+                  @endif
+                </div>
+              </div>
+              @endif
+            <?php
+          }
+          ?>
+        @endforeach
+      </div>
+      <div class="hide w-slider-arrow-left"></div>
+      <div class="hide w-slider-arrow-right"></div>
+      <div class="hide w-slider-nav"></div>
+    </div><img src="{{ asset_frontend('images/home-banner-mask.svg') }}" loading="lazy" style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="home-banner-mask"><img src="{{ asset_frontend('images/home-banner-mask-mobile.svg') }}" loading="lazy" style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="home-banner-mask-mobile">
+  </div>
   <div class="section-content bg-map wf-section">
     <div class="container-full w-container">
         <div class="heading-b">

@@ -40,8 +40,12 @@ h2 {
   font-weight: 700;
 }
 
+.home-banner-slide p, .home-banner-txt-slide-mask p{
+  margin-top:0px !important;
+  margin-bottom:0px !important;
+}
 p {
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
 }
 
 li {
@@ -183,6 +187,12 @@ li {
 .container.home-program {
   position: relative;
   z-index: 1;
+}
+
+.container.v-banner {
+  max-width: none;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .heading {
@@ -463,31 +473,44 @@ li {
 .section-home-banner {
   position: relative;
   overflow: hidden;
-  height: 100vh;
-  padding-bottom: 90px;
+  /* height: 100vh; */
+  /* height:850px; */
+  /* padding-bottom: 90px; */
 }
 
 .home-banner-img {
-  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  /* height: 100%; */
+  /* background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg'); */
+  /* background-position: 50% 50%; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background:white; */
 }
 
 .home-banner-img.banner01 {
-  background-image: url('../images/home-banner012x.jpg');
+  /* background:white; */
+  /* background-image: url('../images/home-banner012x.jpg'); */
 }
 
 .home-banner-img.banner02 {
-  background-image: url('../images/home-banner012x.jpg');
+  /* background:white; */
+  /* background-image: url('../images/home-banner012x.jpg');
   background-position: 50% 50%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .home-banner-img.banner02 {
-  background-image: url('../images/home-banner022x.jpg');
+  /* background-image: url('../images/home-banner022x.jpg'); */
 }
 
 .hidden {
@@ -501,6 +524,7 @@ li {
   right: auto;
   bottom: 0%;
   z-index: 1;
+  width: 320px;
 }
 
 .container-menu {
@@ -899,7 +923,8 @@ li {
   right: 0%;
   bottom: 0%;
   margin-right: 5%;
-  margin-bottom: -65px;
+  /* margin-bottom: -65px; */
+  margin-bottom: 20px;
 }
 
 .home-banner-tag {
@@ -1392,7 +1417,7 @@ li {
 }
 
 .home-banner-slider {
-  height: 100%;
+  height: auto;
   background-color: transparent;
 }
 
@@ -1417,6 +1442,9 @@ li {
 
 .home-banner-slide {
   overflow: hidden;
+  height: 100vh;
+  min-height: 700px;
+  padding-bottom: 80px;
 }
 
 .home-career-line {
@@ -5960,6 +5988,34 @@ li {
   line-height: 2vw;
 }
 
+.home-banner-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.home-banner-content {
+  position: relative;
+  width: 100%;
+}
+
+.home-banner-link {
+  display: block;
+  height: 100%;
+}
+
 .admission-timeline-dot-more {
   position: absolute;
   left: 50%;
@@ -6536,6 +6592,10 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
     width: 980px;
   }
 
+  .home-banner-mask {
+    width: 360px;
+  }
+
   .container-menu {
     border-bottom-left-radius: 20px;
     background-color: #fff;
@@ -6705,6 +6765,10 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
     margin-left: 0px;
   }
 
+  .home-banner-slide {
+    padding-bottom: 90px;
+  }
+
   .home-career-txt {
     font-size: 19px;
     line-height: 23px;
@@ -6857,7 +6921,7 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
   }
 
   .section-home-banner {
-    height: 85vh;
+    /* height: 85vh; */
   }
 
   .student-voices-slide-content-b {
@@ -6939,6 +7003,10 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
     margin-top: 2%;
     padding-right: 5%;
     padding-left: 5%;
+  }
+
+  .home-banner-slide {
+    padding-bottom: 70px;
   }
 
   .home-career-line {
@@ -7820,7 +7888,7 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
 }
 @media screen and (max-width: 767px) {
   .section-home-banner{
-    height:35vh;
+    /* height:55vh; */
   }
   .student-voices-details-txt-quote div{
     overflow:scroll;
@@ -8096,7 +8164,8 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
   }
 
   .home-banner-slide-nav {
-    margin-bottom: -50px;
+    /* margin-bottom: -50px; */
+    margin-bottom: 10px;
   }
 
   .home-banner-tag {
@@ -8246,6 +8315,10 @@ html.w-mod-js *[data-ix="learning-gallery-img-txt-b"] {
 
   .home-banner-txt-slider {
     width: 80%;
+  }
+
+  .home-banner-slide {
+    padding-bottom: 60px;
   }
 
   .home-career-txt-b._01 {
